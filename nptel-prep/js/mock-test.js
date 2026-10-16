@@ -61,7 +61,7 @@ function renderMockList() {
           ${hasSaved ? `<span class="badge badge-green">Score: ${saved.correct}/${saved.total} (${Math.round(saved.correct/saved.total*100)}%)</span>` : ''}
         </div>
         <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
-          <button class="btn btn-blue" onclick="startMock('${mt.id}')">
+          <button class="btn btn-primary" onclick="startMock('${mt.id}')">
             ${hasSaved ? '↺ Retake Test' : '▶ Start Test'}
           </button>
           ${hasSaved ? `<a href="results.html?type=mock&mockId=${mt.id}" class="btn btn-ghost">📊 View Last Results</a>` : ''}

@@ -132,8 +132,8 @@ function renderWeeks() {
               `;
             }).join('')}
           </div>
-          <div style="margin-top:1rem">
-            <a href="quizzes.html?week=${w.week}" class="btn btn-blue" style="font-size:0.85rem;padding:0.5rem 1.1rem">
+          <div style="margin-top:1.2rem">
+            <a href="quizzes.html?week=${w.week}" class="btn btn-primary" style="font-size:0.48rem;padding:0.6rem 1rem">
               ✏️ Practice Week ${w.week} Quiz →
             </a>
           </div>

@@ -5,43 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mock Tests — NPTEL Prep</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
   <style>
-    .page-header {
-      background: linear-gradient(135deg, #16a34a 0%, #2563eb 100%);
-      color: #fff;
-      padding: 2.5rem 1.25rem;
-    }
-    .page-header-content { max-width: 1200px; margin: 0 auto; }
-    .page-header h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.4rem; }
-    .page-header p { opacity: 0.85; font-size: 0.95rem; }
     #mockListView, #mockActiveView { display: none; }
     #mockListView.visible, #mockActiveView.visible { display: block; }
-    .mock-card {
-      background: #fff;
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      box-shadow: var(--shadow-sm);
-      transition: all var(--transition);
-      margin-bottom: 1.25rem;
-    }
-    .mock-card:hover { box-shadow: var(--shadow-md); }
-    .mock-card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-      gap: 1rem;
-    }
-    .mock-card-title { font-size: 1.15rem; font-weight: 800; color: var(--neutral-800); }
-    .mock-card-desc { font-size: 0.9rem; color: var(--neutral-500); margin-top: 0.25rem; }
-    .mock-meta-row {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.25rem;
-    }
   </style>
 </head>
 <body>
@@ -49,8 +15,11 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">N</div>
-      NPTEL Prep
+      <img src="mic-logo.webp" alt="MIC Logo" class="nav-logo-img">
+      <div class="nav-logo-text">
+        NPTEL Prep
+        <span>MIC VIT Chennai</span>
+      </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">🏠 Home</a></li>
@@ -134,7 +103,7 @@
           </div>
         </div>
         <div style="margin-top:1rem">
-          <button class="btn btn-danger" onclick="submitMock()" style="width:100%;font-size:0.85rem;padding:0.6rem">Submit Test</button>
+          <button class="btn btn-danger" onclick="submitMock()" style="width:100%;font-size:0.48rem;padding:0.7rem 0.5rem">Submit Test</button>
         </div>
       </div>
     </div>

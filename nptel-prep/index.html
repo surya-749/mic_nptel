@@ -5,70 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NPTEL Prep — Developing Innovative Products & Entrepreneurship</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 3rem;
-    }
-    .feature-card {
-      background: #fff;
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      box-shadow: var(--shadow-sm);
-      transition: box-shadow var(--transition), transform var(--transition);
-    }
-    .feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    .feature-icon { font-size: 1.8rem; flex-shrink: 0; }
-    .feature-title { font-weight: 700; color: var(--neutral-800); margin-bottom: 0.3rem; }
-    .feature-desc { font-size: 0.88rem; color: var(--neutral-500); line-height: 1.5; }
-    .week-overview-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .week-pill {
-      background: #fff;
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      transition: all var(--transition);
-      text-decoration: none;
-      color: var(--neutral-700);
-    }
-    .week-pill:hover {
-      border-color: var(--primary);
-      background: var(--primary-light);
-      color: var(--primary);
-      text-decoration: none;
-      transform: translateY(-1px);
-    }
-    .week-pill-num {
-      width: 32px;
-      height: 32px;
-      border-radius: var(--radius-sm);
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 0.85rem;
-      flex-shrink: 0;
-    }
-    .week-pill-title { font-size: 0.85rem; font-weight: 600; }
-  </style>
 </head>
 <body>
 
@@ -76,8 +12,11 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">N</div>
-      NPTEL Prep
+      <img src="mic-logo.webp" alt="MIC Logo" class="nav-logo-img">
+      <div class="nav-logo-text">
+        NPTEL Prep
+        <span>MIC VIT Chennai</span>
+      </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">🏠 Home</a></li>
@@ -231,17 +170,18 @@
       const colors = ['blue','purple','green','orange','red','blue'];
       quizCards.innerHTML = qData.assignments.map((a, i) => `
         <div class="card">
+          <div class="card-ribbon">Week ${a.week} · ${a.topic}</div>
           <div class="card-header">
-            <div class="card-icon ${colors[i]}">✏️</div>
+            <div class="card-icon">✏️</div>
             <div>
               <div class="card-title">${a.title}</div>
-              <div class="card-subtitle">Week ${a.week} — ${a.topic}</div>
+              <div class="card-subtitle">${a.questions.length} Questions</div>
             </div>
           </div>
-          <div class="card-body">${a.questions.length} questions covering ${a.topic.toLowerCase()}.</div>
+          <div class="card-body">Practice assignment MCQs on ${a.topic.toLowerCase()} with instant feedback and explanations.</div>
           <div class="card-footer">
-            <span class="badge badge-blue">${a.questions.length} MCQs</span>
-            <a href="quizzes.html?id=${a.id}" class="btn btn-blue" style="font-size:0.85rem;padding:0.5rem 1rem">Start →</a>
+            <span class="badge badge-star">★★★ ${a.questions.length} MCQs</span>
+            <a href="quizzes.html?id=${a.id}" class="btn btn-primary" style="font-size:0.48rem;padding:0.55rem 0.9rem">Start →</a>
           </div>
         </div>
       `).join('');

@@ -5,16 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quizzes — NPTEL Prep</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    .page-header {
-      background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
-      color: #fff;
-      padding: 2.5rem 1.25rem;
-    }
-    .page-header-content { max-width: 1200px; margin: 0 auto; }
-    .page-header h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.4rem; }
-    .page-header p { opacity: 0.85; font-size: 0.95rem; }
     #quizListView, #quizActiveView { display: none; }
     #quizListView.visible, #quizActiveView.visible { display: block; }
   </style>
@@ -24,8 +15,11 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">N</div>
-      NPTEL Prep
+      <img src="mic-logo.webp" alt="MIC Logo" class="nav-logo-img">
+      <div class="nav-logo-text">
+        NPTEL Prep
+        <span>MIC VIT Chennai</span>
+      </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">🏠 Home</a></li>

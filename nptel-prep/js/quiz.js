@@ -86,22 +86,23 @@ function renderQuizList() {
 
     return `
       <div class="card">
+        <div class="card-ribbon">Week ${a.week} · ${a.topic}</div>
         <div class="card-header">
-          <div class="card-icon ${colors[i % colors.length]}">✏️</div>
+          <div class="card-icon">✏️</div>
           <div>
             <div class="card-title">${a.title}</div>
-            <div class="card-subtitle">Week ${a.week} · ${a.topic}</div>
+            <div class="card-subtitle">${total} Questions</div>
           </div>
         </div>
         <div class="card-body">
           ${total} MCQ questions on ${a.topic.toLowerCase()}.
-          ${answered > 0 ? `<br><span style="color:var(--success);font-size:0.82rem;font-weight:600">✓ ${answered}/${total} answered previously</span>` : ''}
+          ${answered > 0 ? `<br><span style="color:var(--success);font-size:0.82rem;font-weight:700">✓ ${answered}/${total} answered</span>` : ''}
         </div>
         <div class="card-footer">
-          <span class="badge badge-blue">${total} questions</span>
+          <span class="badge badge-star">★★★ ${total} MCQs</span>
           <div style="display:flex;gap:0.5rem">
-            ${answered > 0 ? `<button class="btn btn-ghost" style="font-size:0.8rem;padding:0.4rem 0.8rem" onclick="clearProgress('${a.id}')">↺ Reset</button>` : ''}
-            <button class="btn btn-blue" style="font-size:0.85rem;padding:0.5rem 1rem" onclick="startQuizById('${a.id}')">Start →</button>
+            ${answered > 0 ? `<button class="btn btn-ghost" style="font-size:0.45rem;padding:0.45rem 0.75rem" onclick="clearProgress('${a.id}')">↺ Reset</button>` : ''}
+            <button class="btn btn-primary" style="font-size:0.48rem;padding:0.5rem 0.9rem" onclick="startQuizById('${a.id}')">Start →</button>
           </div>
         </div>
       </div>

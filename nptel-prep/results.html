@@ -5,79 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Results — NPTEL Prep</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .review-section { margin-top: 2.5rem; }
-    .review-question {
-      background: #fff;
-      border: 1px solid var(--neutral-200);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      box-shadow: var(--shadow-sm);
-    }
-    .review-question.correct-q { border-left: 4px solid var(--success); }
-    .review-question.wrong-q { border-left: 4px solid var(--danger); }
-    .review-question.skipped-q { border-left: 4px solid var(--neutral-300); }
-    .review-q-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.75rem;
-      gap: 0.75rem;
-    }
-    .review-q-number {
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--neutral-400);
-    }
-    .review-q-text {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--neutral-800);
-      margin-bottom: 0.75rem;
-    }
-    .review-answer {
-      font-size: 0.88rem;
-      padding: 0.5rem 0.85rem;
-      border-radius: var(--radius-sm);
-      margin-bottom: 0.35rem;
-    }
-    .review-answer.your-correct {
-      background: var(--success-light);
-      color: var(--success);
-      font-weight: 600;
-    }
-    .review-answer.your-wrong {
-      background: var(--danger-light);
-      color: var(--danger);
-      font-weight: 600;
-    }
-    .review-answer.correct-ans {
-      background: var(--success-light);
-      color: var(--success);
-      font-weight: 600;
-    }
-    .review-explanation {
-      font-size: 0.85rem;
-      color: var(--neutral-600);
-      background: var(--neutral-50);
-      border-radius: var(--radius-sm);
-      padding: 0.65rem 0.9rem;
-      margin-top: 0.75rem;
-      border-left: 3px solid var(--neutral-300);
-    }
-  </style>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">N</div>
-      NPTEL Prep
+      <img src="mic-logo.webp" alt="MIC Logo" class="nav-logo-img">
+      <div class="nav-logo-text">
+        NPTEL Prep
+        <span>MIC VIT Chennai</span>
+      </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">🏠 Home</a></li>
@@ -215,12 +153,12 @@ function renderResultHero({ title, subtitle, correct, total, percent, timeTaken,
           <div class="result-stat-label">Incorrect / Skipped</div>
         </div>
         <div class="result-stat">
-          <div class="result-stat-number" style="color:var(--primary)">${total}</div>
+          <div class="result-stat-number" style="color:#0c4d8c">${total}</div>
           <div class="result-stat-label">Total</div>
         </div>
         ${timeTaken ? `
         <div class="result-stat">
-          <div class="result-stat-number" style="color:var(--neutral-700)">${formatTime(timeTaken)}</div>
+          <div class="result-stat-number" style="color:var(--text-dark)">${formatTime(timeTaken)}</div>
           <div class="result-stat-label">Time Taken</div>
         </div>` : ''}
       </div>
