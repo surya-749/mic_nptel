@@ -4,6 +4,7 @@ import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import UiIcon from '@/components/UiIcon';
+import { useCourse } from '@/components/CourseContext';
 import { getWeeks, getExamStrategy } from '@/lib/data';
 
 const resourceTypeMap = {
@@ -14,8 +15,9 @@ const resourceTypeMap = {
 
 function MaterialsContent() {
   const searchParams = useSearchParams();
-  const allWeeks = getWeeks();
-  const examStrategy = getExamStrategy();
+  const { currentCourse, courseMeta } = useCourse();
+  const allWeeks = getWeeks(currentCourse);
+  const examStrategy = getExamStrategy(currentCourse);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedWeek, setSelectedWeek] = useState(searchParams.get('week') || '');
@@ -67,10 +69,13 @@ function MaterialsContent() {
     <>
       <div className="page-header">
         <div className="page-header-content">
+          <div className="badge badge-blue" style={{ marginBottom: '0.6rem', alignSelf: 'flex-start' }}>
+            <UiIcon name={courseMeta.icon || 'book'} /> {courseMeta.name}
+          </div>
           <h1>
             <UiIcon name="book" className="page-title-icon" /> Study Materials
           </h1>
-          <p>Week-wise topics, key concepts, and curated reference resources</p>
+          <p>Week-wise topics, key concepts, and curated reference resources for {courseMeta.name}</p>
         </div>
       </div>
 
@@ -85,7 +90,7 @@ function MaterialsContent() {
               <div>
                 <div className="exam-strategy-title">{examStrategy.title || 'Study Strategy for the Exam'}</div>
                 <div className="exam-strategy-subtitle">
-                  Understanding Incubation and Entrepreneurship — NPTEL Certification
+                  {courseMeta.name} — NPTEL Certification
                 </div>
               </div>
             </div>

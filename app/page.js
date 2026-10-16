@@ -1,11 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import UiIcon from '@/components/UiIcon';
+import { useCourse } from '@/components/CourseContext';
 import { getAssignments, getWeeks, getMockTests } from '@/lib/data';
 
 export default function HomePage() {
-  const assignments = getAssignments();
-  const weeks = getWeeks();
-  const mockTests = getMockTests();
+  const { currentCourse, courseMeta } = useCourse();
+
+  const assignments = getAssignments(currentCourse);
+  const weeks = getWeeks(currentCourse);
+  const mockTests = getMockTests(currentCourse);
   const totalQuestions = assignments.reduce((sum, a) => sum + (a.questions ? a.questions.length : 0), 0);
 
   return (
@@ -14,15 +19,15 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-badge">
-            <UiIcon name="gradCap" /> NPTEL Certification Prep
+            <UiIcon name={courseMeta.icon || 'gradCap'} /> NPTEL Certification Prep · {courseMeta.code || 'NPTEL'}
           </div>
           <h1>
             Ace Your NPTEL Exam on
             <br />
-            Understanding Incubation & Entrepreneurship
+            <span style={{ color: '#2563eb' }}>{courseMeta.name}</span>
           </h1>
           <p>
-            Study smarter with topic-wise quizzes, timed mock tests, instant explanations, and curated study materials — all in one place.
+            {courseMeta.description || 'Study smarter with topic-wise quizzes, timed mock tests, instant explanations, and curated study materials — all in one place.'}
           </p>
           <div className="hero-actions">
             <Link href="/quizzes" className="btn btn-primary">
@@ -62,7 +67,7 @@ export default function HomePage() {
         {/* FEATURES */}
         <div className="section-header">
           <h2>Everything You Need to Prepare</h2>
-          <p>Comprehensive preparation resources designed around the NPTEL syllabus</p>
+          <p>Comprehensive preparation resources designed around the NPTEL {courseMeta.name} syllabus</p>
         </div>
 
         <div className="feature-grid">
@@ -141,7 +146,7 @@ export default function HomePage() {
 
         {/* WEEK OVERVIEW */}
         <div className="section-header">
-          <h2>Course Overview — Weeks 1–12</h2>
+          <h2>Course Overview — {courseMeta.name} (Weeks 1–{weeks.length})</h2>
           <p>Browse study materials and quizzes by week</p>
         </div>
 
@@ -156,8 +161,8 @@ export default function HomePage() {
 
         {/* QUICK PRACTICE */}
         <div className="section-header mt-3" style={{ marginTop: '2.5rem' }}>
-          <h2>Quick Practice</h2>
-          <p>Jump directly into any assignment quiz</p>
+          <h2>Quick Practice — All 12 Assignments</h2>
+          <p>Jump directly into any assignment quiz for {courseMeta.name}</p>
         </div>
 
         <div className="cards-grid">

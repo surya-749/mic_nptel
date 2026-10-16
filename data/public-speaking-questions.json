@@ -1,0 +1,1414 @@
+{
+  "course": "Public Speaking",
+  "assignments": [
+    {
+      "id": "ps-assignment-1",
+      "title": "Assignment 1",
+      "week": 1,
+      "topic": "Introduction to Public Speaking & The Canons of Rhetoric",
+      "questions": [
+        {
+          "id": "ps_a1q1",
+          "question": "Public Speaking is a skill that cannot be acquired.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Public speaking is not purely an innate talent; it is an acquired skill that can be developed and mastered through study, practice, and constructive feedback."
+        },
+        {
+          "id": "ps_a1q2",
+          "question": "According to Ralph Waldo Emerson, “Speech is power: speech is to persuade, to convert, to compel.”",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Ralph Waldo Emerson famously observed that speech is power: speech is to persuade, to convert, to compel an audience."
+        },
+        {
+          "id": "ps_a1q3",
+          "question": "A rhetorical device is a technique that is used by a speaker or an author for conveying a particular message to the audience in such a way that it provokes an emotional response to a particular action.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Rhetorical devices use stylistic language to evoke emotion, emphasize key themes, and move listeners toward a specific response or action."
+        },
+        {
+          "id": "ps_a1q4",
+          "question": "Listening is the ability to accurately receive only.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Listening involves far more than merely receiving audio signals; it entails comprehending, evaluating, interpreting, and responding to spoken communication."
+        },
+        {
+          "id": "ps_a1q5",
+          "question": "Incremental Plagiarism is stealing excerpts from multiple sources and combining them into your personal speech.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Patchwork (mosaic) plagiarism is stitching excerpts from multiple sources into a speech. Incremental plagiarism occurs when a speaker fails to give credit for specific borrowed quotes or paraphrases."
+        },
+        {
+          "id": "ps_a1q6",
+          "question": "Which one of the given options is incorrect about ways of being ethical?",
+          "options": [
+            "Avoiding Ethnocentrism",
+            "Avoiding misquoting",
+            "Alienating the audience",
+            "Respecting the audience"
+          ],
+          "answer": 2,
+          "explanation": "Alienating the audience goes against ethical public speaking. Ethical communication requires building bridges, respecting listeners, and fostering mutual trust."
+        },
+        {
+          "id": "ps_a1q7",
+          "question": "Which one is not a caution during speech delivery?",
+          "options": [
+            "Cooked-up data or statistics",
+            "Mentioning irrelevant quotes",
+            "Poor oral citation strength",
+            "Bringing in the bigger picture"
+          ],
+          "answer": 3,
+          "explanation": "Bringing in the bigger picture is a desirable speech practice that provides broad context and significance, rather than an error to avoid."
+        },
+        {
+          "id": "ps_a1q8",
+          "question": "Which one of the following is the characteristic of a good listener?",
+          "options": [
+            "Paying attention to the speaker during the limited time of speech",
+            "Listening to the speaker with presumptions and biases",
+            "Being lackadaisical while listening",
+            "Indulging in other activities while speech is delivered"
+          ],
+          "answer": 0,
+          "explanation": "Active listening requires setting aside distractions and biases to dedicate full attention to the speaker's message during the presentation."
+        },
+        {
+          "id": "ps_a1q9",
+          "question": "Which one of the following is a speech by Martin Luther King Jr.?",
+          "options": [
+            "I Have a Dream",
+            "Tryst with Destiny",
+            "Labouring Loses",
+            "Captain, My Captain"
+          ],
+          "answer": 0,
+          "explanation": "'I Have a Dream' is the landmark civil rights speech delivered by Dr. Martin Luther King Jr. in Washington D.C. in 1963. ('Tryst with Destiny' was by Jawaharlal Nehru; 'O Captain! My Captain!' is by Walt Whitman)."
+        },
+        {
+          "id": "ps_a1q10",
+          "question": "According to Quintilian, there are five canons of Rhetoric for curating a persuasive speech. Pick the right combination.",
+          "options": [
+            "Invention, Disposition, Style, Manner, Delivery",
+            "Invention, Disposition, Style, Memorization, Delivery",
+            "Invention, Disposition, Manner, Delivery, Memorization",
+            "Disposition, Style, Memorization, Delivery, Manner"
+          ],
+          "answer": 1,
+          "explanation": "The five classical canons of rhetoric formulated by Roman rhetoricians (including Quintilian and Cicero) are Invention (inventio), Disposition (dispositio), Style (elocutio), Memorization (memoria), and Delivery (pronuntiatio)."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-2",
+      "title": "Assignment 2",
+      "week": 2,
+      "topic": "Audience Analysis, Relevance Theory & Speaking Aids",
+      "questions": [
+        {
+          "id": "ps_a2q1",
+          "question": "Daniel Sperber and Deirdre Wilson propounded the relevance theory.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Dan Sperber and Deirdre Wilson published 'Relevance: Communication and Cognition' in 1986, establishing Relevance Theory in pragmatics."
+        },
+        {
+          "id": "ps_a2q2",
+          "question": "People in a group have an increased sense of responsibility.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "In group settings, individuals often experience diffusion of responsibility or social loafing, leading to a decreased individual sense of accountability."
+        },
+        {
+          "id": "ps_a2q3",
+          "question": "A speaking outline is a fairly condensed version of a formal written outline.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "A speaking outline is a concise, condensed guide with keywords and delivery cues, designed to prompt the speaker without reading word-for-word."
+        },
+        {
+          "id": "ps_a2q4",
+          "question": "Oration requires both short-term as well as long-term memory.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Speakers rely on long-term memory for organized knowledge, evidence, and narratives, and short-term working memory to adapt to real-time audience cues and immediate phrasing."
+        },
+        {
+          "id": "ps_a2q5",
+          "question": "Microphones and Speakers are the basic technological tools for public speaking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Microphones and loudspeakers serve as the core electroacoustic amplification tools enabling speakers to project clearly across diverse venues."
+        },
+        {
+          "id": "ps_a2q6",
+          "question": "Greater the positive cognitive effects, greater will be its ______.",
+          "options": [
+            "relevance",
+            "effect"
+          ],
+          "answer": 0,
+          "explanation": "In Relevance Theory, communication achieves higher cognitive relevance when it produces greater positive cognitive effects with minimal processing effort."
+        },
+        {
+          "id": "ps_a2q7",
+          "question": "______ audience demands factual and evidence-based argument.",
+          "options": [
+            "Supportive",
+            "Directive"
+          ],
+          "answer": 1,
+          "explanation": "A directive audience requires concrete data, rigorous logic, and verifiable evidence to be convinced and take decisive action."
+        },
+        {
+          "id": "ps_a2q8",
+          "question": "______ helps to make fluent and timely presentation.",
+          "options": [
+            "Speaking Cards",
+            "Reading Materials"
+          ],
+          "answer": 0,
+          "explanation": "Speaking index cards provide concise reminders and time markers that allow the speaker to stay fluent, natural, and punctual."
+        },
+        {
+          "id": "ps_a2q9",
+          "question": "The word personality derives its origin from Latin word persona meaning ______.",
+          "options": [
+            "Mask",
+            "Individual"
+          ],
+          "answer": 0,
+          "explanation": "The Latin word 'persona' referred to the theatrical mask worn by actors in classical drama to project a role and amplify the voice."
+        },
+        {
+          "id": "ps_a2q10",
+          "question": "______ oratory includes live streaming, virtual meetings and webinars.",
+          "options": [
+            "Digital",
+            "Demonstrative"
+          ],
+          "answer": 0,
+          "explanation": "Digital oratory encompasses all speech delivered through computer-mediated interfaces, web broadcasts, and interactive teleconferencing."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-3",
+      "title": "Assignment 3",
+      "week": 3,
+      "topic": "Speech Anxiety, Glossophobia & Psychological Frameworks",
+      "questions": [
+        {
+          "id": "ps_a3q1",
+          "question": "According to Lev Vygotsky, which of the following are the frameworks for humans to experience and understand reality?",
+          "options": [
+            "Language",
+            "Culture",
+            "Relationships",
+            "Both A and B"
+          ],
+          "answer": 3,
+          "explanation": "In Lev Vygotsky's sociocultural framework, language and culture are the primary socio-semiotic tools through which humans perceive, construct, and understand reality."
+        },
+        {
+          "id": "ps_a3q2",
+          "question": "Which of the following statements is not true about the nature of Anxiety?",
+          "options": [
+            "It is a psychological state.",
+            "It is characterized by cognitive, somatic, emotional and behavioral components.",
+            "It is a physiological state.",
+            "It inhibits the secretion of the hormone adrenaline in our body."
+          ],
+          "answer": 3,
+          "explanation": "Anxiety triggers the autonomic sympathetic nervous system, stimulating the rapid secretion of adrenaline (epinephrine) rather than inhibiting it."
+        },
+        {
+          "id": "ps_a3q3",
+          "question": "According to Mulac and Sherman, which of the following is/are among the four elements of speech fright?",
+          "options": [
+            "Dysfluency",
+            "Both A and D",
+            "Fluidity",
+            "Inhibition"
+          ],
+          "answer": 1,
+          "explanation": "Mulac and Sherman (1974) identified behavioral elements of speech fright including dysfluency (speech disruption) and behavioral inhibition."
+        },
+        {
+          "id": "ps_a3q4",
+          "question": "Glossophobia is derived from the Greek word ‘glossa’ which means",
+          "options": [
+            "Tongue",
+            "Talk",
+            "Voice",
+            "Gossip"
+          ],
+          "answer": 0,
+          "explanation": "'Glossa' is the Greek word for tongue. Combined with 'phobos' (fear), glossophobia literally denotes fear of the tongue, universally used for speech anxiety."
+        },
+        {
+          "id": "ps_a3q5",
+          "question": "Which of the following is true about ABC Model of Communication Attitude?",
+          "options": [
+            "It was first formulated by American psychologist, Albert Ellis.",
+            "The acronym stands for its three key components – Attitudes, Belief, Consequences.",
+            "The acronym stands for its three key components – Affect, Behavior, Cognition.",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Albert Ellis introduced the ABC framework in cognitive therapy, and communication attitude theory structures human attitude along Affect, Behavior, and Cognition, making all options relevant facets of the ABC paradigm."
+        },
+        {
+          "id": "ps_a3q6",
+          "question": "State whether the following statement is true or false. To cast a good first impression as a public speaker, it is imperative to align your appearance with the message of your talk.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Visual presentation and grooming establish instant credibility (ethos); aligning attire with topic and audience expectations creates positive rapport."
+        },
+        {
+          "id": "ps_a3q7",
+          "question": "State whether the following statement is true or false. The approach of Desensitization is known to aggravate the fear of public speaking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Systematic desensitization is an established behavioral therapy that relieves and diminishes public speaking fear through gradual exposure and counter-conditioning."
+        },
+        {
+          "id": "ps_a3q8",
+          "question": "State whether the following statement is true or false. Goleman’s Emotional Competence Framework suggests that emotional competence is composed of cognitive competence and professional competence.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Daniel Goleman's Emotional Competence Framework splits emotional intelligence into Personal Competence (self-awareness, self-management) and Social Competence (social awareness, relationship management)."
+        },
+        {
+          "id": "ps_a3q9",
+          "question": "State whether the following statement is true or false. The Power of Positive Thinking, a book on the importance of positive attitude in life, is authored by Norman Vincent Peale.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "'The Power of Positive Thinking' was written by Dr. Norman Vincent Peale and published in 1952."
+        },
+        {
+          "id": "ps_a3q10",
+          "question": "State whether the following statement is true or false. Cognitive development of an individual plays a key role in influencing his/her communicative choices.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Cognitive maturity dictates perspective-taking, complex semantic selection, and adaptive rhetorical strategies in diverse speaking situations."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-4",
+      "title": "Assignment 4",
+      "week": 4,
+      "topic": "Preaching, Classroom Communication & Dramatic Speeches",
+      "questions": [
+        {
+          "id": "ps_a4q1",
+          "question": "Every established religion today exists because of the way its preachers address and influence the minds of the masses.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Oral dissemination, charismatic preaching, and persuasive rhetoric have been historical cornerstones for establishing and sustaining religious movements."
+        },
+        {
+          "id": "ps_a4q2",
+          "question": "Digression is not different from distraction.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "A digression is an intentional, purposeful departure from the central topic used to illuminate an anecdote or re-energize listeners, whereas a distraction is an unintentional loss of focus."
+        },
+        {
+          "id": "ps_a4q3",
+          "question": "Digressions are surprise cards for any speech.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Well-timed digressions operate like pleasant surprises that keep audiences engaged, break monotony, and offer fresh narrative angles."
+        },
+        {
+          "id": "ps_a4q4",
+          "question": "Child-centered theory was developed by Xingzhi.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Child-centered pedagogical theory is credited to thinkers such as Jean-Jacques Rousseau and John Dewey; Tao Xingzhi developed Life Education Theory."
+        },
+        {
+          "id": "ps_a4q5",
+          "question": "Which one of the given options is not a type of Vernacular Plays in the European Middle Ages?",
+          "options": [
+            "Morality Play",
+            "Miracle Play",
+            "Absurdist Play",
+            "Mystery Play"
+          ],
+          "answer": 2,
+          "explanation": "Absurdist drama emerged in the 20th century following World War II, whereas Mystery, Miracle, and Morality plays were the vernacular theatrical forms of medieval Europe."
+        },
+        {
+          "id": "ps_a4q6",
+          "question": "Which of the following is not a component of Classroom Teaching?",
+          "options": [
+            "Providing safe space",
+            "Harsh criticism",
+            "Motivation",
+            "Teacher's feedback"
+          ],
+          "answer": 1,
+          "explanation": "Positive classroom pedagogy relies on psychological safety, motivation, and constructive guidance. Harsh criticism stifles learning and vocal participation."
+        },
+        {
+          "id": "ps_a4q7",
+          "question": "Choose the correct options for types of Dramatic Speeches: (select all that apply)",
+          "options": [
+            "Dialogue, Aside",
+            "Silence",
+            "Soliloquy, Monologue",
+            "Conversation"
+          ],
+          "answer": [0, 2],
+          "isMultiple": true,
+          "explanation": "In classical drama, the recognized forms of dramatic speech are dialogue, aside, soliloquy, and monologue."
+        },
+        {
+          "id": "ps_a4q8",
+          "question": "Point out the option(s) that correctly match/(es) with the features of Soliloquy. (select all that apply)",
+          "options": [
+            "It is “a long, usually serious spoken discourse that a character in a play delivers to an audience and that reveals the character’s thoughts.”",
+            "There is a listener on the stage.",
+            "It is not meant for the audience.",
+            "Its purpose is to channel the inner thoughts and feelings of the character for the audience."
+          ],
+          "answer": [0, 3],
+          "isMultiple": true,
+          "explanation": "A soliloquy is delivered when a character is alone on stage to voice internal contemplations, motives, and emotions directly to the audience."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-5",
+      "title": "Assignment 5",
+      "week": 5,
+      "topic": "Non-Verbal Communication, Proxemics & Chronemics",
+      "questions": [
+        {
+          "id": "ps_a5q1",
+          "question": "Edward Hall introduced the term kinesics in the year 1952.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The term 'kinesics' was introduced by Ray Birdwhistell in 1952, whereas Edward T. Hall coined the term 'proxemics'."
+        },
+        {
+          "id": "ps_a5q2",
+          "question": "Communication is only 7% verbal and 93% non-verbal.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "According to Albert Mehrabian's classic study, when communicating emotions and attitudes, 7% is conveyed via spoken words, 38% via tone of voice, and 55% via body language (93% non-verbal)."
+        },
+        {
+          "id": "ps_a5q3",
+          "question": "Chronemics is the study of space concerning human communication.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Chronemics is the study of the role of time in communication; proxemics is the study of space and spatial distance."
+        },
+        {
+          "id": "ps_a5q4",
+          "question": "Memory and attention span are generally limited in public speaking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Audience cognitive bandwidth and attention spans are inherently constrained, necessitating concise structures, signposts, and engaging presentation."
+        },
+        {
+          "id": "ps_a5q5",
+          "question": "The aspect of touch has to be dealt with both confidence and caution.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Haptic communication (touch) carries deep cultural, personal, and professional implications, requiring appropriate confidence and social sensitivity."
+        },
+        {
+          "id": "ps_a5q6",
+          "question": "Under which spatial zone of communication do formal business occasions fall?",
+          "options": [
+            "Personal Space",
+            "Social Space",
+            "Intimate Space",
+            "Public Space"
+          ],
+          "answer": 1,
+          "explanation": "Edward Hall identified Social Space (4 to 12 feet) as the appropriate proxemic zone for impersonal business transactions, committee meetings, and professional interactions."
+        },
+        {
+          "id": "ps_a5q7",
+          "question": "Choose the option that does not determine the communication in low-context cultures.",
+          "options": [
+            "Words",
+            "Gestures",
+            "Social Status",
+            "Tone"
+          ],
+          "answer": 2,
+          "explanation": "Low-context communication relies primarily on explicit verbal messages rather than unspoken hierarchy or social status."
+        },
+        {
+          "id": "ps_a5q8",
+          "question": "Who among the following said that “the man’s boundary begins and ends with his skin”?",
+          "options": [
+            "Ray Birdwhistell",
+            "Edward Sapir",
+            "Edward Hall",
+            "Stuart Hall"
+          ],
+          "answer": 2,
+          "explanation": "Anthropologist Edward T. Hall explored cultural variations in body buffer zones, contrasting cultures where personal boundary begins and ends with one's skin with those where spatial spheres extend outward."
+        },
+        {
+          "id": "ps_a5q9",
+          "question": "Who introduced the term ‘speech chronemics’?",
+          "options": [
+            "Thomas Bruneau",
+            "H.P. Krüger",
+            "Edward Hall",
+            "Lawrence Wright"
+          ],
+          "answer": 1,
+          "explanation": "H.P. Krüger introduced the concept of speech chronemics to systematically analyze speech timing, tempo, pauses, and pacing in human vocal interactions."
+        },
+        {
+          "id": "ps_a5q10",
+          "question": "For which group among the following is “contact comfort” a primary need?",
+          "options": [
+            "Higher-order mammals",
+            "Lower-order mammals",
+            "Primitive mammals",
+            "Primates"
+          ],
+          "answer": 0,
+          "explanation": "Harry Harlow's seminal research demonstrated that physical contact comfort is an essential, primary developmental drive for higher-order mammals."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-6",
+      "title": "Assignment 6",
+      "week": 6,
+      "topic": "Voice Modulation, Argumentation & Debate Dynamics",
+      "questions": [
+        {
+          "id": "ps_a6q1",
+          "question": "Voice has the potential to reflect the speaker’s ______.",
+          "options": [
+            "intellectual state",
+            "emotional state"
+          ],
+          "answer": 1,
+          "explanation": "Vocal inflections, tremors, pitch, and timbre readily reveal a speaker's underlying emotional state and psychological feelings."
+        },
+        {
+          "id": "ps_a6q2",
+          "question": "Inflammation of the larynx, which is one of the common lapses in articulation, is referred to as ______ of the voice.",
+          "options": [
+            "hoarseness",
+            "harshness"
+          ],
+          "answer": 0,
+          "explanation": "Laryngeal inflammation (laryngitis) swells vocal folds and results in hoarseness, causing the voice to sound raspy, breathy, or strained."
+        },
+        {
+          "id": "ps_a6q3",
+          "question": "In ______ reasoning, the conclusion is reached by arriving at a conclusion through observing specific cases, i.e. progression of argument is from specific to general.",
+          "options": [
+            "deductive",
+            "inductive",
+            "syllogistic"
+          ],
+          "answer": 1,
+          "explanation": "Inductive reasoning moves from specific observed instances to generalized conclusions or probabilistic principles."
+        },
+        {
+          "id": "ps_a6q4",
+          "question": "BATNA (Best Alternative to a Negotiated Agreement) produces an outcome ______ than the gain expected via negotiation.",
+          "options": [
+            "superior",
+            "inferior"
+          ],
+          "answer": 0,
+          "explanation": "A strong BATNA provides negotiating power because it guarantees a superior alternative if the terms offered at the table fail to meet expectations."
+        },
+        {
+          "id": "ps_a6q5",
+          "question": "The type of debate which is presented before a judge with the power to render a binding decision is categorized as ______.",
+          "options": [
+            "academic debate",
+            "applied debate"
+          ],
+          "answer": 1,
+          "explanation": "Applied debates occur in judicial courts, legislative assemblies, or arbitrations where presiding judges have legal authority to enforce a binding resolution."
+        },
+        {
+          "id": "ps_a6q6",
+          "question": "In the argument of a debate, the statement which the arguer seeks the audience to accept is referred to as the ______ of the argument.",
+          "options": [
+            "claim",
+            "inference"
+          ],
+          "answer": 0,
+          "explanation": "In argumentation frameworks (e.g., Toulmin's model), the claim is the central assertion or conclusion that the speaker aims to substantiate."
+        },
+        {
+          "id": "ps_a6q7",
+          "question": "The ideal rate of speech delivery is:",
+          "options": [
+            "100 to 110 words per minute",
+            "110 to 120 words per minute",
+            "130 to 150 words per minute",
+            "160 to 180 words per minute"
+          ],
+          "answer": 2,
+          "explanation": "A speaking rate of 130 to 150 words per minute provides the optimal balance of vocal clarity, cognitive processing time, and energetic delivery."
+        },
+        {
+          "id": "ps_a6q8",
+          "question": "The book titled ‘Pragmatics of Human Communication’ is authored by:",
+          "options": [
+            "Paul Watzlawick",
+            "George Yule",
+            "Noam Chomsky",
+            "Gregory Bateson"
+          ],
+          "answer": 0,
+          "explanation": "'Pragmatics of Human Communication' (1967) was written by Paul Watzlawick, Janet Beavin Bavelas, and Don D. Jackson."
+        },
+        {
+          "id": "ps_a6q9",
+          "question": "French philosopher Jacques Derrida argues that any form of communication essentially incorporates a structure of writing for itself. Which term is used to refer to the linguistic field of studying writing systems and their basic components, i.e. graphemes?",
+          "options": [
+            "Graphematics",
+            "Graphemics",
+            "Graphotactics",
+            "Both A and B"
+          ],
+          "answer": 3,
+          "explanation": "Both 'graphemics' and 'graphematics' refer to the linguistic analysis of writing systems, orthography, and minimal graphic units (graphemes)."
+        },
+        {
+          "id": "ps_a6q10",
+          "question": "According to Sir Richard Steele’s views on ideal conversation, as propounded in his essay ‘The Art of Conversation’, which one of the following statement is true?",
+          "options": [
+            "The ideal conversation should not be a laboured one, rather it should be readily and clearly apprehended.",
+            "In a conversation, the chief end should be to flaunt eloquence.",
+            "Wit is the outcome of much reading but little comprehending.",
+            "Conversation ought to be either an attempt to polite sycophancy or of a determined disputation."
+          ],
+          "answer": 0,
+          "explanation": "Sir Richard Steele argued that true conversation should flow effortlessly and naturally, being easily understood rather than pedantic, strained, or pretentious."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-7",
+      "title": "Assignment 7",
+      "week": 7,
+      "topic": "Elocution, Intonation, Stress & Speech Types",
+      "questions": [
+        {
+          "id": "ps_a7q1",
+          "question": "Elocution may be defined as the art of clear and effective expression of thought by speech, intonation and gestures.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Elocution is the discipline of clear oral articulation, expressive voice modulation, appropriate intonation, and physical gesture in delivery."
+        },
+        {
+          "id": "ps_a7q2",
+          "question": "Every word of more than one syllable has at least one stressed syllable, made prominent by a forceful vocal effort termed as cadence.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The vocal prominence on a syllable is termed accent or stress. Cadence denotes the melodic rhythm or falling inflective contour of spoken phrases."
+        },
+        {
+          "id": "ps_a7q3",
+          "question": "Assertive sentences usually take a falling tone, except when they do not communicate information or absoluteness.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Declarative or assertive statements that state definitive facts conclude with a falling intonation contour in standard English."
+        },
+        {
+          "id": "ps_a7q4",
+          "question": "John Donne, an American philosopher proposed the five-step process, known as the Reflective–Thinking Method, for directing discussion in problem-solving groups.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The Reflective Thinking Method was formulated by American educational philosopher John Dewey (not the 17th-century English poet John Donne)."
+        },
+        {
+          "id": "ps_a7q5",
+          "question": "What are the elements of Elocution and Recitation? (select all that apply)",
+          "options": [
+            "Muffled Articulation",
+            "Emphasis on Accentuation and Intonation",
+            "Emotional Expressiveness, Appropriate Gesticulation",
+            "Incorrect Pronunciation"
+          ],
+          "answer": [1, 2],
+          "isMultiple": true,
+          "explanation": "Exemplary recitation requires precise accentuation, clear intonation, natural emotional expressiveness, and complementary gesticulation."
+        },
+        {
+          "id": "ps_a7q6",
+          "question": "What does Intonation comprise? (select all that apply)",
+          "options": [
+            "Aphorisms",
+            "Action Tones",
+            "Rising Tone",
+            "Falling Tone"
+          ],
+          "answer": [2, 3],
+          "isMultiple": true,
+          "explanation": "Intonation describes speech melody and changes in pitch, primarily divided into rising tones and falling tones."
+        },
+        {
+          "id": "ps_a7q7",
+          "question": "Speeches about ______ explain how something is made, how something is done, or how something works.",
+          "options": [
+            "processes",
+            "objects"
+          ],
+          "answer": 0,
+          "explanation": "Informative speeches about processes break down procedural steps, systematic sequences, and operational mechanisms."
+        },
+        {
+          "id": "ps_a7q8",
+          "question": "______ is the process of creating, reinforcing, or changing people’s beliefs or actions.",
+          "options": [
+            "Citation",
+            "Persuasion"
+          ],
+          "answer": 1,
+          "explanation": "Persuasion is the intentional communication intended to influence, reinforce, or transform attitudes, beliefs, or behaviors."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-8",
+      "title": "Assignment 8",
+      "week": 8,
+      "topic": "Humor, Interviewing Techniques & STAR Method",
+      "questions": [
+        {
+          "id": "ps_a8q1",
+          "question": "Humour is a mode of communication in which the stimulus produces ______.",
+          "options": [
+            "annoyance",
+            "amusement"
+          ],
+          "answer": 1,
+          "explanation": "Humor is communicative stimulus designed to evoke laughter, pleasant surprise, and cognitive amusement."
+        },
+        {
+          "id": "ps_a8q2",
+          "question": "Comedy of humour was introduced as a dramatic genre by ______.",
+          "options": [
+            "Ben Jonson",
+            "Samuel Johnson"
+          ],
+          "answer": 0,
+          "explanation": "Ben Jonson introduced and popularized the Comedy of Humours during the English Renaissance (e.g. 'Every Man in His Humour')."
+        },
+        {
+          "id": "ps_a8q3",
+          "question": "The Latin word ‘humor’ means ______.",
+          "options": [
+            "liquid",
+            "solid"
+          ],
+          "answer": 0,
+          "explanation": "The Latin noun 'humor' means moisture or bodily fluid, rooted in ancient Greek and Roman medicine of the four bodily humors."
+        },
+        {
+          "id": "ps_a8q4",
+          "question": "During an interview session, an interviewee should ______ listen to the questions of the interviewer.",
+          "options": [
+            "actively",
+            "passively"
+          ],
+          "answer": 0,
+          "explanation": "Active listening ensures that the candidate accurately understands the question's premise before formulating an organized response."
+        },
+        {
+          "id": "ps_a8q5",
+          "question": "Laddering technique is a ______ way of understanding the market choices of consumers.",
+          "options": [
+            "non-linear",
+            "hierarchical"
+          ],
+          "answer": 1,
+          "explanation": "Laddering is an in-depth interview technique with a hierarchical probe structure, connecting basic product attributes to personal values."
+        },
+        {
+          "id": "ps_a8q6",
+          "question": "STAR method is suggested to be used in ______ interview.",
+          "options": [
+            "situational",
+            "exit"
+          ],
+          "answer": 0,
+          "explanation": "The STAR technique (Situation, Task, Action, Result) is widely used to structure compelling answers for behavioral and situational interview questions."
+        },
+        {
+          "id": "ps_a8q7",
+          "question": "Which of the following reasons are responsible for interview bias? (select all that apply)",
+          "options": [
+            "Stereotypical mindset",
+            "Interview duration",
+            "Objective mindset",
+            "Cultural misinterpretation"
+          ],
+          "answer": [0, 3],
+          "isMultiple": true,
+          "explanation": "Preconceptions, unconscious stereotyping, and intercultural misunderstandings of non-verbal cues introduce severe interviewer biases."
+        },
+        {
+          "id": "ps_a8q8",
+          "question": "Interview as a process has different applications attached to itself, such as in: (select all that apply)",
+          "options": [
+            "Job selection",
+            "Pedagogical training",
+            "Data collection",
+            "Debate/Discussions"
+          ],
+          "answer": [0, 2],
+          "isMultiple": true,
+          "explanation": "The interview format is a standard protocol in personnel selection (recruitment) and research qualitative data collection."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-9",
+      "title": "Assignment 9",
+      "week": 9,
+      "topic": "Meetings, Agendas, Minutes & Leadership Styles",
+      "questions": [
+        {
+          "id": "ps_a9q1",
+          "question": "Levashina and Campion explain Impression Management (IM) as an attempt conscious or unconscious to influence the image during the process of interaction.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Julia Levashina and Michael Campion defined Impression Management as tactical conscious or unconscious behaviors aimed at shaping how one is perceived."
+        },
+        {
+          "id": "ps_a9q2",
+          "question": "Business conferences enable entrepreneurs to expand network, stimulate new ideas, and create valuable contacts.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Conferences serve as collaborative platforms facilitating knowledge exchange, professional networking, and strategic venture connections."
+        },
+        {
+          "id": "ps_a9q3",
+          "question": "A discursive conference is organized with an aim to share theoretical or factual information.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Discursive conferences center on exploratory dialogue, debating opinions, and open discussion rather than unilateral factual transmission."
+        },
+        {
+          "id": "ps_a9q4",
+          "question": "An official list of items of business to be transacted at a particular meeting is termed as minutes of the meeting.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The planned list of business items is the 'agenda'; the retrospective record of discussions and decisions constitutes the 'minutes'."
+        },
+        {
+          "id": "ps_a9q5",
+          "question": "John Baldoni draws the distinction between leadership and management, in the following terms: “Management is inspiration; leadership is execution.”",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "The conventional principle states the opposite: leadership provides vision and inspiration, whereas management handles administration and execution."
+        },
+        {
+          "id": "ps_a9q6",
+          "question": "“Meetings are the fulcrum…the central nervous system of an information society, the centre stage for personal performance.” Who propounded this statement on the nature of meetings?",
+          "options": [
+            "Antony Jay",
+            "Raymond S. Ross",
+            "Richard Dunsing",
+            "George David Kieffer"
+          ],
+          "answer": 3,
+          "explanation": "George David Kieffer articulated this famous characterization of organizational meetings in 'The Strategy of Meetings'."
+        },
+        {
+          "id": "ps_a9q7",
+          "question": "Which of the following is not a purpose of drafting the agenda of the meeting?",
+          "options": [
+            "To define the purpose of the meeting",
+            "To plan the meeting content and flow",
+            "To assign responsibility to personals for each item enlisted in the agenda",
+            "To provide a basis for decision and action post meeting"
+          ],
+          "answer": 3,
+          "explanation": "The agenda sets expectations prior to and during the meeting; it is the post-meeting minutes that document resolutions and track action items."
+        },
+        {
+          "id": "ps_a9q8",
+          "question": "Laissez-faire leadership style refers to a ______ style of leadership.",
+          "options": [
+            "Delegative",
+            "Supportive",
+            "Directive",
+            "Coaching"
+          ],
+          "answer": 0,
+          "explanation": "Laissez-faire leadership grants complete autonomy and decision-making freedom to subordinates, known as delegative leadership."
+        },
+        {
+          "id": "ps_a9q9",
+          "question": "In which of the following styles of leadership does the leader motivate the subordinates primarily by the system of rewards and punishments?",
+          "options": [
+            "Bureaucratic Style of leadership",
+            "Transactional Style of leadership",
+            "Transformational Style of leadership",
+            "Autocratic Style of leadership"
+          ],
+          "answer": 1,
+          "explanation": "Transactional leadership relies on clear contractual incentives: positive rewards for goal attainment and penalties for performance failures."
+        },
+        {
+          "id": "ps_a9q10",
+          "question": "Who among the following is credited with the development of the Situational Leadership theory?",
+          "options": [
+            "John P. Kotter",
+            "Robert K. Greenleaf",
+            "John Maynard Keynes",
+            "Paul Hersey and Ken Blanchard"
+          ],
+          "answer": 3,
+          "explanation": "Paul Hersey and Ken Blanchard formulated the Situational Leadership model, stating that effective leadership adapts to follower readiness."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-10",
+      "title": "Assignment 10",
+      "week": 10,
+      "topic": "Audience Interaction, Audio-Visual Aids & Delivery Modes",
+      "questions": [
+        {
+          "id": "ps_a10q1",
+          "question": "Intelligent Aggressor people are reluctant to speak during interactive sessions so the best way to tackle them is to engage with them directly.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Intelligent Aggressors are outspoken, assertive, and argumentative rather than reluctant. Tackling them involves firm boundaries and objective moderation."
+        },
+        {
+          "id": "ps_a10q2",
+          "question": "In order to make Submissive Recipients active participants, one can ask opinion-based questions, and stimulate independent thinking, etc.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Inviting gentle, opinion-focused contributions in a safe atmosphere helps draw out shy or submissive audience members."
+        },
+        {
+          "id": "ps_a10q3",
+          "question": "Transitions are “statements in the body of the speech that lets the audience know what the speaker is going to discuss next.”",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Statements forecasting forthcoming points are 'internal previews'; transitions are connecting words that bridge previous thoughts to the next."
+        },
+        {
+          "id": "ps_a10q4",
+          "question": "A run-on sentence occurs when one sentence “runs” right into the next without proper punctuation between them.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "Run-on sentences occur when independent clauses are spliced together without appropriate terminal punctuation or coordinating conjunctions."
+        },
+        {
+          "id": "ps_a10q5",
+          "question": "Choose the incorrect pre-requisites for availing aid during a presentation:",
+          "options": [
+            "Basic knowledge of the equipment is a must",
+            "Integration of aid with the presentation",
+            "Choosing any medium",
+            "Suitable location for the aid for easy accessibility and reach"
+          ],
+          "answer": 2,
+          "explanation": "Visual media must be chosen deliberately to reinforce key concepts, rather than casually choosing 'any medium'."
+        },
+        {
+          "id": "ps_a10q6",
+          "question": "Choose the incorrect objective of audio-visual aids in the Education sector:",
+          "options": [
+            "Active participation of learners",
+            "Neutral Creative sensibility",
+            "Understandable learning material",
+            "Developing students as good observers"
+          ],
+          "answer": 1,
+          "explanation": "Audio-visual media aims to stimulate curiosity, heighten engagement, and expand creative thinking, not neutralize creative sensibility."
+        },
+        {
+          "id": "ps_a10q7",
+          "question": "Speaking ______ is considered the most effective mode for a speaker.",
+          "options": [
+            "extemporaneously",
+            "Impromptu"
+          ],
+          "answer": 0,
+          "explanation": "Extemporaneous speaking combines disciplined preparation with conversational flexibility, making it the most natural and effective delivery mode."
+        },
+        {
+          "id": "ps_a10q8",
+          "question": "______ refer to brief statements to mark where one exactly is during a presentation.",
+          "options": [
+            "Internal previews",
+            "Signposts"
+          ],
+          "answer": 1,
+          "explanation": "Signposts (e.g. 'First', 'Next', 'Turning now to...', 'In conclusion') are verbal cues that orient the audience within the speech structure."
+        },
+        {
+          "id": "ps_a10q9",
+          "question": "According to ______, “Leaders can no longer trust in power; instead, they rely on the power of trust.”",
+          "options": [
+            "J. Maxwell",
+            "Charles Green"
+          ],
+          "answer": 1,
+          "explanation": "Charles H. Green, noted author on trust-based leadership, highlighted that authentic leadership rests upon the power of earned trust."
+        },
+        {
+          "id": "ps_a10q10",
+          "question": "The ______ makes the decision guided by his/her expertise and knowledge and announces it to the group.",
+          "options": [
+            "follower",
+            "leader"
+          ],
+          "answer": 1,
+          "explanation": "In authoritative decision-making frameworks, the leader evaluates circumstances using personal expertise and communicates the mandate to the team."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-11",
+      "title": "Assignment 11",
+      "week": 11,
+      "topic": "Linguistic Functions, Creativity & Linguistic Relativity",
+      "questions": [
+        {
+          "id": "ps_a11q1",
+          "question": "Who called language to be the instrument of “culture, domination and liberation”?",
+          "options": [
+            "Indira Gandhi",
+            "Angela Carter",
+            "Angela Merkel",
+            "Maya Angelou"
+          ],
+          "answer": 1,
+          "explanation": "British author and essayist Angela Carter characterized language as a potent medium of culture, hegemony, and liberation."
+        },
+        {
+          "id": "ps_a11q2",
+          "question": "Which linguistic function helps in strengthening social bonding?",
+          "options": [
+            "Referential",
+            "Emotive",
+            "Poetic",
+            "Phatic"
+          ],
+          "answer": 3,
+          "explanation": "Phatic communication (small talk, pleasantries, greetings) serves to establish, warm, and maintain social bonds and interpersonal solidarity."
+        },
+        {
+          "id": "ps_a11q3",
+          "question": "According to Roman Jakobson, how many functions are there for a given language?",
+          "options": [
+            "Two",
+            "Six",
+            "Four",
+            "Five"
+          ],
+          "answer": 1,
+          "explanation": "Roman Jakobson's model identifies six functions of language: Referential, Emotive, Conative, Phatic, Metalingual, and Poetic."
+        },
+        {
+          "id": "ps_a11q4",
+          "question": "Who introduced the creative concept of “flow”?",
+          "options": [
+            "Mihaly Csikszentmihalyi",
+            "Edward Sapir",
+            "Graham Wallas",
+            "Mel Rhodes"
+          ],
+          "answer": 0,
+          "explanation": "Positive psychologist Mihaly Csikszentmihalyi conceptualized 'flow' as a psychological state of complete, energized absorption in an activity."
+        },
+        {
+          "id": "ps_a11q5",
+          "question": "What is the term for a public presentation where several people present prepared speeches on different aspects of the same topic?",
+          "options": [
+            "Seminar",
+            "Symposium",
+            "Debates",
+            "Workshop"
+          ],
+          "answer": 1,
+          "explanation": "A symposium brings together a panel of experts who deliver prepared addresses focusing on distinct aspects of a common subject."
+        },
+        {
+          "id": "ps_a11q6",
+          "question": "Which of the following is not one of the levels of politeness in communication?",
+          "options": [
+            "Official",
+            "Linear",
+            "Neutral",
+            "Familiar"
+          ],
+          "answer": 1,
+          "explanation": "Sociolinguistic registers of politeness encompass formal/official, neutral, and informal/familiar; 'linear' is not a politeness level."
+        },
+        {
+          "id": "ps_a11q7",
+          "question": "Which two scholars propounded the linguistic relativity hypothesis? (select all that apply)",
+          "options": [
+            "Edward Sapir",
+            "Benjamin Lee Whorf",
+            "Noam Chomsky",
+            "Jean Piaget"
+          ],
+          "answer": [0, 1],
+          "isMultiple": true,
+          "explanation": "Edward Sapir and Benjamin Lee Whorf developed the Sapir-Whorf hypothesis, arguing that language structures shape human cognition and cultural worldview."
+        },
+        {
+          "id": "ps_a11q8",
+          "question": "What are some of the factors which impair the clarity of speech? (select all that apply)",
+          "options": [
+            "Emotion",
+            "Jargon",
+            "Doublespeak",
+            "Body Language"
+          ],
+          "answer": [1, 2],
+          "isMultiple": true,
+          "explanation": "Excessive technical jargon confuses uninitiated listeners, while doublespeak deliberately obfuscates meaning and distorts message clarity."
+        }
+      ]
+    },
+    {
+      "id": "ps-assignment-12",
+      "title": "Assignment 12",
+      "week": 12,
+      "topic": "E-Learning, Panel Interviews & Digital Media Dynamics",
+      "questions": [
+        {
+          "id": "ps_a12q1",
+          "question": "E-learning means all learning situations where there is significant use of ______ and communication resources.",
+          "options": [
+            "information",
+            "informatics"
+          ],
+          "answer": 1,
+          "explanation": "E-learning entails educational environments enriched and supported through informatics (information science and computation) and telecommunication technologies."
+        },
+        {
+          "id": "ps_a12q2",
+          "question": "When an interviewee is asked to tell his/her weakness/es, the ideal approach to answer this question is to describe your weakness as a ______ in disguise.",
+          "options": [
+            "strength",
+            "weakness"
+          ],
+          "answer": 0,
+          "explanation": "Strategic interview practice involves acknowledging a genuine growth area while framing it as a constructive, evolving strength in disguise."
+        },
+        {
+          "id": "ps_a12q3",
+          "question": "In the setting of panel interview, the ______ usually begins the interview proceedings.",
+          "options": [
+            "Panel Chair",
+            "H. R. Manager"
+          ],
+          "answer": 0,
+          "explanation": "The panel chair convenes the board, introduces the committee members, and formally initiates candidate questioning."
+        },
+        {
+          "id": "ps_a12q4",
+          "question": "Which of the following is not among the five determining factors of digital divide?",
+          "options": [
+            "Availability",
+            "Acceptability",
+            "Affordability",
+            "Agency"
+          ],
+          "answer": 1,
+          "explanation": "Key dimensions analyzing the digital divide include access/availability, affordability, digital ability, and agency; 'acceptability' is not one of the five core determinants."
+        },
+        {
+          "id": "ps_a12q5",
+          "question": "Which of the following is a major challenge posed by the culture of online interaction?",
+          "options": [
+            "Portability",
+            "Reduced need of physical infrastructure",
+            "Greater flexibility",
+            "Privacy"
+          ],
+          "answer": 3,
+          "explanation": "Data surveillance, personal confidentiality leaks, and erosion of digital privacy represent paramount concerns in online telecommunications."
+        },
+        {
+          "id": "ps_a12q6",
+          "question": "Which of the following is the correct understanding of a panel interview?",
+          "options": [
+            "One interviewee, one interviewer",
+            "Multiple interviewees, one interviewer",
+            "One interviewee, multiple interviewers",
+            "None of the above"
+          ],
+          "answer": 2,
+          "explanation": "A panel interview is conducted by a group of multiple interviewers simultaneously interviewing a single candidate."
+        },
+        {
+          "id": "ps_a12q7",
+          "question": "Which of the following are the two most crucial and distinctive features of social media that have led to its increased significance? (select two)",
+          "options": [
+            "Exchange",
+            "Dialogue",
+            "Interactivity",
+            "Ubiquity"
+          ],
+          "answer": [2, 3],
+          "isMultiple": true,
+          "explanation": "Dynamic real-time interactivity and omnipresent 24/7 mobile ubiquity are the defining drivers behind social media's worldwide impact."
+        },
+        {
+          "id": "ps_a12q8",
+          "question": "Select the two key roles played by Digital Media from the following options:",
+          "options": [
+            "Monetize",
+            "Communicate",
+            "Isolate",
+            "Monitor"
+          ],
+          "answer": [1, 3],
+          "isMultiple": true,
+          "explanation": "In mass communication models, digital media functions decisively to communicate messages broadly and monitor public reactions."
+        },
+        {
+          "id": "ps_a12q9",
+          "question": "Which two of the following are not the characteristic features of online learning (E-Learning)?",
+          "options": [
+            "Student-centered learning",
+            "Multi-sensory stimulation",
+            "Isolated and artificial context",
+            "Broadcast/Transmission model learning"
+          ],
+          "answer": [2, 3],
+          "isMultiple": true,
+          "explanation": "Modern e-learning promotes learner-centricity and interactive media, repudiating isolated contexts and unidirectional broadcast models."
+        },
+        {
+          "id": "ps_a12q10",
+          "question": "In an interview while answering a question on career history and future goals, which two of the following attitudes should one adopt?",
+          "options": [
+            "Career-oriented person",
+            "Ambiguous",
+            "Spirited",
+            "Nonchalant"
+          ],
+          "answer": [0, 2],
+          "isMultiple": true,
+          "explanation": "Hiring committees look for professional dedication (career-oriented vision) and vibrant enthusiasm (spirited energy)."
+        }
+      ]
+    }
+  ],
+  "mockTests": [
+    {
+      "id": "ps-mock-1",
+      "title": "Public Speaking Full Mock Test 1",
+      "description": "Comprehensive timed examination covering Weeks 1 to 12 — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": [
+        "ps_a1q1",
+        "ps_a1q3",
+        "ps_a1q10",
+        "ps_a2q1",
+        "ps_a2q6",
+        "ps_a2q7",
+        "ps_a3q2",
+        "ps_a3q4",
+        "ps_a3q5",
+        "ps_a4q1",
+        "ps_a4q5",
+        "ps_a4q7",
+        "ps_a5q2",
+        "ps_a5q6",
+        "ps_a5q9",
+        "ps_a6q1",
+        "ps_a6q3",
+        "ps_a6q7",
+        "ps_a7q1",
+        "ps_a7q6",
+        "ps_a7q8",
+        "ps_a8q2",
+        "ps_a8q6",
+        "ps_a9q2",
+        "ps_a9q8",
+        "ps_a10q4",
+        "ps_a10q7",
+        "ps_a11q3",
+        "ps_a12q3",
+        "ps_a12q6"
+      ],
+      "scope": "All 12 Weeks"
+    },
+    {
+      "id": "ps-mock-2",
+      "title": "Public Speaking Full Mock Test 2",
+      "description": "Comprehensive timed examination covering Weeks 1 to 12 — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": [
+        "ps_a1q2",
+        "ps_a1q6",
+        "ps_a1q9",
+        "ps_a2q3",
+        "ps_a2q8",
+        "ps_a2q10",
+        "ps_a3q3",
+        "ps_a3q7",
+        "ps_a3q9",
+        "ps_a4q2",
+        "ps_a4q6",
+        "ps_a4q8",
+        "ps_a5q1",
+        "ps_a5q7",
+        "ps_a5q8",
+        "ps_a6q2",
+        "ps_a6q4",
+        "ps_a6q8",
+        "ps_a7q2",
+        "ps_a7q5",
+        "ps_a7q7",
+        "ps_a8q1",
+        "ps_a8q5",
+        "ps_a9q6",
+        "ps_a9q9",
+        "ps_a10q2",
+        "ps_a10q8",
+        "ps_a11q4",
+        "ps_a12q1",
+        "ps_a12q7"
+      ],
+      "scope": "All 12 Weeks"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CourseSelector from '@/components/CourseSelector';
 
 export default function TopBrand() {
   return (
@@ -8,6 +9,7 @@ export default function TopBrand() {
         <img src="/mic-logo.webp" alt="MIC Logo" className="top-brand-logo" width="48" height="48" />
         <span className="top-brand-text">MIC VIT CHENNAI</span>
       </Link>
+      <CourseSelector />
     </header>
   );
 }

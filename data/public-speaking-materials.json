@@ -1,0 +1,361 @@
+{
+  "course": {
+    "name": "Public Speaking",
+    "code": "NPTEL",
+    "duration": "12 Weeks",
+    "instructor": "NPTEL Faculty",
+    "description": "Comprehensive 12-week NPTEL curriculum covering the art of oratory, classical canons of rhetoric, audience psychology, managing speech anxiety, non-verbal cues, voice modulation, elocution, humor, meeting leadership, and digital communication."
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Introduction to Public Speaking & The Canons of Rhetoric",
+      "coreFocus": "Understanding speech as an acquired craft, active listening essentials, ethical communication, and Quintilian's five canons of rhetoric.",
+      "topics": [
+        "Public speaking as a learned and acquirable skill",
+        "Ralph Waldo Emerson on the persuasive power of speech",
+        "Rhetorical devices and eliciting audience emotional resonance",
+        "Active listening vs. passive hearing",
+        "Ethics in public speaking: Avoiding ethnocentrism, alienation, and plagiarism types",
+        "Quintilian's Five Canons: Invention, Disposition, Style, Memorization, Delivery"
+      ],
+      "keyTakeaway": "Effective public speaking is not an innate gift but a systematic discipline rooted in Quintilian's five canons and ethical audience engagement.",
+      "resources": [
+        {
+          "title": "NPTEL Public Speaking — Week 1 Overview",
+          "type": "video",
+          "description": "Foundational concepts of rhetoric and public address",
+          "url": "https://nptel.ac.in"
+        },
+        {
+          "title": "Classical Canons of Rhetoric Notes",
+          "type": "notes",
+          "description": "Invention, disposition, style, memory, and delivery summarized",
+          "url": "#"
+        },
+        {
+          "title": "Aristotle's Rhetoric & Roman Oratory",
+          "type": "reference",
+          "description": "Core texts on persuasive communication principles",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Audience Analysis, Relevance Theory & Speaking Aids",
+      "coreFocus": "Analyzing audience types, applying Sperber & Wilson's Relevance Theory, and leveraging speech cards and digital oratory.",
+      "topics": [
+        "Sperber & Wilson's Relevance Theory in cognitive communication",
+        "Group dynamics and the diffusion of responsibility",
+        "Preparing speaking outlines vs. formal manuscript outlines",
+        "The cognitive role of working memory and long-term memory in oratory",
+        "Directive vs. supportive audience expectations",
+        "Speaking cue cards and timing techniques",
+        "Digital oratory: Webinars, video conferencing, and live broadcasts"
+      ],
+      "keyTakeaway": "Maximize communicative relevance by matching positive cognitive impact with minimal processing effort for your target audience.",
+      "resources": [
+        {
+          "title": "Relevance Theory in Modern Public Address",
+          "type": "notes",
+          "description": "Cognitive pragmatics and audience framing",
+          "url": "#"
+        },
+        {
+          "title": "Effective Use of Speaking Cards & Notes",
+          "type": "reference",
+          "description": "Maintaining eye contact and fluid pacing",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Speech Anxiety, Glossophobia & Psychological Frameworks",
+      "coreFocus": "Understanding the physiological basis of stage fright, cognitive development models, and evidence-based desensitization techniques.",
+      "topics": [
+        "Vygotsky's sociocultural theory: Language and culture as reality frameworks",
+        "Physiological anatomy of anxiety: Adrenaline and autonomic activation",
+        "Mulac and Sherman's speech fright elements: Dysfluency and inhibition",
+        "Glossophobia: Origins and manifestations",
+        "Albert Ellis's ABC model of communication attitude",
+        "Systematic desensitization and cognitive reframing",
+        "Norman Vincent Peale and positive attitude reinforcement"
+      ],
+      "keyTakeaway": "Stage fright is a natural adrenaline response that can be channeled into dynamic energy through systematic desensitization and cognitive alignment.",
+      "resources": [
+        {
+          "title": "Overcoming Glossophobia & Stage Fright",
+          "type": "notes",
+          "description": "Behavioral techniques and relaxation routines",
+          "url": "#"
+        },
+        {
+          "title": "The Power of Positive Thinking Summary",
+          "type": "reference",
+          "description": "Norman Vincent Peale's principles applied to oration",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Preaching, Classroom Communication & Dramatic Speeches",
+      "coreFocus": "Analyzing historical preaching, classroom pedagogy, intentional digression, and dramatic speech structures.",
+      "topics": [
+        "The rhetorical influence of religious preaching throughout history",
+        "Distinguishing intentional digression from unproductive distraction",
+        "Classroom communication: Safe psychological spaces vs. harsh criticism",
+        "Vernacular plays: Mystery, Miracle, and Morality traditions",
+        "Dramatic speech categories: Dialogue, Aside, Soliloquy, and Monologue",
+        "The artistic purpose of soliloquies in character interiority"
+      ],
+      "keyTakeaway": "Strategic digressions and dramatic framing enliven spoken discourse, retaining audience attention across diverse settings.",
+      "resources": [
+        {
+          "title": "Dramatic Speeches & Monologue Analysis",
+          "type": "notes",
+          "description": "Soliloquies, asides, and classical performance techniques",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "title": "Non-Verbal Communication, Proxemics & Chronemics",
+      "coreFocus": "Mastering non-verbal cues, Albert Mehrabian's rule, Edward Hall's proxemics, and speech chronemics.",
+      "topics": [
+        "Mehrabian's 7%-38%-55% communication formula",
+        "Ray Birdwhistell and the science of kinesics (1952)",
+        "Edward Hall's proxemic zones: Intimate, Personal, Social (4-12 ft), and Public",
+        "High-context vs. low-context cultural communication",
+        "Speech chronemics: Pauses, timing, and tempo (H.P. Krüger)",
+        "Haptics: Appropriate touch in professional settings",
+        "Harry Harlow's contact comfort in social mammals"
+      ],
+      "keyTakeaway": "93% of emotional communication is carried through vocal tone and body language; master proxemics and speech timing to command the room.",
+      "resources": [
+        {
+          "title": "Edward T. Hall's Proxemics Guide",
+          "type": "notes",
+          "description": "Spatial zones and cultural variations in personal space",
+          "url": "#"
+        },
+        {
+          "title": "Kinesics & Body Language in Public Address",
+          "type": "video",
+          "description": "Postures, open gestures, and facial expressions",
+          "url": "https://nptel.ac.in"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "title": "Voice Modulation, Argumentation & Debate Dynamics",
+      "coreFocus": "Vocal health, speech rates, Toulmin argumentation, BATNA negotiation, and debate typologies.",
+      "topics": [
+        "Vocal anatomy: Laryngeal inflammation, hoarseness, and pitch modulation",
+        "Optimal speaking rate: 130 to 150 words per minute",
+        "Inductive reasoning (specific to general) vs. deductive reasoning",
+        "Toulmin's model: Claims, grounds, warrants, and backing",
+        "Academic debates vs. applied debates with binding decisions",
+        "BATNA (Best Alternative to a Negotiated Agreement)",
+        "Watzlawick's Pragmatics of Human Communication",
+        "Jacques Derrida and graphematics/graphemics"
+      ],
+      "keyTakeaway": "Structure persuasive debates with rigorous claims and evidence while delivering between 130 and 150 words per minute for peak clarity.",
+      "resources": [
+        {
+          "title": "Voice Modulation & Articulation Exercises",
+          "type": "notes",
+          "description": "Breath control, resonance, and pacing tips",
+          "url": "#"
+        },
+        {
+          "title": "Toulmin Argumentation & Debate Theory",
+          "type": "reference",
+          "description": "Building airtight argumentative structures",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "title": "Elocution, Intonation, Stress & Speech Types",
+      "coreFocus": "Elocutionary refinement, stress vs. cadence, intonation patterns, and John Dewey's reflective thinking.",
+      "topics": [
+        "Principles of elocution: Pronunciation, articulation, and gesture",
+        "Syllable stress vs. vocal cadence",
+        "Intonation contours: Rising tone (questions/incompleteness) vs. falling tone (assertive statements)",
+        "John Dewey's Reflective Thinking Method for group problem-solving",
+        "Elements of recitation and expressive poetry delivery",
+        "Speeches about processes, objects, concepts, and persuasive calls to action"
+      ],
+      "keyTakeaway": "Mastering rising and falling intonation alongside accurate syllabic stress transforms monotone delivery into captivating elocution.",
+      "resources": [
+        {
+          "title": "Elocution & Phonetics Handbook",
+          "type": "notes",
+          "description": "Rules of stress, cadence, and tone in spoken English",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "title": "Humor, Interviewing Techniques & STAR Method",
+      "coreFocus": "The mechanics of humor, Ben Jonson's comedy of humours, behavioral interviews, and mitigating interview bias.",
+      "topics": [
+        "Humor as an amusement-generating communicative device",
+        "Ben Jonson and the classical comedy of humours",
+        "Active listening requirements for interviewees",
+        "Laddering interview technique for uncovering deep consumer values",
+        "The STAR Method: Situation, Task, Action, Result for situational questions",
+        "Recognizing interview bias: Stereotyping and intercultural misinterpretation",
+        "Applications of interviews in job recruitment and qualitative research"
+      ],
+      "keyTakeaway": "Deploy the STAR framework for situational clarity, and use well-judged humor to build instantaneous rapport with interviewers and audiences.",
+      "resources": [
+        {
+          "title": "STAR Method Mastery for Interviews",
+          "type": "notes",
+          "description": "Templates and examples for behavioral questions",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "title": "Meetings, Agendas, Minutes & Leadership Styles",
+      "coreFocus": "Meeting dynamics, impression management, leadership models (Hersey-Blanchard), and agenda governance.",
+      "topics": [
+        "Impression Management (IM) in organizational interaction (Levashina & Campion)",
+        "George David Kieffer: Meetings as the central nervous system of modern organizations",
+        "Purposes and rules of meeting agendas vs. meeting minutes",
+        "Laissez-faire (delegative) vs. autocratic vs. coaching leadership",
+        "Transactional leadership: Motivations via rewards and penalties",
+        "Hersey & Blanchard's Situational Leadership Theory",
+        "Leadership (vision & inspiration) vs. management (execution & administration)"
+      ],
+      "keyTakeaway": "Effective leaders match their communicative style to team maturity and run purposeful meetings guided by strict agendas and clear minutes.",
+      "resources": [
+        {
+          "title": "Leading Effective Business Meetings",
+          "type": "notes",
+          "description": "Agenda drafting, minute taking, and timeboxing",
+          "url": "#"
+        },
+        {
+          "title": "Situational Leadership Framework Guide",
+          "type": "reference",
+          "description": "Hersey-Blanchard model summary",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "title": "Audience Interaction, Audio-Visual Aids & Delivery Modes",
+      "coreFocus": "Managing difficult audience personalities, leveraging signposts, extemporaneous delivery, and integrating audio-visual aids.",
+      "topics": [
+        "Handling audience profiles: Tackling Intelligent Aggressors and drawing out Submissive Recipients",
+        "Grammatical precision: Identifying and resolving run-on sentences",
+        "Internal previews vs. transitions vs. signposts ('First', 'In conclusion')",
+        "Delivery modes: Impromptu, manuscript, memorized, and extemporaneous (the gold standard)",
+        "Audio-visual aids: Purposeful integration vs. choosing arbitrary media",
+        "Charles Green on trust-based leadership in modern institutions"
+      ],
+      "keyTakeaway": "Extemporaneous speaking supported by disciplined signposts and well-curated audio-visual aids yields maximum audience engagement.",
+      "resources": [
+        {
+          "title": "Modes of Delivery: Extemporaneous Speaking",
+          "type": "notes",
+          "description": "How to practice from minimal cue cards",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "title": "Linguistic Functions, Creativity & Linguistic Relativity",
+      "coreFocus": "Roman Jakobson's language functions, Sapir-Whorf linguistic relativity, Mihaly Csikszentmihalyi's flow, and symposium formats.",
+      "topics": [
+        "Angela Carter: Language as an instrument of culture, power, and liberation",
+        "Phatic communication in cementing social rapport",
+        "Roman Jakobson's six functions of language (Referential, Emotive, Conative, Phatic, Metalingual, Poetic)",
+        "Mihaly Csikszentmihalyi's concept of 'Flow' in creative expression",
+        "Symposium structures for multi-speaker topical discourse",
+        "Sociolinguistic politeness registers: Official, neutral, familiar",
+        "Sapir-Whorf linguistic relativity hypothesis",
+        "Speech clarity hazards: Doublespeak and obfuscating jargon"
+      ],
+      "keyTakeaway": "Language shapes reality; avoid deceptive doublespeak and technical jargon, and cultivate flow to captivate your listeners.",
+      "resources": [
+        {
+          "title": "Roman Jakobson's Functions of Communication",
+          "type": "notes",
+          "description": "Detailed explanation of the 6 linguistic functions",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "title": "E-Learning, Panel Interviews & Digital Media Dynamics",
+      "coreFocus": "Informatics in online education, navigating panel interviews, addressing weaknesses as strengths, and social media dynamics.",
+      "topics": [
+        "E-learning and educational informatics",
+        "Student-centered online learning vs. transmission broadcast models",
+        "Panel interview protocols: The role of the Panel Chair and handling multiple interviewers",
+        "Framing weaknesses as constructive strengths in disguise",
+        "Determinants of the digital divide: Access, affordability, agency",
+        "Privacy and confidentiality concerns in digital communication",
+        "Social media dynamics: Ubiquity and two-way interactivity",
+        "Digital media's dual mandate: Communicating and monitoring public sentiment",
+        "Interview attitudes: Balancing professional career orientation with spirited enthusiasm"
+      ],
+      "keyTakeaway": "Excel in panel interviews by projecting spirited career clarity, and leverage interactive digital media while safeguarding personal privacy.",
+      "resources": [
+        {
+          "title": "Panel Interview Strategy Guide",
+          "type": "notes",
+          "description": "Techniques for engaging multiple panel members",
+          "url": "#"
+        },
+        {
+          "title": "Digital Divide & Social Media Dynamics",
+          "type": "reference",
+          "description": "Contemporary communication studies",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "examStrategy": {
+    "title": "💡 High-Yield Strategy for NPTEL Public Speaking Exam",
+    "points": [
+      "Assignment Heavy: Nearly 80% of the NPTEL Public Speaking exam questions are derived directly from the 12 weekly assignment quizzes.",
+      "Theorists & Frameworks: Memorize key theorists — Sperber & Wilson (Relevance), Albert Mehrabian (7-38-55%), Edward Hall (Proxemics), Paul Watzlawick (Pragmatics), Roman Jakobson (6 Functions), and Hersey-Blanchard (Situational Leadership).",
+      "Multiple Select Questions (MSQs): Weeks 4, 7, 8, 11, and 12 feature questions where multiple options are correct (e.g., types of dramatic speeches, soliloquy features, interview biases). Practice identifying all valid options."
+    ],
+    "tips": [
+      {
+        "heading": "Master the 5 Canons of Rhetoric",
+        "text": "Quintilian's classical canons (Invention, Disposition, Style, Memory, Delivery) form the theoretical core of Weeks 1 and 2."
+      },
+      {
+        "heading": "Memorize Theorists & Seminal Concepts",
+        "text": "High question frequency on Sperber & Wilson (Relevance), Albert Mehrabian (7-38-55%), Edward Hall (Proxemics), Paul Watzlawick (Pragmatics), Roman Jakobson (6 Functions), and Hersey-Blanchard (Situational Leadership)."
+      },
+      {
+        "heading": "Watch for MSQs (Multiple Select Questions)",
+        "text": "Weeks 4, 7, 8, 11, and 12 feature multiple-choice questions requiring you to select all correct options (e.g. dramatic speeches, soliloquy features, interview biases)."
+      },
+      {
+        "heading": "Distinguish Technical Terms",
+        "text": "Be clear on differences: Agenda vs. Minutes; Transitions vs. Signposts; Cadence vs. Accent/Stress; Digression vs. Distraction; Kinesics (Birdwhistell) vs. Proxemics (Hall)."
+      }
+    ]
+  }
+}

@@ -4,7 +4,8 @@ import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import UiIcon from '@/components/UiIcon';
-import { getAssignments, getAssignment } from '@/lib/data';
+import { useCourse } from '@/components/CourseContext';
+import { getAssignments, getAssignment, isAnswerCorrect } from '@/lib/data';
 import { saveProgress, loadProgress, clearProgress } from '@/lib/storage';
 import { useToast } from '@/components/ToastContext';
 
@@ -14,8 +15,9 @@ function QuizzesContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { showToast } = useToast();
+  const { currentCourse, courseMeta } = useCourse();
 
-  const allAssignments = getAssignments();
+  const allAssignments = getAssignments(currentCourse);
 
   // Search & filter state
   const [searchTerm, setSearchTerm] = useState('');
@@ -52,7 +54,7 @@ function QuizzesContent() {
     }
   }, [searchParams]);
 
-  const currentAssignment = activeAssignmentId ? getAssignment(activeAssignmentId) : null;
+  const currentAssignment = activeAssignmentId ? getAssignment(activeAssignmentId, currentCourse) : null;
 
   // Filter assignments
   const filteredAssignments = allAssignments.filter(a => {
@@ -91,15 +93,28 @@ function QuizzesContent() {
     const q = currentAssignment.questions[currentIndex];
     if (revealed[q.id]) return;
 
-    const newAnswers = { ...userAnswers, [q.id]: optIndex };
-    setUserAnswers(newAnswers);
-    saveProgress(`quiz_${currentAssignment.id}`, { answers: newAnswers });
+    const isMulti = q.isMultiple || Array.isArray(q.answer);
+    if (isMulti) {
+      const prev = Array.isArray(userAnswers[q.id]) ? userAnswers[q.id] : [];
+      const updated = prev.includes(optIndex)
+        ? prev.filter(i => i !== optIndex)
+        : [...prev, optIndex].sort((a, b) => a - b);
+      const newAnswers = { ...userAnswers, [q.id]: updated };
+      setUserAnswers(newAnswers);
+      saveProgress(`quiz_${currentAssignment.id}`, { answers: newAnswers });
+    } else {
+      const newAnswers = { ...userAnswers, [q.id]: optIndex };
+      setUserAnswers(newAnswers);
+      saveProgress(`quiz_${currentAssignment.id}`, { answers: newAnswers });
+    }
   };
 
   const checkAnswer = () => {
     if (!currentAssignment) return;
     const q = currentAssignment.questions[currentIndex];
-    if (userAnswers[q.id] === undefined) {
+    const isMulti = q.isMultiple || Array.isArray(q.answer);
+    const ans = userAnswers[q.id];
+    if (ans === undefined || (isMulti && (!Array.isArray(ans) || ans.length === 0))) {
       showToast('Please select an answer first', 'danger');
       return;
     }
@@ -114,7 +129,7 @@ function QuizzesContent() {
     if (next >= total) {
       // Finish quiz
       const correct = currentAssignment.questions.filter(
-        q => userAnswers[q.id] === q.answer
+        q => isAnswerCorrect(userAnswers[q.id], q.answer)
       ).length;
 
       saveProgress(`quiz_${currentAssignment.id}`, {
@@ -141,10 +156,13 @@ function QuizzesContent() {
     <>
       <div className="page-header">
         <div className="page-header-content">
+          <div className="badge badge-blue" style={{ marginBottom: '0.6rem', alignSelf: 'flex-start' }}>
+            <UiIcon name={courseMeta.icon || 'book'} /> {courseMeta.name}
+          </div>
           <h1>
             <UiIcon name="pen" className="page-title-icon" /> Assignment Quizzes
           </h1>
-          <p>Practice assignment-wise MCQs with instant feedback and detailed explanations</p>
+          <p>Practice assignment-wise MCQs with instant feedback and detailed explanations for {courseMeta.name}</p>
         </div>
       </div>
 
@@ -160,7 +178,7 @@ function QuizzesContent() {
                 <input
                   type="text"
                   className="search-input"
-                  placeholder="Search quizzes by topic…"
+                  placeholder={`Search ${courseMeta.name} quizzes…`}
                   value={searchTerm}
                   onChange={e => setSearchTerm(e.target.value)}
                   autoComplete="off"
@@ -187,7 +205,7 @@ function QuizzesContent() {
                   <UiIcon name="search" style={{ width: 36, height: 36 }} />
                 </div>
                 <h3>No quizzes found</h3>
-                <p>Try a different keyword or clear the filter</p>
+                <p>Try a different keyword or clear the filter for {courseMeta.name}</p>
               </div>
             ) : (
               <div className="cards-grid">
@@ -211,36 +229,41 @@ function QuizzesContent() {
                         </div>
                       </div>
                       <div className="card-body">
-                        {total} MCQ questions on {a.topic.toLowerCase()}.
-                        {answered > 0 && (
-                          <>
-                            <br />
-                            <span style={{ color: 'var(--success)', fontSize: '0.82rem', fontWeight: 700 }}>
-                              <UiIcon name="check" /> {answered}/{total} answered
-                            </span>
-                          </>
+                        MCQ practice covering {a.topic.toLowerCase()}.
+                        {saved && saved.finished && (
+                          <div className="quiz-result-inline">
+                            Score: {saved.correct}/{saved.total} ({Math.round((saved.correct / saved.total) * 100)}%)
+                          </div>
+                        )}
+                        {saved && !saved.finished && answered > 0 && (
+                          <div className="quiz-result-inline in-progress">
+                            In progress: {answered}/{total} answered
+                          </div>
                         )}
                       </div>
                       <div className="card-footer">
                         <span className="badge badge-star">
                           <UiIcon name="check" /> {total} MCQs
                         </span>
-                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                          {answered > 0 && (
+                        <div style={{ display: 'flex', gap: '0.4rem' }}>
+                          {saved && (
                             <button
+                              type="button"
                               className="btn btn-ghost"
-                              style={{ fontSize: '0.45rem', padding: '0.45rem 0.75rem' }}
+                              style={{ padding: '0.4rem 0.6rem', fontSize: '0.75rem' }}
                               onClick={e => handleResetProgress(a.id, e)}
+                              title="Reset saved progress"
                             >
-                              <UiIcon name="refresh" /> Reset
+                              <UiIcon name="refresh" />
                             </button>
                           )}
                           <button
+                            type="button"
                             className="btn btn-primary"
-                            style={{ fontSize: '0.48rem', padding: '0.5rem 0.9rem' }}
+                            style={{ fontSize: '0.48rem', padding: '0.55rem 0.9rem' }}
                             onClick={() => handleStartQuiz(a.id)}
                           >
-                            Start &nbsp;→
+                            {saved ? (saved.finished ? 'Review' : 'Resume') : 'Start'} &nbsp;→
                           </button>
                         </div>
                       </div>
@@ -252,21 +275,30 @@ function QuizzesContent() {
           </div>
         ) : (
           /* ACTIVE QUIZ VIEW */
-          <div>
-            <div style={{ marginBottom: '1rem' }}>
-              <button className="btn btn-ghost" onClick={handleBackToList}>
-                ← Back to Quizzes
-              </button>
-            </div>
+          <div className="quiz-container">
+            <button
+              className="btn btn-ghost"
+              style={{ marginBottom: '1.25rem', alignSelf: 'flex-start' }}
+              onClick={handleBackToList}
+            >
+              ← Back to Quizzes
+            </button>
 
-            {/* Quiz Progress */}
             {(() => {
               const total = currentAssignment.questions.length;
-              const answered = Object.keys(userAnswers).length;
-              const correct = currentAssignment.questions.filter(q => userAnswers[q.id] === q.answer).length;
               const q = currentAssignment.questions[currentIndex];
-              const isRevealed = revealed[q.id];
+              if (!q) return <div>Question not found</div>;
+
+              const isMulti = q.isMultiple || Array.isArray(q.answer);
               const selected = userAnswers[q.id];
+              const isRevealed = !!revealed[q.id];
+
+              const answered = Object.keys(userAnswers).length;
+              const correct = currentAssignment.questions.filter(
+                question => isAnswerCorrect(userAnswers[question.id], question.answer)
+              ).length;
+
+              const userGotItRight = isAnswerCorrect(selected, q.answer);
 
               return (
                 <>
@@ -288,11 +320,13 @@ function QuizzesContent() {
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        marginTop: '0.6rem'
+                        marginTop: '0.6rem',
+                        flexWrap: 'wrap',
+                        gap: '0.4rem'
                       }}
                     >
                       <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                        {answered > 0 ? `Score so far: ${correct}/${answered} correct` : ''}
+                        {answered > 0 ? `Score so far: ${correct}/${answered} answered correctly` : ''}
                       </span>
                       <span className="badge badge-blue">
                         Week {currentAssignment.week} · {currentAssignment.topic}
@@ -302,18 +336,33 @@ function QuizzesContent() {
 
                   {/* Question Card */}
                   <div className="question-card">
-                    <div className="question-number">
-                      Question {currentIndex + 1} of {total}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      <div className="question-number">
+                        Question {currentIndex + 1} of {total}
+                      </div>
+                      {isMulti && (
+                        <span className="badge badge-warning" style={{ fontSize: '0.55rem', padding: '0.25rem 0.6rem' }}>
+                          Select All That Apply (Multiple Options)
+                        </span>
+                      )}
                     </div>
                     <div className="question-text">{q.question}</div>
 
                     <ul className="options-list">
                       {q.options.map((opt, i) => {
+                        const isOptionSelected = isMulti
+                          ? Array.isArray(selected) && selected.includes(i)
+                          : selected === i;
+
+                        const isOptionCorrect = isMulti
+                          ? Array.isArray(q.answer) && q.answer.includes(i)
+                          : q.answer === i;
+
                         let cls = '';
                         if (isRevealed) {
-                          if (i === q.answer) cls = 'correct';
-                          else if (i === selected && selected !== q.answer) cls = 'incorrect';
-                        } else if (i === selected) {
+                          if (isOptionCorrect) cls = 'correct';
+                          else if (isOptionSelected && !isOptionCorrect) cls = 'incorrect';
+                        } else if (isOptionSelected) {
                           cls = 'selected';
                         }
 
@@ -324,14 +373,16 @@ function QuizzesContent() {
                             onClick={() => !isRevealed && selectOption(i)}
                           >
                             <label className="option-label">
-                              <span className="option-letter">{letters[i]}</span>
+                              <span className="option-letter">
+                                {isMulti ? (isOptionSelected ? '✓' : letters[i]) : letters[i]}
+                              </span>
                               <span className="option-text">{opt}</span>
-                              {isRevealed && i === q.answer && (
+                              {isRevealed && isOptionCorrect && (
                                 <span className="option-indicator">
                                   <UiIcon name="checkCircle" />
                                 </span>
                               )}
-                              {isRevealed && i === selected && selected !== q.answer && (
+                              {isRevealed && isOptionSelected && !isOptionCorrect && (
                                 <span className="option-indicator">
                                   <UiIcon name="alertCircle" />
                                 </span>
@@ -343,10 +394,10 @@ function QuizzesContent() {
                     </ul>
 
                     {isRevealed && (
-                      <div className={`explanation-box ${selected !== q.answer ? 'wrong' : ''}`}>
+                      <div className={`explanation-box ${!userGotItRight ? 'wrong' : ''}`}>
                         <div className="explanation-title">
-                          <UiIcon name={selected === q.answer ? 'checkCircle' : 'alertCircle'} />{' '}
-                          {selected === q.answer ? 'Correct!' : 'Incorrect'}
+                          <UiIcon name={userGotItRight ? 'checkCircle' : 'alertCircle'} />{' '}
+                          {userGotItRight ? 'Correct!' : 'Incorrect'}
                         </div>
                         <div className="explanation-text">{q.explanation}</div>
                       </div>
@@ -365,7 +416,7 @@ function QuizzesContent() {
                     <button
                       className="btn btn-ghost"
                       onClick={checkAnswer}
-                      disabled={isRevealed || selected === undefined}
+                      disabled={isRevealed || selected === undefined || (isMulti && Array.isArray(selected) && selected.length === 0)}
                     >
                       {isRevealed ? 'Revealed' : 'Check Answer'}
                     </button>
