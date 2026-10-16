@@ -12,26 +12,13 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="mic-logo.webp" alt="MIC Logo" class="nav-logo-img">
-      <div class="nav-logo-text">
-        NPTEL Prep
-        <span>MIC VIT Chennai</span>
-      </div>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="materials.html">📚 Materials</a></li>
-      <li><a href="quizzes.html" class="active">✏️ Quizzes</a></li>
-      <li><a href="mock-tests.html">🧪 Mock Tests</a></li>
-    </ul>
-    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+<!-- TOP BRAND (Matching Mockup) -->
+<header class="top-brand">
+  <a href="index.html" class="top-brand-badge" title="MIC VIT Chennai — NPTEL Prep">
+    <img src="mic-logo.webp" alt="MIC Logo" class="top-brand-logo">
+    <span class="top-brand-text">MIC VIT CHENNAI</span>
+  </a>
+</header>
 
 <div class="page-header">
   <div class="page-header-content">
@@ -104,5 +91,20 @@
 
 <script src="js/app.js"></script>
 <script src="js/quiz.js"></script>
+<!-- BOTTOM NAVIGATION WIDGET (Green Pixel Button & Small Menu Bar) -->
+<div class="bottom-nav-widget" id="bottomNavWidget">
+  <button class="bottom-nav-toggle" id="bottomNavToggle" onclick="toggleBottomMenu(event)" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span class="nav-stripe"></span>
+    <span class="nav-stripe"></span>
+    <span class="nav-stripe"></span>
+  </button>
+  <nav class="bottom-nav-menu" id="bottomNavMenu" aria-label="Navigation menu">
+    <a href="index.html" class="bottom-nav-link">🏠 Home</a>
+    <a href="materials.html" class="bottom-nav-link">📚 Materials</a>
+    <a href="quizzes.html" class="bottom-nav-link">✏️ Quizzes</a>
+    <a href="mock-tests.html" class="bottom-nav-link">🧪 Mock Tests</a>
+  </nav>
+</div>
+
 </body>
 </html>
