@@ -11,7 +11,6 @@ node_modules/
 
 # Environment variables
 .env*.local
-.env
 
 # Logs
 npm-debug.log*
@@ -26,8 +25,8 @@ Thumbs.db
 
 # Editor directories
 .idea/
-.vscode/
 
 # Documents & Temp
 *.docx
 ~$*
+config.bat

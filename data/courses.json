@@ -1,0 +1,26 @@
+[
+  {
+    "id": "incubation",
+    "name": "Understanding Incubation and Entrepreneurship",
+    "shortName": "Incubation & Entr.",
+    "code": "NPTEL",
+    "badge": "💡 Incubation & Entrepreneurship",
+    "icon": "lightbulb",
+    "description": "Learn startup dynamics, Lean methodologies, customer validation, MVP prototyping, IP protection, incubation ecosystems, and investor pitching.",
+    "duration": "12 Weeks",
+    "totalWeeks": 12,
+    "totalQuestions": 120
+  },
+  {
+    "id": "public-speaking",
+    "name": "Public Speaking",
+    "shortName": "Public Speaking",
+    "code": "NPTEL",
+    "badge": "🎙️ Public Speaking",
+    "icon": "mic",
+    "description": "Master the art of rhetoric, speech anxiety management, non-verbal delivery, elocution, persuasion, interviewing techniques, and digital oratory.",
+    "duration": "12 Weeks",
+    "totalWeeks": 12,
+    "totalQuestions": 112
+  }
+]

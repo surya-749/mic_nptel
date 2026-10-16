@@ -2,8 +2,10 @@
 
 import { Suspense, useState, useEffect, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import UiIcon from '@/components/UiIcon';
-import { getMockTests, getMockTest, getAssignments } from '@/lib/data';
+import { useCourse } from '@/components/CourseContext';
+import { getMockTests, getMockTest, getAssignments, isAnswerCorrect } from '@/lib/data';
 import { saveProgress, loadProgress, formatTime } from '@/lib/storage';
 import { useToast } from '@/components/ToastContext';
 
@@ -13,9 +15,10 @@ function MockTestsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { showToast } = useToast();
+  const { currentCourse, courseMeta } = useCourse();
 
-  const mockTests = getMockTests();
-  const assignments = getAssignments();
+  const mockTests = getMockTests(currentCourse);
+  const assignments = getAssignments(currentCourse);
 
   // Active mock test ID from query or state
   const [activeMockId, setActiveMockId] = useState(searchParams.get('id') || null);
@@ -41,19 +44,19 @@ function MockTestsContent() {
   useEffect(() => {
     const id = searchParams.get('id');
     if (id) {
-      const mock = getMockTest(id);
+      const mock = getMockTest(id, currentCourse);
       if (mock) {
         setActiveMockId(id);
         setCurrentIndex(0);
         setUserAnswers({});
-        setTimeLeft(mock.duration * 60);
+        setTimeLeft(mock.duration || 45 * 60);
         setTimerStarted(true);
       }
     } else {
       setActiveMockId(null);
       setTimerStarted(false);
     }
-  }, [searchParams]);
+  }, [searchParams, currentCourse]);
 
   // Timer countdown
   useEffect(() => {
@@ -90,7 +93,7 @@ function MockTestsContent() {
     questionMap.current = map;
   }, [assignments]);
 
-  const activeMock = activeMockId ? getMockTest(activeMockId) : null;
+  const activeMock = activeMockId ? getMockTest(activeMockId, currentCourse) : null;
   const mockQuestions = activeMock
     ? (activeMock.questionIds || []).map(id => questionMap.current[id]).filter(Boolean)
     : [];
@@ -102,9 +105,21 @@ function MockTestsContent() {
   const selectOption = (optIndex) => {
     if (!mockQuestions[currentIndex]) return;
     const q = mockQuestions[currentIndex];
-    const newAnswers = { ...userAnswers, [q.id]: optIndex };
-    setUserAnswers(newAnswers);
-    saveProgress(`mock_${activeMockId}`, { answers: newAnswers });
+    const isMulti = q.isMultiple || Array.isArray(q.answer);
+
+    if (isMulti) {
+      const prev = Array.isArray(userAnswers[q.id]) ? userAnswers[q.id] : [];
+      const updated = prev.includes(optIndex)
+        ? prev.filter(i => i !== optIndex)
+        : [...prev, optIndex].sort((a, b) => a - b);
+      const newAnswers = { ...userAnswers, [q.id]: updated };
+      setUserAnswers(newAnswers);
+      saveProgress(`mock_${activeMockId}`, { answers: newAnswers });
+    } else {
+      const newAnswers = { ...userAnswers, [q.id]: optIndex };
+      setUserAnswers(newAnswers);
+      saveProgress(`mock_${activeMockId}`, { answers: newAnswers });
+    }
   };
 
   const handleAutoSubmit = () => {
@@ -113,7 +128,11 @@ function MockTestsContent() {
   };
 
   const handleSubmitTest = () => {
-    const answeredCount = Object.keys(userAnswers).length;
+    const answeredCount = Object.keys(userAnswers).filter(k => {
+      const val = userAnswers[k];
+      return Array.isArray(val) ? val.length > 0 : val !== undefined;
+    }).length;
+
     const total = mockQuestions.length;
     const unans = total - answeredCount;
 
@@ -131,8 +150,8 @@ function MockTestsContent() {
     if (timerRef.current) clearInterval(timerRef.current);
     if (!activeMock) return;
 
-    const timeSpent = activeMock.duration * 60 - timeLeft;
-    const correct = mockQuestions.filter(q => userAnswers[q.id] === q.answer).length;
+    const timeSpent = (activeMock.duration || 45 * 60) - timeLeft;
+    const correct = mockQuestions.filter(q => isAnswerCorrect(userAnswers[q.id], q.answer)).length;
     const total = mockQuestions.length;
 
     saveProgress(`mock_${activeMock.id}`, {
@@ -151,10 +170,13 @@ function MockTestsContent() {
     <>
       <div className="page-header">
         <div className="page-header-content">
+          <div className="badge badge-blue" style={{ marginBottom: '0.6rem', alignSelf: 'flex-start' }}>
+            <UiIcon name={courseMeta.icon || 'book'} /> {courseMeta.name}
+          </div>
           <h1>
-            <UiIcon name="test" className="page-title-icon" /> Mock Tests
+            <UiIcon name="test" className="page-title-icon" /> Timed Mock Tests
           </h1>
-          <p>Full timed examinations covering all 12 weeks — just like the real NPTEL exam</p>
+          <p>Full timed examinations covering all 12 weeks of {courseMeta.name} — just like the real NPTEL exam</p>
         </div>
       </div>
 
@@ -163,7 +185,7 @@ function MockTestsContent() {
           /* MOCK LIST VIEW */
           <div>
             <div className="section-header">
-              <h2>Available Mock Tests</h2>
+              <h2>Available Mock Tests — {courseMeta.name}</h2>
               <p>Each test has 30 questions with a 45-minute timer. You can review answers after submission.</p>
             </div>
 
@@ -189,7 +211,7 @@ function MockTestsContent() {
                         <UiIcon name="check" /> {m.questionCount} Questions
                       </span>
                       <span className="badge badge-green">
-                        <UiIcon name="clock" /> {m.duration} Mins
+                        <UiIcon name="clock" /> {Math.round((m.duration || 2700) / 60)} Mins
                       </span>
                       <span className="badge badge-orange">
                         <UiIcon name="gradCap" /> Pass: 40%
@@ -243,10 +265,10 @@ function MockTestsContent() {
               <div>
                 <div className="mock-title">{activeMock.title}</div>
                 <div className="mock-meta">
-                  30 MCQs &nbsp;·&nbsp; {activeMock.duration} Minutes &nbsp;·&nbsp; {activeMock.scope}
+                  {mockQuestions.length} MCQs &nbsp;·&nbsp; {Math.round((activeMock.duration || 2700) / 60)} Minutes &nbsp;·&nbsp; {activeMock.scope}
                 </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                 <div
                   className={`timer ${timeLeft < 60 ? 'danger' : timeLeft < 300 ? 'warning' : ''}`}
                   id="timerDisplay"
@@ -274,7 +296,7 @@ function MockTestsContent() {
               <div className="progress-bar">
                 <div
                   className="progress-fill"
-                  style={{ width: `${((currentIndex + 1) / mockQuestions.length) * 100}%` }}
+                  style={{ width: `${((currentIndex + 1) / (mockQuestions.length || 1)) * 100}%` }}
                 ></div>
               </div>
             </div>
@@ -282,31 +304,49 @@ function MockTestsContent() {
             <div className="quiz-layout">
               <div>
                 {/* Question Card */}
-                {mockQuestions[currentIndex] && (
-                  <div className="question-card">
-                    <div className="question-number">
-                      Question {currentIndex + 1} of {mockQuestions.length}
+                {mockQuestions[currentIndex] && (() => {
+                  const q = mockQuestions[currentIndex];
+                  const isMulti = q.isMultiple || Array.isArray(q.answer);
+                  const selected = userAnswers[q.id];
+
+                  return (
+                    <div className="question-card">
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                        <div className="question-number">
+                          Question {currentIndex + 1} of {mockQuestions.length}
+                        </div>
+                        {isMulti && (
+                          <span className="badge badge-warning" style={{ fontSize: '0.55rem', padding: '0.25rem 0.6rem' }}>
+                            Select All That Apply
+                          </span>
+                        )}
+                      </div>
+                      <div className="question-text">{q.question}</div>
+                      <ul className="options-list">
+                        {q.options.map((opt, i) => {
+                          const isSelected = isMulti
+                            ? Array.isArray(selected) && selected.includes(i)
+                            : selected === i;
+
+                          return (
+                            <li
+                              key={i}
+                              className={`option-item ${isSelected ? 'selected' : ''}`}
+                              onClick={() => selectOption(i)}
+                            >
+                              <label className="option-label">
+                                <span className="option-letter">
+                                  {isMulti ? (isSelected ? '✓' : letters[i]) : letters[i]}
+                                </span>
+                                <span className="option-text">{opt}</span>
+                              </label>
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </div>
-                    <div className="question-text">{mockQuestions[currentIndex].question}</div>
-                    <ul className="options-list">
-                      {mockQuestions[currentIndex].options.map((opt, i) => {
-                        const isSelected = userAnswers[mockQuestions[currentIndex].id] === i;
-                        return (
-                          <li
-                            key={i}
-                            className={`option-item ${isSelected ? 'selected' : ''}`}
-                            onClick={() => selectOption(i)}
-                          >
-                            <label className="option-label">
-                              <span className="option-letter">{letters[i]}</span>
-                              <span className="option-text">{opt}</span>
-                            </label>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                )}
+                  );
+                })()}
 
                 <div className="quiz-nav">
                   <button
@@ -333,7 +373,9 @@ function MockTestsContent() {
                 <div className="palette-title">Questions</div>
                 <div className="palette-grid">
                   {mockQuestions.map((q, idx) => {
-                    const isAnswered = userAnswers[q.id] !== undefined;
+                    const ans = userAnswers[q.id];
+                    const isMulti = q.isMultiple || Array.isArray(q.answer);
+                    const isAnswered = isMulti ? Array.isArray(ans) && ans.length > 0 : ans !== undefined;
                     const isCurrent = idx === currentIndex;
                     return (
                       <button
@@ -349,27 +391,14 @@ function MockTestsContent() {
 
                 <div className="palette-legend">
                   <div className="legend-item">
-                    <div className="legend-dot current"></div>
-                    <span>Current</span>
+                    <span className="legend-dot current"></span> Current
                   </div>
                   <div className="legend-item">
-                    <div className="legend-dot answered"></div>
-                    <span>Answered</span>
+                    <span className="legend-dot answered"></span> Answered
                   </div>
                   <div className="legend-item">
-                    <div className="legend-dot"></div>
-                    <span>Not answered</span>
+                    <span className="legend-dot unvisited"></span> Unanswered
                   </div>
-                </div>
-
-                <div style={{ marginTop: '1rem' }}>
-                  <button
-                    className="btn btn-danger"
-                    onClick={handleSubmitTest}
-                    style={{ width: '100%', fontSize: '0.48rem', padding: '0.7rem 0.5rem' }}
-                  >
-                    Submit Test
-                  </button>
                 </div>
               </div>
             </div>

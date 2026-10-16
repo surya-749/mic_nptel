@@ -4,10 +4,19 @@ import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import UiIcon from '@/components/UiIcon';
-import { getAssignments, getMockTests } from '@/lib/data';
+import { getAssignment, getMockTest, getAssignments, isAnswerCorrect } from '@/lib/data';
 import { loadProgress, getScoreGrade, formatTime } from '@/lib/storage';
 
 const letters = ['A', 'B', 'C', 'D', 'E'];
+
+function formatAnswerText(ans, options) {
+  if (ans === undefined || ans === null) return 'None';
+  if (Array.isArray(ans)) {
+    if (ans.length === 0) return 'None';
+    return ans.map(idx => `${letters[idx]}. ${options[idx]}`).join('; ');
+  }
+  return `${letters[ans]}. ${options[ans]}`;
+}
 
 function ResultsContent() {
   const searchParams = useSearchParams();
@@ -19,11 +28,8 @@ function ResultsContent() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const assignments = getAssignments();
-    const mockTests = getMockTests();
-
     if (type === 'quiz' && assignmentId) {
-      const assignment = assignments.find(a => a.id === assignmentId);
+      const assignment = getAssignment(assignmentId);
       if (!assignment) {
         setError('Quiz not found.');
         return;
@@ -32,8 +38,8 @@ function ResultsContent() {
       const saved = loadProgress(`quiz_${assignmentId}`);
       const answers = saved && saved.answers ? saved.answers : {};
       const total = assignment.questions.length;
-      const correct = assignment.questions.filter(q => answers[q.id] === q.answer).length;
-      const percent = Math.round((correct / total) * 100);
+      const correct = assignment.questions.filter(q => isAnswerCorrect(answers[q.id], q.answer)).length;
+      const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
 
       setResultData({
         title: `${assignment.title} Results`,
@@ -50,14 +56,17 @@ function ResultsContent() {
         answers
       });
     } else if (type === 'mock' && mockId) {
-      const mock = mockTests.find(m => m.id === mockId);
+      const mock = getMockTest(mockId);
       if (!mock) {
         setError('Mock test not found.');
         return;
       }
 
+      // Collect questions from all assignments across all courses
+      const allIncubationAssignments = getAssignments('incubation');
+      const allPublicSpeakingAssignments = getAssignments('public-speaking');
       const questionMap = {};
-      assignments.forEach(a => {
+      [...allIncubationAssignments, ...allPublicSpeakingAssignments].forEach(a => {
         (a.questions || []).forEach(q => {
           questionMap[q.id] = q;
         });
@@ -67,7 +76,7 @@ function ResultsContent() {
       const saved = loadProgress(`mock_${mockId}`);
       const answers = saved && saved.answers ? saved.answers : {};
       const total = questions.length;
-      const correct = questions.filter(q => answers[q.id] === q.answer).length;
+      const correct = questions.filter(q => isAnswerCorrect(answers[q.id], q.answer)).length;
       const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
       const timeTaken = saved ? saved.duration : null;
 
@@ -208,14 +217,15 @@ function ResultsContent() {
           <h2>
             <UiIcon name="test" /> Answer Review
           </h2>
-          <p>Check every question, your answer, and the explanation</p>
+          <p>Check every question, your answer, and the detailed conceptual explanation</p>
         </div>
 
         <div>
           {questions.map((q, i) => {
+            const isMulti = q.isMultiple || Array.isArray(q.answer);
             const selected = answers[q.id];
-            const isCorrect = selected === q.answer;
-            const skipped = selected === undefined;
+            const isCorrect = isAnswerCorrect(selected, q.answer);
+            const skipped = selected === undefined || (isMulti && Array.isArray(selected) && selected.length === 0);
 
             const cls = skipped ? 'skipped-q' : isCorrect ? 'correct-q' : 'wrong-q';
 
@@ -223,6 +233,11 @@ function ResultsContent() {
               <div key={q.id || i} className={`review-question ${cls}`}>
                 <div className="review-q-header">
                   <span className="review-q-number">Q{i + 1}</span>
+                  {isMulti && (
+                    <span className="badge badge-warning" style={{ fontSize: '0.55rem', marginRight: 'auto', marginLeft: '0.5rem' }}>
+                      Multiple Select
+                    </span>
+                  )}
                   {skipped ? (
                     <span className="badge badge-gray">
                       <UiIcon name="info" /> Skipped
@@ -242,19 +257,19 @@ function ResultsContent() {
 
                 {!skipped && !isCorrect && (
                   <div className="review-answer your-wrong">
-                    <UiIcon name="alertCircle" /> Your answer: {letters[selected]}. {q.options[selected]}
+                    <UiIcon name="alertCircle" /> Your answer: {formatAnswerText(selected, q.options)}
                   </div>
                 )}
 
                 {!skipped && isCorrect && (
                   <div className="review-answer your-correct">
-                    <UiIcon name="checkCircle" /> Your answer: {letters[selected]}. {q.options[selected]}
+                    <UiIcon name="checkCircle" /> Your answer: {formatAnswerText(selected, q.options)}
                   </div>
                 )}
 
                 {!isCorrect && (
                   <div className="review-answer correct-ans">
-                    <UiIcon name="checkCircle" /> Correct answer: {letters[q.answer]}. {q.options[q.answer]}
+                    <UiIcon name="checkCircle" /> Correct answer: {formatAnswerText(q.answer, q.options)}
                   </div>
                 )}
 
