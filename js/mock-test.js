@@ -29,7 +29,7 @@ async function initMockTest() {
   } catch(e) {
     document.getElementById('mockCards').innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">⚠️</div>
+        <div class="empty-state-icon">${getUiIcon('alertCircle')}</div>
         <h3>Could not load mock tests</h3>
         <p>${e.message}</p>
       </div>`;
@@ -49,22 +49,22 @@ function renderMockList() {
       <div class="mock-card">
         <div class="mock-card-header">
           <div>
-            <div class="mock-card-title">🧪 ${mt.title}</div>
+            <div class="mock-card-title">${getUiIcon('test')} ${mt.title}</div>
             <div class="mock-card-desc">${mt.description}</div>
           </div>
-          ${hasSaved ? `<span class="badge badge-green">✓ Completed</span>` : ''}
+          ${hasSaved ? `<span class="badge badge-green">${getUiIcon('check')} Completed</span>` : ''}
         </div>
         <div class="mock-meta-row">
-          <span class="badge badge-blue">📋 ${mt.questionCount} Questions</span>
-          <span class="badge badge-orange">⏱ ${minutes} Minutes</span>
-          <span class="badge badge-purple">📚 ${mt.scope || 'All 12 Weeks'}</span>
+          <span class="badge badge-blue">${getUiIcon('notes')} ${mt.questionCount} Questions</span>
+          <span class="badge badge-orange">${getUiIcon('clock')} ${minutes} Minutes</span>
+          <span class="badge badge-purple">${getUiIcon('book')} ${mt.scope || 'All 12 Weeks'}</span>
           ${hasSaved ? `<span class="badge badge-green">Score: ${saved.correct}/${saved.total} (${Math.round(saved.correct/saved.total*100)}%)</span>` : ''}
         </div>
         <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
           <button class="btn btn-primary" onclick="startMock('${mt.id}')">
-            ${hasSaved ? '↺ Retake Test' : '▶ Start Test'}
+            ${hasSaved ? `${getUiIcon('refresh')} Retake Test` : `${getUiIcon('play')} Start Test`}
           </button>
-          ${hasSaved ? `<a href="results.html?type=mock&mockId=${mt.id}" class="btn btn-ghost">📊 View Last Results</a>` : ''}
+          ${hasSaved ? `<a href="results.html?type=mock&mockId=${mt.id}" class="btn btn-ghost">${getUiIcon('chart')} View Last Results</a>` : ''}
         </div>
       </div>
     `;
@@ -101,7 +101,7 @@ function startTimer() {
     updateTimerDisplay();
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
-      showToast('⏰ Time is up! Submitting automatically…', 'danger');
+      showToast('Time is up! Submitting automatically…', 'danger');
       setTimeout(submitMock, 1500);
     }
   }, 1000);
@@ -111,7 +111,7 @@ function updateTimerDisplay() {
   const el = document.getElementById('timerDisplay');
   if (!el) return;
   const formatted = formatTime(timeLeft);
-  el.textContent = `⏱ ${formatted}`;
+  el.innerHTML = `${getUiIcon('clock')} ${formatted}`;
   if (timeLeft <= 60) {
     el.className = 'timer danger';
   } else if (timeLeft <= 300) {
