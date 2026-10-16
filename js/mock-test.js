@@ -57,7 +57,7 @@ function renderMockList() {
         <div class="mock-meta-row">
           <span class="badge badge-blue">📋 ${mt.questionCount} Questions</span>
           <span class="badge badge-orange">⏱ ${minutes} Minutes</span>
-          <span class="badge badge-purple">📚 All 6 Weeks</span>
+          <span class="badge badge-purple">📚 ${mt.scope || 'All 12 Weeks'}</span>
           ${hasSaved ? `<span class="badge badge-green">Score: ${saved.correct}/${saved.total} (${Math.round(saved.correct/saved.total*100)}%)</span>` : ''}
         </div>
         <div style="display:flex;gap:0.75rem;flex-wrap:wrap">

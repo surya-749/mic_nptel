@@ -1,11 +1,11 @@
 {
-  "course": "Developing Innovative Products and Entrepreneurship",
+  "course": "Understanding Incubation and Entrepreneurship",
   "assignments": [
     {
       "id": "assignment-1",
       "title": "Assignment 1",
       "week": 1,
-      "topic": "Entrepreneurship Fundamentals",
+      "topic": "Introduction to Entrepreneurship & The Startup Landscape",
       "questions": [
         {
           "id": "a1q1",
@@ -133,7 +133,7 @@
       "id": "assignment-2",
       "title": "Assignment 2",
       "week": 2,
-      "topic": "Team Building and Customer Discovery",
+      "topic": "Team Dynamics & Problem Identification",
       "questions": [
         {
           "id": "a2q1",
@@ -261,7 +261,7 @@
       "id": "assignment-3",
       "title": "Assignment 3",
       "week": 3,
-      "topic": "Design Thinking and Product Design",
+      "topic": "Human-Centered Ideation & Customer Validation",
       "questions": [
         {
           "id": "a3q1",
@@ -389,7 +389,7 @@
       "id": "assignment-4",
       "title": "Assignment 4",
       "week": 4,
-      "topic": "Market Entry and Customer Needs",
+      "topic": "Business Models & Value Proposition",
       "questions": [
         {
           "id": "a4q1",
@@ -517,7 +517,7 @@
       "id": "assignment-5",
       "title": "Assignment 5",
       "week": 5,
-      "topic": "Innovation, IPR and Technology Readiness",
+      "topic": "Prototyping & Minimum Viable Product (MVP)",
       "questions": [
         {
           "id": "a5q1",
@@ -645,7 +645,7 @@
       "id": "assignment-6",
       "title": "Assignment 6",
       "week": 6,
-      "topic": "Human-Centered Design and Design Management",
+      "topic": "Commercialization & Go-To-Market (GTM) Strategy",
       "questions": [
         {
           "id": "a6q1",
@@ -768,24 +768,936 @@
           "explanation": "Empathizing with both users and business goals allows designers to create solutions that are both creatively compelling and commercially viable."
         }
       ]
+    },
+    {
+      "id": "assignment-7",
+      "title": "Assignment 7",
+      "week": 7,
+      "topic": "Technology & IP Protection Strategies",
+      "questions": [
+        {
+          "id": "a7q1",
+          "question": "Which approach emphasizes collaboration, iteration, and a non-linear process to develop innovative solutions?",
+          "options": [
+            "Economic stability",
+            "Design thinking",
+            "Complacency",
+            "Short-term focus"
+          ],
+          "answer": 1,
+          "explanation": "Design thinking is an iterative, non-linear, and collaborative methodology centered on understanding user needs and developing creative solutions."
+        },
+        {
+          "id": "a7q2",
+          "question": "What is a problem-solving methodology that encourages creative thinking by connecting seemingly unrelated concepts?",
+          "options": [
+            "Brainstorming",
+            "Synectics",
+            "Mind mapping",
+            "SWOT analysis"
+          ],
+          "answer": 1,
+          "explanation": "Synectics is a creative problem-solving technique developed by George Prince and William Gordon that stimulates creative ideas by joining together seemingly unrelated elements."
+        },
+        {
+          "id": "a7q3",
+          "question": "What are the most important three critical factors to consider when developing a product?",
+          "options": [
+            "Market Need, technical feasibility, and business viability",
+            "Advertisement, product packaging, and distribution networks",
+            "User sensibility, market size, and product range",
+            "Profit, market sensitivity, and employee strength"
+          ],
+          "answer": 0,
+          "explanation": "Successful product innovation exists at the convergence of desirability (Market Need), feasibility (technical feasibility), and viability (business viability)."
+        },
+        {
+          "id": "a7q4",
+          "question": "Which tool graphically represents a business model and helps stakeholders understand it easily?",
+          "options": [
+            "Business Model Canvas",
+            "Balance sheet",
+            "Profit and loss statement",
+            "Organizational chart"
+          ],
+          "answer": 0,
+          "explanation": "The Business Model Canvas (BMC) is a visual strategic management template for documenting and developing new or existing business models across nine key building blocks."
+        },
+        {
+          "id": "a7q5",
+          "question": "What is the meaning of \"Double Whammy\"?",
+          "options": [
+            "A situation where two positive events occur simultaneously",
+            "A situation where two adverse events or effects occur simultaneously",
+            "A term used to describe a single unfortunate event",
+            "A financial model for maximizing profits"
+          ],
+          "answer": 1,
+          "explanation": "A \"Double Whammy\" refers to a blow, setback, or problem that occurs in conjunction with another, delivering two negative setbacks simultaneously."
+        },
+        {
+          "id": "a7q6",
+          "question": "What makes a collaborative model beneficial for entrepreneurship?",
+          "options": [
+            "Provides access to resources",
+            "Offers networking opportunities",
+            "Creates a sense of community",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Collaborative models empower startups through resource sharing, expanded professional networks, and a community of peer support."
+        },
+        {
+          "id": "a7q7",
+          "question": "What distinguishes the fractional ownership business model from other models?",
+          "options": [
+            "Shared ownership of physical assets",
+            "Focus on virtual assets and digital goods",
+            "Primary emphasis on intellectual property rights",
+            "Leasing equipment to businesses"
+          ],
+          "answer": 0,
+          "explanation": "Fractional ownership allows multiple individuals or entities to split ownership of expensive physical assets, sharing the capital risk and utilization benefits."
+        },
+        {
+          "id": "a7q8",
+          "question": "What key criteria should a business model meet to achieve optimal success?",
+          "options": [
+            "High Initial Investment, Extensive Workforce, and Expensive Marketing",
+            "Clear Value Proposition, Scalability, and Sustainable Revenue Streams",
+            "Low Costs, Rapid Expansion, and Minimal Effort",
+            "Single Revenue Source, Limited Target Market, and High Complexity"
+          ],
+          "answer": 1,
+          "explanation": "To achieve sustainable long-term success, a business model must provide a clear value proposition, operational scalability, and recurring, sustainable revenue streams."
+        },
+        {
+          "id": "a7q9",
+          "question": "Which key performance metrics help to monitor a business's success?",
+          "options": [
+            "Revenue growth, customer acquisition, and value proposition",
+            "Employee welfare, operational cost reduction, and inventory turnover",
+            "Brand recognition, social media reach, and product diversification",
+            "Customer retention, marketing spends, and aesthetic appeal"
+          ],
+          "answer": 0,
+          "explanation": "Revenue growth, customer acquisition rate, and value proposition delivery serve as core indicators of market traction and commercial viability."
+        },
+        {
+          "id": "a7q10",
+          "question": "Why is the Lean Canvas a valuable tool for startups?",
+          "options": [
+            "Helps secure large investments from venture capitalists",
+            "Develops a detailed five-year financial plan",
+            "Allows startups to test and iterate on their business model assumptions quickly",
+            "Designs a complex organizational structure for future growth"
+          ],
+          "answer": 2,
+          "explanation": "The Lean Canvas enables founders to map, test, and iterate on core business hypotheses rapidly without wasting time writing speculative 50-page business plans."
+        }
+      ]
+    },
+    {
+      "id": "assignment-8",
+      "title": "Assignment 8",
+      "week": 8,
+      "topic": "The Incubation Ecosystem & Startup Support",
+      "questions": [
+        {
+          "id": "a8q1",
+          "question": "What advantages can your business gain from identifying early adopters?",
+          "options": [
+            "Competitive disadvantage",
+            "Validate market demands through early feedback",
+            "Slow revenue generation",
+            "Requires less marketing effort"
+          ],
+          "answer": 1,
+          "explanation": "Early adopters validate market demand by providing candid feedback, uncovering flaws, and confirming the product's value proposition before mass market scaling."
+        },
+        {
+          "id": "a8q2",
+          "question": "What are the key characteristics that early-stage entrepreneurs should develop?",
+          "options": [
+            "An entrepreneurial mindset",
+            "Adaptability and resilience",
+            "Upholding ethical standards",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Successful entrepreneurs combine an opportunistic mindset, resilience to withstand setbacks, and unwavering integrity and ethics."
+        },
+        {
+          "id": "a8q3",
+          "question": "What is essential for delivering a compelling business pitch to investors?",
+          "options": [
+            "Detailed operational procedures",
+            "A scalable and profitable business model",
+            "Market size and demographics",
+            "Long-term industry trends"
+          ],
+          "answer": 1,
+          "explanation": "Investors prioritize pitches that clearly demonstrate a scalable, repeatable, and profitable business model capable of generating high returns."
+        },
+        {
+          "id": "a8q4",
+          "question": "What role does a Minimum Viable Product (MVP) play in product development?",
+          "options": [
+            "Builds brand reputation without validation",
+            "Attracts early-adopter customers and validates the product idea",
+            "Focuses on short-term revenue generation",
+            "Prioritizes aesthetics over functionality"
+          ],
+          "answer": 1,
+          "explanation": "An MVP is built with minimal resources to engage early adopters and collect validated learning about the core product hypothesis."
+        },
+        {
+          "id": "a8q5",
+          "question": "What are the initial steps involved in developing a Lean Canvas?",
+          "options": [
+            "Identify your target customers and users",
+            "List your customer’s top three problems",
+            "Develop solutions for each identified problem",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Constructing a Lean Canvas begins with defining customer segments, articulating their top three problems, and proposing targeted solution features."
+        },
+        {
+          "id": "a8q6",
+          "question": "What factors must a product have to remain competitive in the market?",
+          "options": [
+            "Consistent product improvement and innovation",
+            "Incremental price increases",
+            "Limited scalability to control costs",
+            "Focus on low-impact trends"
+          ],
+          "answer": 0,
+          "explanation": "Market longevity requires continuous product improvement, technological upgrades, and responsive innovation tailored to evolving consumer needs."
+        },
+        {
+          "id": "a8q7",
+          "question": "What term is used to describe legal protections that prevent unauthorized use of original creative works?",
+          "options": [
+            "Physical property",
+            "Intellectual property",
+            "Commercial asset",
+            "Industrial design"
+          ],
+          "answer": 1,
+          "explanation": "Intellectual property (IP) grants creators exclusive legal rights over creations of the mind, preventing unauthorized commercial duplication or exploitation."
+        },
+        {
+          "id": "a8q8",
+          "question": "Which types of intellectual property rights (IPR) protect innovations and creative works?",
+          "options": [
+            "Real estate and buildings",
+            "Patents, copyrights, trademarks, and trade secrets",
+            "Financial statements and records",
+            "Office equipment and tools"
+          ],
+          "answer": 1,
+          "explanation": "The core types of IPR are patents (inventions), copyrights (creative/artistic expressions), trademarks (distinctive brand identifiers), and trade secrets (confidential proprietary know-how)."
+        },
+        {
+          "id": "a8q9",
+          "question": "What is the primary focus of customer acquisition strategies for startups?",
+          "options": [
+            "Ensuring long-term customer retention",
+            "Maximizing short-term sales revenue",
+            "Ignoring customer feedback for cost-saving",
+            "Relying on word-of-mouth marketing alone"
+          ],
+          "answer": 0,
+          "explanation": "Acquisition is effective only if it leads to high retention; retaining customers maximizes customer lifetime value (LTV) and justifies acquisition costs (CAC)."
+        },
+        {
+          "id": "a8q10",
+          "question": "How does a strong Unique Value Proposition (UVP) benefit a startup?",
+          "options": [
+            "Enhances the company's ability to attract and retain customers by clearly addressing their needs and preferences",
+            "Solely focuses on improving financial performance metrics without considering customer satisfaction",
+            "Prioritizes technological infrastructure over understanding customer needs",
+            "Concentrates on offering low-cost services at the expense of quality"
+          ],
+          "answer": 0,
+          "explanation": "A powerful UVP distinctly outlines the unique value delivered, why it's superior to alternatives, and why target customers should care."
+        }
+      ]
+    },
+    {
+      "id": "assignment-9",
+      "title": "Assignment 9",
+      "week": 9,
+      "topic": "Startup Financing & Capital Structure",
+      "questions": [
+        {
+          "id": "a9q1",
+          "question": "What barriers must a designer or entrepreneur overcome to turn an idea into action?",
+          "options": [
+            "Lack of confidence in their skills",
+            "Fear of negative feedback",
+            "Difficulty in securing funding",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Entrepreneurs face both internal emotional hurdles (imposter syndrome, fear of rejection) and external practical barriers (access to seed capital and resources)."
+        },
+        {
+          "id": "a9q2",
+          "question": "What is the most important relationship for a startup to manage?",
+          "options": [
+            "Funding sources",
+            "Target customers",
+            "Technological infrastructure",
+            "Market needs"
+          ],
+          "answer": 1,
+          "explanation": "Customer relationships determine business survival; staying deeply engaged with target users ensures ongoing product-market fit and customer loyalty."
+        },
+        {
+          "id": "a9q3",
+          "question": "What types of funding are typically sought by early-stage entrepreneurs or startups?",
+          "options": [
+            "Government grants and seed funding / crowdfunding",
+            "Long-term bank loans with high interest rates",
+            "Public stock market offerings (IPO)",
+            "Corporate debt bonds"
+          ],
+          "answer": 0,
+          "explanation": "Early ventures rely primarily on non-dilutive government grants, angel/seed capital, and rewards-based or equity crowdfunding before securing venture debt or later-stage PE."
+        },
+        {
+          "id": "a9q4",
+          "question": "What are some reasons why certain regions may lag in techno-entrepreneurial ventures?",
+          "options": [
+            "Education is focused solely on securing jobs",
+            "Abundance of natural resources reduces the need for innovation",
+            "Government policies discourage entrepreneurship",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Cultural emphasis on risk-averse employment, economic complacency from commodity resource wealth, and restrictive regulatory frameworks hinder regional startup ecosystems."
+        },
+        {
+          "id": "a9q5",
+          "question": "What is the purpose of the incubation stage in the entrepreneurial journey?",
+          "options": [
+            "Developing a business plan and securing resources",
+            "Taking a product idea to commercialization",
+            "Conducting advanced research and development",
+            "Scaling the business for global markets"
+          ],
+          "answer": 0,
+          "explanation": "Incubation programs assist early-stage founders by providing structured mentorship, physical workspace, legal assistance, and access to capital to develop an actionable business plan."
+        },
+        {
+          "id": "a9q6",
+          "question": "How does the role of an entrepreneur differ from that of an innovator?",
+          "options": [
+            "Entrepreneurs focus on maximizing profits, while innovators solve problems without business goals",
+            "Entrepreneurs see problems as business opportunities, while innovators focus solely on solving problems",
+            "Entrepreneurs work alone, while innovators always work in teams",
+            "Entrepreneurs need formal education, while innovators rely on creativity"
+          ],
+          "answer": 1,
+          "explanation": "Innovators focus on inventing novel solutions, whereas entrepreneurs identify commercial potential and build sustainable business models around those solutions."
+        },
+        {
+          "id": "a9q7",
+          "question": "What is the purpose of clinical immersion in the healthcare sector for entrepreneurs?",
+          "options": [
+            "To provide administrative training and management skills",
+            "To identify unmet needs and gather insights for innovation",
+            "To develop marketing strategies for healthcare products",
+            "To focus on financial analysis and budget planning"
+          ],
+          "answer": 1,
+          "explanation": "Clinical immersion allows innovators to shadow clinicians and observe clinical workflows firsthand to discover real, unaddressed medical and patient needs."
+        },
+        {
+          "id": "a9q8",
+          "question": "What key factor ensures better execution of an entrepreneurial idea?",
+          "options": [
+            "Clear definition of customer needs and market gaps",
+            "Strong advertising strategy and brand presence",
+            "Advanced office infrastructure and equipment",
+            "Rigid adherence to the initial business plan"
+          ],
+          "answer": 0,
+          "explanation": "Superior execution relies on rigorous clarity regarding the specific customer pain points being resolved and the exact market white space being occupied."
+        },
+        {
+          "id": "a9q9",
+          "question": "What is the process of transferring an idea to industry through intellectual property or technology transfer called?",
+          "options": [
+            "Entrepreneurship",
+            "Commercialization",
+            "Enterprise development",
+            "Incubation"
+          ],
+          "answer": 1,
+          "explanation": "Commercialization is the translation of academic research, inventions, or patents into viable market-ready products and services."
+        },
+        {
+          "id": "a9q10",
+          "question": "Which stage of the entrepreneurial journey focuses on the initial creation and development of a startup idea?",
+          "options": [
+            "Idea Generation Stage",
+            "Research Stage",
+            "Incubation Stage",
+            "Scaling Stage"
+          ],
+          "answer": 0,
+          "explanation": "The Idea Generation Stage is the foundational phase where founders identify problems, brainstorm creative opportunities, and conceptualize initial solutions."
+        }
+      ]
+    },
+    {
+      "id": "assignment-10",
+      "title": "Assignment 10",
+      "week": 10,
+      "topic": "Legal, Regulatory & Governance Frameworks",
+      "questions": [
+        {
+          "id": "a10q1",
+          "question": "What creative thinking technique involves individuals imagining themselves as part of the problem or situation they are trying to solve?",
+          "options": [
+            "Fantasy analogy",
+            "Personal analogy",
+            "Symbolic analogy",
+            "CAD analogy"
+          ],
+          "answer": 1,
+          "explanation": "In Synectics, a Personal Analogy encourages the designer to empathize deeply by imagining themselves directly as the object, mechanism, or user in the problem situation."
+        },
+        {
+          "id": "a10q2",
+          "question": "Which of the following is NOT a typical prototyping method?",
+          "options": [
+            "Additive methods",
+            "Subtractive methods",
+            "Forming methods",
+            "Lateral thinking"
+          ],
+          "answer": 3,
+          "explanation": "Additive (3D printing), subtractive (machining/milling), and forming (casting/molding) are physical fabrication methods, whereas lateral thinking is a cognitive creative technique."
+        },
+        {
+          "id": "a10q3",
+          "question": "What is the correct sequence during a product development process?",
+          "options": [
+            "Ideation → Concept Generation → Prototyping → Testing → Market Launch",
+            "Market Research → Concept Generation → Testing → Ideation → Prototyping",
+            "Concept Generation → Prototyping → Testing → Market Launch → Ideation",
+            "Ideation → Market Launch → Prototype → Testing → Concept Generation"
+          ],
+          "answer": 0,
+          "explanation": "Product development logically advances from initial ideation to concept generation, prototype creation, testing/refinement, and finally market launch."
+        },
+        {
+          "id": "a10q4",
+          "question": "Which type of reasoning involves forming general conclusions from specific observations?",
+          "options": [
+            "Abductive reasoning",
+            "Deductive reasoning",
+            "Inductive reasoning",
+            "Analytical reasoning"
+          ],
+          "answer": 2,
+          "explanation": "Inductive reasoning builds generalized principles from specific, repeated observations, whereas deductive reasoning derives specific instances from general premises."
+        },
+        {
+          "id": "a10q5",
+          "question": "How does frugality in product innovation benefit organizations?",
+          "options": [
+            "By increasing production costs to maximize resources",
+            "By minimizing waste and reducing costs through efficient use of resources",
+            "By prioritizing aesthetics over functionality",
+            "By focusing solely on rapid scaling without cost considerations"
+          ],
+          "answer": 1,
+          "explanation": "Frugal engineering reduces wasteful expenditures, streamlines design complexity, and creates high-value solutions with constrained resources."
+        },
+        {
+          "id": "a10q6",
+          "question": "What is the primary purpose of a Proof of Concept (POC)?",
+          "options": [
+            "To validate the feasibility and viability of a new idea or concept",
+            "To generate the final product for market launch",
+            "To secure funding for large-scale production",
+            "To build prototypes for user feedback"
+          ],
+          "answer": 0,
+          "explanation": "A Proof of Concept (POC) is an early exercise designed to verify that a proposed concept, algorithm, or mechanism is technically achievable in reality."
+        },
+        {
+          "id": "a10q7",
+          "question": "What does prototyping aim to achieve in the design process?",
+          "options": [
+            "Finalizing the design for immediate market release",
+            "Creating models to test and improve design, functionality, and usability",
+            "Building large-scale production units for market distribution",
+            "Avoiding iterative development to save time"
+          ],
+          "answer": 1,
+          "explanation": "Prototyping creates tangible artifacts that allow teams to test assumptions, optimize functionality, refine ergonomics, and validate usability."
+        },
+        {
+          "id": "a10q8",
+          "question": "What is the primary goal of Synectics in the design process?",
+          "options": [
+            "Encouraging exploration and breaking conventional thinking",
+            "Generating a single, perfect solution to a problem",
+            "Reaching consensus among team members quickly",
+            "Applying detailed technical analysis to refine existing concepts"
+          ],
+          "answer": 0,
+          "explanation": "Synectics aims to dismantle mental blocks by employing metaphors and analogies to 'make the familiar strange and the strange familiar'."
+        },
+        {
+          "id": "a10q9",
+          "question": "How can entrepreneurs effectively collaborate with one another?",
+          "options": [
+            "By franchising their mutual businesses",
+            "By sharing resources and distributing production responsibilities",
+            "By competing in the same market segments",
+            "All of the above"
+          ],
+          "answer": 1,
+          "explanation": "Entrepreneurs collaborate effectively by sharing facilities, manufacturing pipelines, and distribution channels to lower individual operating overhead."
+        },
+        {
+          "id": "a10q10",
+          "question": "Why is it important for designers to create prototypes before deploying a product?",
+          "options": [
+            "To identify and resolve design flaws early in the process",
+            "To use prototypes as the final version for market release",
+            "To skip the need for market research and testing",
+            "To focus on aesthetics without user input"
+          ],
+          "answer": 0,
+          "explanation": "Uncovering usability and engineering flaws during early prototyping is exponentially cheaper and faster than making modifications post-tooling and mass production."
+        }
+      ]
+    },
+    {
+      "id": "assignment-11",
+      "title": "Assignment 11",
+      "week": 11,
+      "topic": "Growth, Scaling & Operations Strategy",
+      "questions": [
+        {
+          "id": "a11q1",
+          "question": "What is the most effective approach for developing products that meet the needs of specially-abled people?",
+          "options": [
+            "User-centered design",
+            "Exclusivity in design",
+            "Profit maximization",
+            "Reducing production costs"
+          ],
+          "answer": 0,
+          "explanation": "User-centered design directly involves specially-abled individuals throughout the research, co-creation, and evaluation phases to ensure true accessibility."
+        },
+        {
+          "id": "a11q2",
+          "question": "What are the two key aspects to focus on when developing a product using assistive technology?",
+          "options": [
+            "Promoting awareness about digital alternatives",
+            "Making users independent and fostering social integration",
+            "Redesigning existing products for the market",
+            "Creating exclusive and expensive solutions"
+          ],
+          "answer": 1,
+          "explanation": "Assistive devices fundamentally aim to restore personal autonomy and enable seamless integration into social, educational, and economic spheres."
+        },
+        {
+          "id": "a11q3",
+          "question": "What are the critical factors for a product to succeed in the market?",
+          "options": [
+            "Being trendy and common",
+            "Being relevant and differentiated",
+            "Being cheap and generic",
+            "Being expensive and complex"
+          ],
+          "answer": 1,
+          "explanation": "To succeed and sustain competitive advantage, a product must address authentic customer problems (relevance) while standing out distinctly from alternatives (differentiation)."
+        },
+        {
+          "id": "a11q4",
+          "question": "What should a startup offer to persuade investors or customers to invest in or purchase its product?",
+          "options": [
+            "An unrealistic guaranteed return on investment",
+            "A unique and differentiated service or product",
+            "A vague and unclear value proposition",
+            "A low-cost product with limited functionality"
+          ],
+          "answer": 1,
+          "explanation": "Startups win customers and capital by delivering a distinct value proposition that provides a superior, defensible solution compared to incumbents."
+        },
+        {
+          "id": "a11q5",
+          "question": "Why is it advisable to avoid using cheap materials when developing a product, especially in a B2C context?",
+          "options": [
+            "Cheap materials reduce production time significantly",
+            "Using cheap materials increases return and servicing costs",
+            "Cheap materials ensure better brand reputation",
+            "Cheap materials improve the product's aesthetic appeal"
+          ],
+          "answer": 1,
+          "explanation": "Substandard materials lead to frequent defects, high return rates, warranty claims, and brand damage that far outweigh initial material savings."
+        },
+        {
+          "id": "a11q6",
+          "question": "What potential risk factor could affect the viability of a startup's business model?",
+          "options": [
+            "Strong customer loyalty and retention",
+            "Reliance on a limited number of corporate clients",
+            "Rapidly decreasing operational costs",
+            "Established brand recognition"
+          ],
+          "answer": 1,
+          "explanation": "High customer concentration risk leaves a startup vulnerable; losing a single client can trigger existential financial distress."
+        },
+        {
+          "id": "a11q7",
+          "question": "How does human-to-human interaction benefit product design compared to AI-based solutions?",
+          "options": [
+            "AI processes designs faster and more efficiently",
+            "Human interaction fosters empathy and understanding of individual needs",
+            "AI consistently improves through machine learning",
+            "AI offers a broader range of design capabilities"
+          ],
+          "answer": 1,
+          "explanation": "Direct human interactions uncover qualitative context, emotional nuances, and empathetic insights that automated algorithmic models cannot intuitively synthesize."
+        },
+        {
+          "id": "a11q8",
+          "question": "How can design contribute to the development of cognitive, motor, and analytical skills in children?",
+          "options": [
+            "By creating interactive games that encourage physical movement and coordination",
+            "By focusing solely on aesthetic appeal and trendy designs",
+            "By using advanced technology for entertainment purposes",
+            "By emphasizing cost-effectiveness over engagement"
+          ],
+          "answer": 0,
+          "explanation": "Intentional, interactive design stimulates motor coordination, tactile feedback, and problem-solving through kinesthetic play and puzzle solving."
+        },
+        {
+          "id": "a11q9",
+          "question": "What factors should be prioritized when developing a product using evidence-based learning methodologies?",
+          "options": [
+            "Understanding target customers and measuring the impact of the solution",
+            "Increasing brand recognition and analyzing market competition",
+            "Allocating advertising budgets and determining technical specifications",
+            "Designing packaging and setting product pricing"
+          ],
+          "answer": 0,
+          "explanation": "Evidence-based product development focuses on empirical testing, understanding end users, and measuring concrete outcomes to guide iteration."
+        },
+        {
+          "id": "a11q10",
+          "question": "Why is it essential for a product to align with customer needs and preferences during its design?",
+          "options": [
+            "To reduce the cost of production",
+            "To ensure long-term customer satisfaction and loyalty",
+            "To focus on marketing trends exclusively",
+            "To simplify the manufacturing process"
+          ],
+          "answer": 1,
+          "explanation": "Customer-centric design ensures that the finished product genuinely solves pain points, driving organic customer satisfaction, retention, and brand loyalty."
+        }
+      ]
+    },
+    {
+      "id": "assignment-12",
+      "title": "Assignment 12",
+      "week": 12,
+      "topic": "Pitching, Exit Strategies & Ecosystem Case Studies",
+      "questions": [
+        {
+          "id": "a12q1",
+          "question": "How does identifying problems early in the product design process help businesses?",
+          "options": [
+            "Leads to overemphasis on a single issue",
+            "Provides a well-defined direction for development",
+            "Assumes problems remain static throughout the process",
+            "Overlooks user insights during the design phase"
+          ],
+          "answer": 1,
+          "explanation": "Early, precise problem framing directs design resources effectively and ensures the engineering team is solving a genuine, high-value problem."
+        },
+        {
+          "id": "a12q2",
+          "question": "What are the benefits of designing modular and customizable products?",
+          "options": [
+            "Increased customer satisfaction and enhanced efficiency",
+            "Higher production costs and limited scalability",
+            "Reduced customer engagement and feedback opportunities",
+            "Simplified designs with minimal user options"
+          ],
+          "answer": 0,
+          "explanation": "Modularity allows customized configurations tailored to user preferences while preserving standardized manufacturing economies of scale."
+        },
+        {
+          "id": "a12q3",
+          "question": "How does analyzing a \"Beachhead market\" help businesses during product launch?",
+          "options": [
+            "Spreads resources thinly across multiple segments",
+            "Identifies a focused customer segment for initial success",
+            "Skips customer research and prioritizes production",
+            "Avoids market segmentation entirely"
+          ],
+          "answer": 1,
+          "explanation": "A Beachhead market strategy concentrates scarce startup resources on winning and dominating a single accessible, well-defined customer niche before expanding."
+        },
+        {
+          "id": "a12q4",
+          "question": "How can networking be utilized effectively to harness its full potential?",
+          "options": [
+            "Limiting interactions to close friends only",
+            "Promoting products through targeted connections",
+            "Avoiding industry events and conferences",
+            "Keeping networking efforts informal and unstructured"
+          ],
+          "answer": 1,
+          "explanation": "Targeted networking connects founders with strategic partners, pilot customers, and mentors with relevant industry domain expertise."
+        },
+        {
+          "id": "a12q5",
+          "question": "What are the advantages of the \"Inverted Pyramid Model\" for product-centric businesses?",
+          "options": [
+            "Increased development costs due to complex designs",
+            "Improved customer focus by prioritizing their needs",
+            "Creation of complex product descriptions for a wider audience",
+            "Prioritizing concise messaging with a clear audience focus"
+          ],
+          "answer": 1,
+          "explanation": "The Inverted Pyramid Model puts core user needs and essential value propositions first, keeping product strategy focused on the most critical customer problems."
+        },
+        {
+          "id": "a12q6",
+          "question": "What is the most crucial step in the product design process to ensure a startup's success?",
+          "options": [
+            "Identifying the target customer segment",
+            "Ignoring user feedback during early stages",
+            "Skipping competitor analysis to save time",
+            "Overlooking market research to focus on production"
+          ],
+          "answer": 0,
+          "explanation": "Defining precisely who experiences the problem and is willing to pay for the solution is the fundamental prerequisite for product-market fit."
+        },
+        {
+          "id": "a12q7",
+          "question": "What is considered an ideal marketing strategy for startups?",
+          "options": [
+            "Expensive and extravagant campaigns",
+            "Short-term and aggressive advertising",
+            "Innovative and lean strategies",
+            "Random and unfocused marketing efforts"
+          ],
+          "answer": 2,
+          "explanation": "Resource-constrained startups succeed by employing innovative, lean growth marketing techniques (content marketing, community building, viral loops, targeted partnerships)."
+        },
+        {
+          "id": "a12q8",
+          "question": "What factors should be prioritized when designing a product for the market?",
+          "options": [
+            "Irrelevant personal opinions and preferences",
+            "Customer needs and preferences",
+            "Excessive technical details and low usability",
+            "Low-impact trends to reduce risks"
+          ],
+          "answer": 1,
+          "explanation": "Products succeed when they are engineered to resolve user pain points according to customer preferences, rather than the internal assumptions of the team."
+        },
+        {
+          "id": "a12q9",
+          "question": "Why is it important to emphasize the product solution when presenting a business idea?",
+          "options": [
+            "To focus on irrelevant features for market differentiation",
+            "To overemphasize minor market segments",
+            "To provide clarity on how the product addresses a specific problem",
+            "To focus on overambitious goals for investor appeal"
+          ],
+          "answer": 2,
+          "explanation": "Clearly explaining the solution articulates how the innovation directly and effectively eliminates the customer's identified pain points."
+        },
+        {
+          "id": "a12q10",
+          "question": "What is an essential factor to focus on when pitching a business idea to investors?",
+          "options": [
+            "Presenting a vague and unclear concept",
+            "Avoiding discussions about market potential",
+            "Clearly articulating the value proposition and market fit",
+            "Presenting weak financial projections to lower expectations"
+          ],
+          "answer": 2,
+          "explanation": "Investors demand clear articulation of the unique value proposition, target market size, unit economics, and evidence of product-market fit."
+        }
+      ]
     }
   ],
   "mockTests": [
     {
       "id": "mock-1",
-      "title": "Full Mock Test 1",
-      "description": "Covers all 6 weeks — 30 questions, 45 minutes",
+      "title": "Full Mock Test 1 (All 12 Weeks)",
+      "description": "Comprehensive timed examination covering all 12 weeks — 30 questions, 45 minutes",
       "duration": 2700,
       "questionCount": 30,
-      "questionIds": ["a1q1","a1q3","a1q5","a1q7","a1q9","a2q1","a2q3","a2q5","a2q7","a2q9","a3q1","a3q3","a3q5","a3q7","a3q9","a4q1","a4q3","a4q5","a4q7","a4q9","a5q1","a5q3","a5q5","a5q7","a5q9","a6q1","a6q3","a6q5","a6q7","a6q9"]
+      "questionIds": [
+        "a1q1",
+        "a1q2",
+        "a1q3",
+        "a2q1",
+        "a2q2",
+        "a3q1",
+        "a3q2",
+        "a3q3",
+        "a4q1",
+        "a4q2",
+        "a5q1",
+        "a5q2",
+        "a5q3",
+        "a6q1",
+        "a6q2",
+        "a7q1",
+        "a7q2",
+        "a7q3",
+        "a8q1",
+        "a8q2",
+        "a9q1",
+        "a9q2",
+        "a9q3",
+        "a10q1",
+        "a10q2",
+        "a11q1",
+        "a11q2",
+        "a11q3",
+        "a12q1",
+        "a12q2"
+      ],
+      "scope": "All 12 Weeks"
     },
     {
       "id": "mock-2",
-      "title": "Full Mock Test 2",
-      "description": "Covers all 6 weeks — 30 questions, 45 minutes",
+      "title": "Full Mock Test 2 (All 12 Weeks)",
+      "description": "Comprehensive timed examination covering all 12 weeks — 30 questions, 45 minutes",
       "duration": 2700,
       "questionCount": 30,
-      "questionIds": ["a1q2","a1q4","a1q6","a1q8","a1q10","a2q2","a2q4","a2q6","a2q8","a2q10","a3q2","a3q4","a3q6","a3q8","a3q10","a4q2","a4q4","a4q6","a4q8","a4q10","a5q2","a5q4","a5q6","a5q8","a5q10","a6q2","a6q4","a6q6","a6q8","a6q10"]
+      "questionIds": [
+        "a1q4",
+        "a1q5",
+        "a2q4",
+        "a2q5",
+        "a2q6",
+        "a3q4",
+        "a3q5",
+        "a4q4",
+        "a4q5",
+        "a4q6",
+        "a5q4",
+        "a5q5",
+        "a6q4",
+        "a6q5",
+        "a6q6",
+        "a7q4",
+        "a7q5",
+        "a8q4",
+        "a8q5",
+        "a8q6",
+        "a9q4",
+        "a9q5",
+        "a10q4",
+        "a10q5",
+        "a10q6",
+        "a11q4",
+        "a11q5",
+        "a12q4",
+        "a12q5",
+        "a12q6"
+      ],
+      "scope": "All 12 Weeks"
+    },
+    {
+      "id": "mock-3",
+      "title": "Mid-Term Mock Test (Weeks 1-6)",
+      "description": "Covers foundational entrepreneurship & design thinking — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": [
+        "a1q1",
+        "a1q2",
+        "a1q3",
+        "a1q4",
+        "a1q5",
+        "a2q1",
+        "a2q2",
+        "a2q3",
+        "a2q4",
+        "a2q5",
+        "a3q1",
+        "a3q2",
+        "a3q3",
+        "a3q4",
+        "a3q5",
+        "a4q1",
+        "a4q2",
+        "a4q3",
+        "a4q4",
+        "a4q5",
+        "a5q1",
+        "a5q2",
+        "a5q3",
+        "a5q4",
+        "a5q5",
+        "a6q1",
+        "a6q2",
+        "a6q3",
+        "a6q4",
+        "a6q5"
+      ],
+      "scope": "Weeks 1-6"
+    },
+    {
+      "id": "mock-4",
+      "title": "End-Term Mock Test (Weeks 7-12)",
+      "description": "Covers business models, prototyping, assistive tech & launch — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": [
+        "a7q1",
+        "a7q2",
+        "a7q3",
+        "a7q4",
+        "a7q5",
+        "a8q1",
+        "a8q2",
+        "a8q3",
+        "a8q4",
+        "a8q5",
+        "a9q1",
+        "a9q2",
+        "a9q3",
+        "a9q4",
+        "a9q5",
+        "a10q1",
+        "a10q2",
+        "a10q3",
+        "a10q4",
+        "a10q5",
+        "a11q1",
+        "a11q2",
+        "a11q3",
+        "a11q4",
+        "a11q5",
+        "a12q1",
+        "a12q2",
+        "a12q3",
+        "a12q4",
+        "a12q5"
+      ],
+      "scope": "Weeks 7-12"
     }
   ]
 }

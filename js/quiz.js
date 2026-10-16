@@ -15,7 +15,7 @@ async function initQuiz() {
 
     // Populate week filter
     const weekFilter = document.getElementById('weekFilter');
-    const weeks = [...new Set(allAssignments.map(a => a.week))].sort();
+    const weeks = [...new Set(allAssignments.map(a => a.week))].sort((a, b) => a - b);
     weeks.forEach(w => {
       const opt = document.createElement('option');
       opt.value = w;
@@ -46,7 +46,7 @@ async function initQuiz() {
   } catch(e) {
     document.getElementById('quizCards').innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">⚠️</div>
+        <div class="empty-state-icon">${getUiIcon('alertCircle')}</div>
         <h3>Could not load quizzes</h3>
         <p>${e.message}</p>
       </div>`;
@@ -88,7 +88,7 @@ function renderQuizList() {
       <div class="card">
         <div class="card-ribbon">Week ${a.week} · ${a.topic}</div>
         <div class="card-header">
-          <div class="card-icon">✏️</div>
+          <div class="card-icon">${getUiIcon('pen')}</div>
           <div>
             <div class="card-title">${a.title}</div>
             <div class="card-subtitle">${total} Questions</div>
@@ -99,10 +99,10 @@ function renderQuizList() {
           ${answered > 0 ? `<br><span style="color:var(--success);font-size:0.82rem;font-weight:700">✓ ${answered}/${total} answered</span>` : ''}
         </div>
         <div class="card-footer">
-          <span class="badge badge-star">★★★ ${total} MCQs</span>
+          <span class="badge badge-star">${getUiIcon('check')} ${total} MCQs</span>
           <div style="display:flex;gap:0.5rem">
-            ${answered > 0 ? `<button class="btn btn-ghost" style="font-size:0.45rem;padding:0.45rem 0.75rem" onclick="clearProgress('${a.id}')">↺ Reset</button>` : ''}
-            <button class="btn btn-primary" style="font-size:0.48rem;padding:0.5rem 0.9rem" onclick="startQuizById('${a.id}')">Start →</button>
+            ${answered > 0 ? `<button class="btn btn-ghost" style="font-size:0.45rem;padding:0.45rem 0.75rem" onclick="clearProgress('${a.id}')">${getUiIcon('refresh')} Reset</button>` : ''}
+            <button class="btn btn-primary" style="font-size:0.48rem;padding:0.5rem 0.9rem" onclick="startQuizById('${a.id}')">Start &nbsp;→</button>
           </div>
         </div>
       </div>
