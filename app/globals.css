@@ -385,13 +385,13 @@ a:hover {
   .bottom-nav-widget {
     flex-direction: column;
     align-items: flex-end;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 1rem;
+    right: 1rem;
   }
   .bottom-nav-menu {
     flex-direction: column;
     align-items: stretch;
-    width: 220px;
+    width: min(240px, calc(100vw - 2.5rem));
     margin-bottom: 0.5rem;
   }
 }
@@ -2092,41 +2092,553 @@ a:hover {
   color: #0c4d8c;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    border-bottom: 3.5px solid var(--pixel-dark);
-    box-shadow: 0 6px 0 var(--pixel-dark);
-    padding: 1rem 1.25rem;
-    flex-direction: column;
-    gap: 0.6rem;
-    z-index: 99;
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablets & Small Desktops (max-width: 992px) */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 1rem 1rem 4rem;
   }
-
-  .nav-links.open { display: flex; }
-  .nav-hamburger  { display: flex; }
-
-  .hero { padding: 2.5rem 1rem 1.5rem; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn { width: 100%; }
-
-  .quiz-layout { grid-template-columns: 1fr; }
-  .question-palette { position: static; }
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quiz-layout {
+    grid-template-columns: 1fr 220px;
+    gap: 1.25rem;
+  }
 }
 
+/* Tablets & Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Top Brand Header */
+  .top-brand {
+    padding: 1rem 1rem 0.25rem;
+  }
+  .top-brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+  .top-brand-text {
+    font-size: 0.52rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  /* Page Headers */
+  .page-header {
+    margin: 0.75rem auto 1.5rem;
+    padding: 1.75rem 1rem;
+    border-radius: 12px;
+  }
+  .page-header h1 {
+    font-size: clamp(0.95rem, 4vw, 1.35rem);
+    line-height: 1.5;
+  }
+  .page-header p {
+    font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 2.25rem 1rem 1.5rem;
+  }
+  .hero-badge {
+    font-size: 0.44rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 {
+    font-size: clamp(1rem, 4.2vw, 1.5rem);
+    line-height: 1.55;
+    text-shadow: 2px 2px 0 #ffffff, 3.5px 3.5px 0 var(--pixel-dark);
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 48px;
+    font-size: 0.58rem;
+    padding: 0.85rem 1rem;
+  }
+
+  /* Stats Bar — Clean 2x2 Grid on Mobile */
+  .stats-bar {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0.85rem;
+  }
+  .stat-item {
+    padding: 0.85rem 0.4rem;
+  }
+  .stat-number {
+    font-size: 1.25rem;
+  }
+  .stat-label {
+    font-size: 0.42rem;
+    margin-top: 0.35rem;
+  }
+
+  /* Feature Grid & Cards Grid */
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  .feature-card {
+    padding: 1.2rem;
+    gap: 0.9rem;
+  }
+  .feature-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .feature-title {
+    font-size: 0.56rem;
+  }
+  .feature-desc {
+    font-size: 0.86rem;
+  }
+
+  /* Week Overview Grid */
+  .week-overview-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.85rem;
+    margin-bottom: 2.5rem;
+  }
+  .week-pill {
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+  }
+  .week-pill-num {
+    width: 34px;
+    height: 34px;
+    font-size: 0.7rem;
+  }
+  .week-pill-title {
+    font-size: 0.45rem;
+  }
+
+  /* Cards Grid */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 1.35rem 1.1rem 1.1rem;
+  }
+  .card-ribbon {
+    font-size: 0.42rem;
+    padding: 0.3rem 0.85rem;
+    max-width: 95%;
+    text-align: center;
+    white-space: normal;
+  }
+  .card-title {
+    font-size: 0.56rem;
+  }
+  .card-footer {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .card-footer .btn {
+    flex: 1;
+    min-height: 44px;
+    text-align: center;
+  }
+
+  /* Filter & Search Bar — Prevent iOS Safari zoom with 16px inputs */
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .search-input-wrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+  .search-input {
+    font-size: 16px;
+    padding: 0.85rem 1rem 0.85rem 2.6rem;
+  }
+  .filter-select {
+    width: 100%;
+    font-size: 0.52rem;
+    padding: 0.85rem 1rem;
+    min-height: 46px;
+  }
+
+  /* Active Quiz View */
+  .quiz-progress {
+    padding: 0.85rem 1rem;
+  }
+  .quiz-progress-label, .quiz-progress-count {
+    font-size: 0.48rem;
+  }
+  .quiz-progress > div:last-child {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .question-card {
+    padding: 1.35rem 1rem;
+    border-radius: 12px;
+  }
+  .question-number {
+    font-size: 0.46rem;
+    margin-bottom: 0.75rem;
+  }
+  .question-text {
+    font-size: 1.02rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+  .option-label {
+    padding: 0.85rem 0.95rem;
+    gap: 0.75rem;
+    min-height: 52px;
+  }
+  .option-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 0.52rem;
+  }
+  .option-text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .option-indicator {
+    font-size: 1rem;
+  }
+  .explanation-box {
+    padding: 1rem;
+    margin-top: 1.25rem;
+  }
+  .explanation-title {
+    font-size: 0.48rem;
+  }
+  .explanation-text {
+    font-size: 0.88rem;
+  }
+  .quiz-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .quiz-nav .btn {
+    width: 100%;
+    min-height: 48px;
+    font-size: 0.55rem;
+    justify-content: center;
+  }
+
+  /* Mock Test Layout & Active Header */
+  .quiz-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .mock-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 0.85rem;
+    padding: 1rem;
+  }
+  .mock-header > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .timer {
+    flex: 1;
+    justify-content: center;
+    font-size: 0.78rem;
+    padding: 0.6rem 0.85rem;
+    min-height: 44px;
+  }
+  .mock-header .btn {
+    min-height: 44px;
+    padding: 0.6rem 1rem;
+  }
+  .mock-card {
+    padding: 1.35rem 1.1rem;
+  }
+  .mock-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .mock-card-title {
+    font-size: 0.62rem;
+  }
+  .mock-meta-row {
+    margin-bottom: 1.25rem;
+  }
+
+  /* Mock Test Question Palette on Mobile */
+  .question-palette {
+    position: static;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+  }
+  .palette-title {
+    font-size: 0.48rem;
+    margin-bottom: 0.75rem;
+  }
+  .palette-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+  }
+  .palette-btn {
+    min-height: 42px;
+    font-size: 0.52rem;
+  }
+  .palette-legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-top: 0.85rem;
+  }
+  .legend-item {
+    font-size: 0.4rem;
+  }
+
+  /* Exam Strategy Banner */
+  .exam-strategy-banner {
+    padding: 1.15rem 1rem;
+    border-radius: 12px;
+  }
+  .exam-strategy-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .exam-strategy-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .exam-strategy-title {
+    font-size: 0.6rem;
+  }
+  .exam-strategy-points {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .exam-strategy-action .btn {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  /* Week Cards (Materials) */
+  .week-card {
+    border-radius: 12px;
+  }
+  .week-header {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  .week-number {
+    width: 38px;
+    height: 38px;
+    font-size: 0.75rem;
+  }
+  .week-title {
+    font-size: 0.52rem;
+  }
+  .week-body {
+    padding: 1rem 0.85rem;
+  }
+  .resource-item {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0.85rem;
+  }
+  .resource-info {
+    min-width: 160px;
+  }
+  .resource-link {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 0.48rem;
+    padding-top: 0.3rem;
+  }
+  .week-core-focus, .week-key-takeaway {
+    padding: 0.85rem;
+  }
+  .focus-text, .takeaway-text {
+    font-size: 0.88rem;
+  }
+  .week-body .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Results Page on Mobile */
+  .result-hero {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  }
+  .score-percent {
+    font-size: 1.45rem;
+  }
+  .result-title {
+    font-size: 0.78rem;
+  }
+  .result-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 1.5rem;
+  }
+  .result-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    max-width: 100%;
+  }
+  .result-stat {
+    padding: 0.75rem 0.5rem;
+  }
+  .result-stat-number {
+    font-size: 1.2rem;
+  }
+  .result-stat-label {
+    font-size: 0.42rem;
+  }
+  .result-hero .btn {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+  }
+  .review-question {
+    padding: 1.15rem 0.85rem;
+    border-radius: 10px;
+  }
+  .review-q-text {
+    font-size: 0.96rem;
+  }
+  .review-answer {
+    font-size: 0.86rem;
+    word-break: break-word;
+    padding: 0.6rem 0.75rem;
+  }
+  .review-explanation {
+    font-size: 0.84rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  /* Bottom Navigation Floating Menu */
+  .bottom-nav-widget {
+    bottom: 1rem;
+    right: 1rem;
+    gap: 0.6rem;
+  }
+  .bottom-nav-toggle {
+    width: 48px;
+    height: 48px;
+  }
+  .bottom-nav-menu {
+    width: min(240px, calc(100vw - 2.5rem));
+    padding: 0.6rem;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .bottom-nav-link {
+    font-size: 0.52rem;
+    padding: 0.7rem 0.85rem;
+    min-height: 44px;
+  }
+
+  /* Toast Notifications */
+  .toast-container {
+    bottom: 5.5rem;
+    left: 1rem;
+    right: 1rem;
+    align-items: center;
+  }
+  .toast {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.48rem;
+    padding: 0.85rem 1rem;
+  }
+
+  /* Main container bottom margin to prevent floating nav overlap */
+  .main-content {
+    padding-bottom: 6rem;
+  }
+}
+
+/* Extra Small Phones (max-width: 480px) */
 @media (max-width: 480px) {
-  .filter-bar { flex-direction: column; align-items: stretch; }
-  .search-input-wrapper { min-width: 100%; }
-  .result-stats { grid-template-columns: repeat(2, 1fr); }
-  .cards-grid { grid-template-columns: 1fr; }
-  .feature-grid { grid-template-columns: 1fr; }
-  .week-overview-grid { grid-template-columns: 1fr; }
+  .top-brand-text {
+    font-size: 0.48rem;
+    padding: 0.35rem 0.6rem;
+    letter-spacing: 0.02em;
+  }
+  .top-brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+  .week-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .palette-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+  .palette-btn {
+    min-height: 40px;
+    font-size: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.05rem;
+  }
+  .page-header h1 {
+    font-size: 0.95rem;
+  }
+  .section-header h2 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Very Narrow Devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .top-brand-badge {
+    gap: 0.5rem;
+  }
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  .result-stats {
+    grid-template-columns: 1fr;
+  }
+  .palette-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Utility classes */
