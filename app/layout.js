@@ -4,10 +4,11 @@ import BottomNav from '@/components/BottomNav';
 import PixelClouds from '@/components/PixelClouds';
 import Footer from '@/components/Footer';
 import { ToastProvider } from '@/components/ToastContext';
+import { CourseProvider } from '@/components/CourseContext';
 
 export const metadata = {
-  title: 'NPTEL Prep — Understanding Incubation & Entrepreneurship',
-  description: 'Study smarter with topic-wise quizzes, timed mock tests, instant explanations, and curated study materials — all in one place.',
+  title: 'NPTEL Prep — Incubation & Entrepreneurship & Public Speaking',
+  description: 'Study smarter with topic-wise quizzes, timed mock tests, instant explanations, and curated study materials for NPTEL courses.',
   icons: {
     icon: '/mic-logo.webp',
   },
@@ -23,13 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ToastProvider>
-          <PixelClouds />
-          <TopBrand />
-          {children}
-          <Footer />
-          <BottomNav />
-        </ToastProvider>
+        <CourseProvider>
+          <ToastProvider>
+            <PixelClouds />
+            <TopBrand />
+            {children}
+            <Footer />
+            <BottomNav />
+          </ToastProvider>
+        </CourseProvider>
       </body>
     </html>
   );
