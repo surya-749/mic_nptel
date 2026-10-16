@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results — NPTEL Prep</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .review-section { margin-top: 2.5rem; }
+    .review-question {
+      background: #fff;
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .review-question.correct-q { border-left: 4px solid var(--success); }
+    .review-question.wrong-q { border-left: 4px solid var(--danger); }
+    .review-question.skipped-q { border-left: 4px solid var(--neutral-300); }
+    .review-q-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      gap: 0.75rem;
+    }
+    .review-q-number {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--neutral-400);
+    }
+    .review-q-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--neutral-800);
+      margin-bottom: 0.75rem;
+    }
+    .review-answer {
+      font-size: 0.88rem;
+      padding: 0.5rem 0.85rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.35rem;
+    }
+    .review-answer.your-correct {
+      background: var(--success-light);
+      color: var(--success);
+      font-weight: 600;
+    }
+    .review-answer.your-wrong {
+      background: var(--danger-light);
+      color: var(--danger);
+      font-weight: 600;
+    }
+    .review-answer.correct-ans {
+      background: var(--success-light);
+      color: var(--success);
+      font-weight: 600;
+    }
+    .review-explanation {
+      font-size: 0.85rem;
+      color: var(--neutral-600);
+      background: var(--neutral-50);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.9rem;
+      margin-top: 0.75rem;
+      border-left: 3px solid var(--neutral-300);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">N</div>
+      NPTEL Prep
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="materials.html">📚 Materials</a></li>
+      <li><a href="quizzes.html">✏️ Quizzes</a></li>
+      <li><a href="mock-tests.html">🧪 Mock Tests</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main class="main-content">
+
+  <div id="resultsContent">
+    <div class="empty-state">
+      <div class="empty-state-icon">⏳</div>
+      <h3>Loading results…</h3>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>NPTEL Prep — Developing Innovative Products and Entrepreneurship &nbsp;|&nbsp;
+  <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a></p>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/app.js"></script>
+<script>
+const letters = ['A','B','C','D','E'];
+
+async function initResults() {
+  const type = getParam('type');
+  const assignmentId = getParam('assignmentId');
+  const mockId = getParam('mockId');
+
+  try {
+    const data = await fetchData('data/questions.json');
+
+    if (type === 'quiz' && assignmentId) {
+      await renderQuizResults(data, assignmentId);
+    } else if (type === 'mock' && mockId) {
+      await renderMockResults(data, mockId);
+    } else {
+      showError('No result data found. Please complete a quiz or mock test first.');
+    }
+  } catch(e) {
+    showError(e.message);
+  }
+}
+
+async function renderQuizResults(data, assignmentId) {
+  const assignment = data.assignments.find(a => a.id === assignmentId);
+  if (!assignment) { showError('Quiz not found.'); return; }
+
+  const saved = loadProgress(`quiz_${assignmentId}`);
+  const answers = saved ? (saved.answers || {}) : {};
+
+  const correct = assignment.questions.filter(q => answers[q.id] === q.answer).length;
+  const total = assignment.questions.length;
+  const percent = Math.round((correct / total) * 100);
+
+  renderResultHero({
+    title: `${assignment.title} Results`,
+    subtitle: `${assignment.topic} — Week ${assignment.week}`,
+    correct, total, percent,
+    backHref: 'quizzes.html',
+    backLabel: '← Back to Quizzes',
+    retakeHref: `quizzes.html?id=${assignmentId}`,
+    retakeLabel: '↺ Retake Quiz'
+  });
+
+  renderReview(assignment.questions, answers);
+}
+
+async function renderMockResults(data, mockId) {
+  const mock = data.mockTests.find(m => m.id === mockId);
+  if (!mock) { showError('Mock test not found.'); return; }
+
+  // Build question lookup
+  const questionMap = {};
+  data.assignments.forEach(a => a.questions.forEach(q => { questionMap[q.id] = q; }));
+
+  const questions = mock.questionIds.map(id => questionMap[id]).filter(Boolean);
+  const saved = loadProgress(`mock_${mockId}`);
+  const answers = saved ? (saved.answers || {}) : {};
+
+  const correct = questions.filter(q => answers[q.id] === q.answer).length;
+  const total = questions.length;
+  const percent = Math.round((correct / total) * 100);
+  const timeTaken = saved ? saved.duration : null;
+
+  renderResultHero({
+    title: `${mock.title} Results`,
+    subtitle: mock.description,
+    correct, total, percent,
+    timeTaken,
+    backHref: 'mock-tests.html',
+    backLabel: '← Back to Mock Tests',
+    retakeHref: `mock-tests.html`,
+    retakeLabel: '↺ Retake Test'
+  });
+
+  renderReview(questions, answers);
+}
+
+function renderResultHero({ title, subtitle, correct, total, percent, timeTaken, backHref, backLabel, retakeHref, retakeLabel }) {
+  const grade = getScoreGrade(percent);
+
+  document.getElementById('resultsContent').innerHTML = `
+    <div style="margin-bottom:1rem">
+      <a href="${backHref}" class="btn btn-ghost">${backLabel}</a>
+    </div>
+
+    <div class="result-hero">
+      <div class="score-circle ${grade.cls}">
+        <div class="score-percent">${percent}%</div>
+        <div class="score-label">Score</div>
+      </div>
+
+      <div class="result-title">${grade.emoji} ${grade.label}</div>
+      <div class="result-subtitle">${title} · ${subtitle}</div>
+
+      <div class="result-stats">
+        <div class="result-stat">
+          <div class="result-stat-number correct-count">${correct}</div>
+          <div class="result-stat-label">Correct</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-number wrong-count">${total - correct}</div>
+          <div class="result-stat-label">Incorrect / Skipped</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-number" style="color:var(--primary)">${total}</div>
+          <div class="result-stat-label">Total</div>
+        </div>
+        ${timeTaken ? `
+        <div class="result-stat">
+          <div class="result-stat-number" style="color:var(--neutral-700)">${formatTime(timeTaken)}</div>
+          <div class="result-stat-label">Time Taken</div>
+        </div>` : ''}
+      </div>
+
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+        <a href="${retakeHref}" class="btn btn-blue">${retakeLabel}</a>
+        <a href="index.html" class="btn btn-ghost">🏠 Home</a>
+      </div>
+    </div>
+
+    <div class="review-section" id="reviewSection">
+      <div class="section-header">
+        <h2>📋 Answer Review</h2>
+        <p>Check every question, your answer, and the explanation</p>
+      </div>
+      <div id="reviewCards"></div>
+    </div>
+  `;
+}
+
+function renderReview(questions, answers) {
+  const container = document.getElementById('reviewCards');
+  if (!container) return;
+
+  container.innerHTML = questions.map((q, i) => {
+    const selected = answers[q.id];
+    const isCorrect = selected === q.answer;
+    const skipped = selected === undefined;
+
+    let cls = skipped ? 'skipped-q' : (isCorrect ? 'correct-q' : 'wrong-q');
+    let statusBadge = skipped
+      ? '<span class="badge badge-gray">⬜ Skipped</span>'
+      : isCorrect
+        ? '<span class="badge badge-green">✅ Correct</span>'
+        : '<span class="badge badge-red">❌ Incorrect</span>';
+
+    return `
+      <div class="review-question ${cls}">
+        <div class="review-q-header">
+          <span class="review-q-number">Q${i + 1}</span>
+          ${statusBadge}
+        </div>
+        <div class="review-q-text">${q.question}</div>
+
+        ${!skipped && !isCorrect ? `
+          <div class="review-answer your-wrong">
+            ❌ Your answer: ${letters[selected]}. ${q.options[selected]}
+          </div>
+        ` : ''}
+
+        ${!skipped && isCorrect ? `
+          <div class="review-answer your-correct">
+            ✅ Your answer: ${letters[selected]}. ${q.options[selected]}
+          </div>
+        ` : ''}
+
+        ${!isCorrect ? `
+          <div class="review-answer correct-ans">
+            ✅ Correct answer: ${letters[q.answer]}. ${q.options[q.answer]}
+          </div>
+        ` : ''}
+
+        <div class="review-explanation">
+          💡 ${q.explanation}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function showError(msg) {
+  document.getElementById('resultsContent').innerHTML = `
+    <div class="empty-state">
+      <div class="empty-state-icon">⚠️</div>
+      <h3>Result not found</h3>
+      <p>${msg}</p>
+      <a href="index.html" class="btn btn-blue" style="margin-top:1rem">🏠 Go Home</a>
+    </div>`;
+}
+
+initResults();
+</script>
+</body>
+</html>

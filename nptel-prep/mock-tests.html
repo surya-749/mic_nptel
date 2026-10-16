@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Tests — NPTEL Prep</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+  <style>
+    .page-header {
+      background: linear-gradient(135deg, #16a34a 0%, #2563eb 100%);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+    }
+    .page-header-content { max-width: 1200px; margin: 0 auto; }
+    .page-header h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .page-header p { opacity: 0.85; font-size: 0.95rem; }
+    #mockListView, #mockActiveView { display: none; }
+    #mockListView.visible, #mockActiveView.visible { display: block; }
+    .mock-card {
+      background: #fff;
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition);
+      margin-bottom: 1.25rem;
+    }
+    .mock-card:hover { box-shadow: var(--shadow-md); }
+    .mock-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      gap: 1rem;
+    }
+    .mock-card-title { font-size: 1.15rem; font-weight: 800; color: var(--neutral-800); }
+    .mock-card-desc { font-size: 0.9rem; color: var(--neutral-500); margin-top: 0.25rem; }
+    .mock-meta-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">N</div>
+      NPTEL Prep
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="materials.html">📚 Materials</a></li>
+      <li><a href="quizzes.html">✏️ Quizzes</a></li>
+      <li><a href="mock-tests.html" class="active">🧪 Mock Tests</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-content">
+    <h1>🧪 Mock Tests</h1>
+    <p>Full timed examinations covering all 6 weeks — just like the real NPTEL exam</p>
+  </div>
+</div>
+
+<main class="main-content">
+
+  <!-- MOCK LIST -->
+  <div id="mockListView">
+    <div class="section-header">
+      <h2>Available Mock Tests</h2>
+      <p>Each test has 30 questions with a 45-minute timer. You can review answers after submission.</p>
+    </div>
+
+    <div id="mockCards"></div>
+  </div>
+
+  <!-- MOCK ACTIVE VIEW -->
+  <div id="mockActiveView">
+    <div class="mock-header">
+      <div>
+        <div class="mock-title" id="mockTitle">Mock Test</div>
+        <div class="mock-meta" id="mockMeta"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div class="timer" id="timerDisplay">⏱ 45:00</div>
+        <button class="btn btn-danger" onclick="submitMock()" id="submitBtn" style="font-size:0.85rem;padding:0.5rem 1rem">Submit Test</button>
+      </div>
+    </div>
+
+    <div class="quiz-progress">
+      <div class="quiz-progress-header">
+        <span class="quiz-progress-label" id="mockProgressLabel">Question</span>
+        <span class="quiz-progress-count" id="mockProgressCount">0 / 0</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="mockProgressFill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div class="quiz-layout">
+      <div>
+        <div class="question-card" id="mockQuestionCard"></div>
+        <div class="quiz-nav">
+          <button class="btn btn-ghost" onclick="mockNavigate(-1)" id="mockPrevBtn">← Prev</button>
+          <button class="btn btn-blue" onclick="mockNavigate(1)" id="mockNextBtn">Next →</button>
+        </div>
+      </div>
+
+      <!-- QUESTION PALETTE -->
+      <div class="question-palette">
+        <div class="palette-title">Questions</div>
+        <div class="palette-grid" id="paletteGrid"></div>
+        <div class="palette-legend">
+          <div class="legend-item">
+            <div class="legend-dot current"></div>
+            <span>Current</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot answered"></div>
+            <span>Answered</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot"></div>
+            <span>Not answered</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem">
+          <button class="btn btn-danger" onclick="submitMock()" style="width:100%;font-size:0.85rem;padding:0.6rem">Submit Test</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>NPTEL Prep — Developing Innovative Products and Entrepreneurship &nbsp;|&nbsp;
+  <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a></p>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/app.js"></script>
+<script src="js/mock-test.js"></script>
+</body>
+</html>

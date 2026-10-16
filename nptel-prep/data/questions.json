@@ -1,0 +1,791 @@
+{
+  "course": "Developing Innovative Products and Entrepreneurship",
+  "assignments": [
+    {
+      "id": "assignment-1",
+      "title": "Assignment 1",
+      "week": 1,
+      "topic": "Entrepreneurship Fundamentals",
+      "questions": [
+        {
+          "id": "a1q1",
+          "question": "What makes an idea valuable even if it fails?",
+          "options": [
+            "Avoiding collaboration to prevent shared blame",
+            "Gaining valuable lessons and insights from the failure",
+            "Shifting focus to unrelated projects immediately",
+            "Disregarding accountability and blaming external factors"
+          ],
+          "answer": 1,
+          "explanation": "Failed ideas still provide valuable learning opportunities. The lessons learned from failure can guide future decisions and help avoid similar mistakes."
+        },
+        {
+          "id": "a1q2",
+          "question": "What are some key characteristics essential for a business to achieve success?",
+          "options": [
+            "The ability to balance expenses while maintaining product quality",
+            "Ignoring customer feedback to prioritize internal goals",
+            "Strategic planning and adaptability to market changes",
+            "Focusing solely on profit maximization"
+          ],
+          "answer": 2,
+          "explanation": "Strategic planning combined with adaptability allows businesses to navigate market changes and remain competitive."
+        },
+        {
+          "id": "a1q3",
+          "question": "What are the primary objectives of selling a product or service?",
+          "options": [
+            "Identifying and fulfilling customer and market needs",
+            "Maximizing profits through aggressive pricing strategies",
+            "Focusing on complex promotional campaigns",
+            "Offering discounts to increase sales"
+          ],
+          "answer": 0,
+          "explanation": "The core purpose of selling is to identify and fulfill customer and market needs, creating value for both parties."
+        },
+        {
+          "id": "a1q4",
+          "question": "What makes an idea 'disruptive'?",
+          "options": [
+            "Maintaining the existing state and avoiding innovation",
+            "Imitating successful competitors to gain market share",
+            "Introducing changes that challenge existing market norms",
+            "Strictly adhering to traditional market standards"
+          ],
+          "answer": 2,
+          "explanation": "A disruptive idea challenges existing market norms by introducing changes that fundamentally alter how an industry operates."
+        },
+        {
+          "id": "a1q5",
+          "question": "How does entrepreneurship contribute to economic growth?",
+          "options": [
+            "By developing robust business models without innovation",
+            "By focusing solely on customer validation and discovery",
+            "By identifying and solving market problems effectively",
+            "By avoiding competitive risks through market isolation"
+          ],
+          "answer": 2,
+          "explanation": "Entrepreneurship drives economic growth by identifying real market problems and creating effective solutions that add economic value."
+        },
+        {
+          "id": "a1q6",
+          "question": "What is emphasized in the Lean Startup methodology for product development?",
+          "options": [
+            "Graduation degrees as a prerequisite for entrepreneurship",
+            "Rigid execution of initial business plans",
+            "Financial optimization over product innovation",
+            "Continuous learning and validation through customer feedback"
+          ],
+          "answer": 3,
+          "explanation": "The Lean Startup methodology emphasizes continuous learning and customer feedback validation to iteratively improve products."
+        },
+        {
+          "id": "a1q7",
+          "question": "What are the key objectives of the Lean Startup methodology when launching a new product or service?",
+          "options": [
+            "Customer validation and iterative development",
+            "Company building without market analysis",
+            "Rapid scaling and long-term planning",
+            "Agile engineering without customer feedback"
+          ],
+          "answer": 0,
+          "explanation": "The Lean Startup methodology focuses on customer validation and iterative development to minimize waste and maximize learning."
+        },
+        {
+          "id": "a1q8",
+          "question": "How do institutions foster innovation and entrepreneurship effectively?",
+          "options": [
+            "By connecting academic research to practical applications in the market",
+            "By focusing exclusively on theoretical research",
+            "By isolating themselves from marketplace collaborations",
+            "By discouraging experimentation within the institution"
+          ],
+          "answer": 0,
+          "explanation": "Institutions foster innovation by bridging academic research with practical market applications, creating real-world impact."
+        },
+        {
+          "id": "a1q9",
+          "question": "How can evidence-based entrepreneurship be defined and applied effectively?",
+          "options": [
+            "By utilizing validated learning through continuous experimentation and data analysis",
+            "By implementing the Build-Measure-Learn cycle to iteratively develop and improve products",
+            "By making decisions based on empirical evidence rather than assumptions",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Evidence-based entrepreneurship encompasses validated learning, the Build-Measure-Learn cycle, and empirical decision-making — all three approaches together define it."
+        },
+        {
+          "id": "a1q10",
+          "question": "What are some common mistakes startups make?",
+          "options": [
+            "Adopting the Lean Startup methodology",
+            "Focusing too much on the product and neglecting the market",
+            "Developing solutions without engaging potential customers",
+            "Both B and C"
+          ],
+          "answer": 3,
+          "explanation": "Common startup mistakes include focusing excessively on the product while neglecting market needs, and building solutions without engaging potential customers."
+        }
+      ]
+    },
+    {
+      "id": "assignment-2",
+      "title": "Assignment 2",
+      "week": 2,
+      "topic": "Team Building and Customer Discovery",
+      "questions": [
+        {
+          "id": "a2q1",
+          "question": "What can be the main reason for the failure of a startup?",
+          "options": [
+            "No real need for the product or service",
+            "A skilled and experienced team",
+            "Having sufficient investors and funding",
+            "Offering a user-friendly product"
+          ],
+          "answer": 0,
+          "explanation": "The primary reason most startups fail is the lack of a real market need for the product or service they are offering."
+        },
+        {
+          "id": "a2q2",
+          "question": "Which among the following could be a crucial factor in a team's unity and success?",
+          "options": [
+            "Individual achievements",
+            "Lack of diversity",
+            "Frequent disagreements",
+            "Shared vision and common ideology"
+          ],
+          "answer": 3,
+          "explanation": "A shared vision and common ideology aligns team members toward the same goals, fostering unity and collective success."
+        },
+        {
+          "id": "a2q3",
+          "question": "What are the key objectives of startup founders when launching a product?",
+          "options": [
+            "Achieving rapid market entry without validation",
+            "Iterative development and customer-centric learning",
+            "Long-term planning without short-term feedback",
+            "Building internal teams over market exploration"
+          ],
+          "answer": 1,
+          "explanation": "Startup founders should focus on iterative development and customer-centric learning to validate and refine their product."
+        },
+        {
+          "id": "a2q4",
+          "question": "How do customer interactions contribute to effectively identifying and addressing market needs?",
+          "options": [
+            "By gathering direct feedback on products and services",
+            "By uncovering customer pain points and preferences",
+            "By validating business ideas and assumptions",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Customer interactions contribute in multiple ways — they provide direct feedback, uncover pain points, and validate business assumptions."
+        },
+        {
+          "id": "a2q5",
+          "question": "What role do early adopters play in helping a company refine its products or services?",
+          "options": [
+            "Assist in marketing the product to a broader audience",
+            "Provide critical feedback to improve the product",
+            "Expand production capacity to meet demands",
+            "Offer financial support for scaling operations"
+          ],
+          "answer": 1,
+          "explanation": "Early adopters provide critical feedback that helps companies identify issues and improve their products before wider market release."
+        },
+        {
+          "id": "a2q6",
+          "question": "Which misconception can mislead startup founders during the growth phase?",
+          "options": [
+            "Securing funding guarantees success",
+            "Scaling the team strategically",
+            "Prioritizing customer needs over product development",
+            "Focusing on team-building over business goals"
+          ],
+          "answer": 0,
+          "explanation": "Funding alone does not guarantee success. Many well-funded startups have failed due to poor product-market fit and execution."
+        },
+        {
+          "id": "a2q7",
+          "question": "Who plays the most crucial role in validating the success of a startup's product or service?",
+          "options": [
+            "The founder",
+            "The investors",
+            "The customers",
+            "The marketing teams"
+          ],
+          "answer": 2,
+          "explanation": "Customers are the ultimate validators of a startup's product or service — their adoption and satisfaction determine real success."
+        },
+        {
+          "id": "a2q8",
+          "question": "What actions should founders take when faced with stagnation in progress?",
+          "options": [
+            "Reevaluate the business strategy and pivot if necessary",
+            "Increase marketing efforts and budget",
+            "Ignore the issue and hope for improvement",
+            "Cut down on expenses and reduce team size"
+          ],
+          "answer": 0,
+          "explanation": "When progress stagnates, founders should reevaluate their strategy and be willing to pivot — changing direction based on new insights."
+        },
+        {
+          "id": "a2q9",
+          "question": "What characteristics are essential for a startup team to achieve long-term success?",
+          "options": [
+            "Strong leadership and vision",
+            "Effective communication and collaboration",
+            "Ignoring customer feedback and focusing on company vision",
+            "Both A and B"
+          ],
+          "answer": 3,
+          "explanation": "Long-term startup success requires both strong leadership/vision and effective communication/collaboration within the team."
+        },
+        {
+          "id": "a2q10",
+          "question": "What is an essential quality that startup founders must possess?",
+          "options": [
+            "Strong belief in the startup's vision",
+            "Pursuit of endless funding",
+            "Rapid product development skills",
+            "Exceptional programming expertise"
+          ],
+          "answer": 0,
+          "explanation": "A strong belief in the startup's vision keeps founders motivated through challenges and inspires the team and investors."
+        }
+      ]
+    },
+    {
+      "id": "assignment-3",
+      "title": "Assignment 3",
+      "week": 3,
+      "topic": "Design Thinking and Product Design",
+      "questions": [
+        {
+          "id": "a3q1",
+          "question": "What role does empathy play while designing a product?",
+          "options": [
+            "Enhances aesthetics",
+            "Reduces manufacturing costs",
+            "Fosters competition among designers",
+            "Promotes user-centered design"
+          ],
+          "answer": 3,
+          "explanation": "Empathy helps designers understand user needs, feelings, and contexts — which is the foundation of user-centered design."
+        },
+        {
+          "id": "a3q2",
+          "question": "What characteristics are crucial for building an ideal team?",
+          "options": [
+            "A varied skill set and diverse perspectives",
+            "Singular expertise in a specific domain",
+            "Limited experience and collaboration",
+            "A homogeneous team with similar backgrounds"
+          ],
+          "answer": 0,
+          "explanation": "Diverse skill sets and perspectives bring different viewpoints to problem-solving, leading to more innovative and robust solutions."
+        },
+        {
+          "id": "a3q3",
+          "question": "Why is it important to take a product category approach instead of a single-product approach?",
+          "options": [
+            "Encourages risk diversification and adaptability",
+            "Focuses solely on cost-cutting measures",
+            "Reduces customer engagement and feedback",
+            "Limits the scope of market exploration"
+          ],
+          "answer": 0,
+          "explanation": "A product category approach allows businesses to diversify risk and adapt more flexibly to changing market demands."
+        },
+        {
+          "id": "a3q4",
+          "question": "What are the key qualities that each team member must possess when working as a team?",
+          "options": [
+            "Flexibility and willingness to adapt",
+            "Lowering ego and collaborating effectively",
+            "Taking specific roles to solve problems",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Effective team members need flexibility, collaboration, low ego, and the ability to take on specific roles as needed."
+        },
+        {
+          "id": "a3q5",
+          "question": "What are the key elements essential for creating a clear and concise design brief?",
+          "options": [
+            "Functional and user requirements",
+            "Budget estimates and target audience",
+            "Project timeline and brand vision",
+            "Comprehensive technical specifications"
+          ],
+          "answer": 0,
+          "explanation": "A clear design brief must start with functional and user requirements — what the product needs to do and who will use it."
+        },
+        {
+          "id": "a3q6",
+          "question": "What is the importance of collaborative design in product development?",
+          "options": [
+            "Facilitates resource sharing and expertise integration",
+            "Streamlines manufacturing processes",
+            "Enhances aesthetic appeal of the product",
+            "Simplifies administrative tasks"
+          ],
+          "answer": 0,
+          "explanation": "Collaborative design brings together diverse expertise and shared resources, resulting in more comprehensive and effective product solutions."
+        },
+        {
+          "id": "a3q7",
+          "question": "How can using regulatory barriers help in product design?",
+          "options": [
+            "Simplifies administrative processes",
+            "Encourages unrestricted innovation",
+            "Ensures public health protection and legal compliance",
+            "Promotes informal market practices"
+          ],
+          "answer": 2,
+          "explanation": "Regulatory barriers, while sometimes seen as constraints, ultimately ensure product safety, public health protection, and legal compliance."
+        },
+        {
+          "id": "a3q8",
+          "question": "Which element is essential for crafting an effective problem statement?",
+          "options": [
+            "Providing a detailed solution",
+            "Defining the problem clearly",
+            "Establishing a strict budget",
+            "Highlighting only the team's capabilities"
+          ],
+          "answer": 1,
+          "explanation": "An effective problem statement must clearly define the problem without jumping to solutions, ensuring everyone understands what needs to be solved."
+        },
+        {
+          "id": "a3q9",
+          "question": "What is a crucial factor in driving successful innovation within an organization?",
+          "options": [
+            "Strict compliance with established procedures",
+            "Competition between internal teams",
+            "Interdisciplinary collaboration",
+            "Extensive financial resources"
+          ],
+          "answer": 2,
+          "explanation": "Interdisciplinary collaboration brings together diverse expertise and perspectives, which is the key driver of breakthrough innovation."
+        },
+        {
+          "id": "a3q10",
+          "question": "Identify the term used for 'Previously granted patents and published patent applications.'",
+          "options": [
+            "Prior art",
+            "Reference documents",
+            "Past literature",
+            "Intellectual archives"
+          ],
+          "answer": 0,
+          "explanation": "Prior art refers to any evidence that an invention is already known — including previously granted patents and published patent applications."
+        }
+      ]
+    },
+    {
+      "id": "assignment-4",
+      "title": "Assignment 4",
+      "week": 4,
+      "topic": "Market Entry and Customer Needs",
+      "questions": [
+        {
+          "id": "a4q1",
+          "question": "What could cause a startup to fail despite having an innovative product?",
+          "options": [
+            "Addressing user pain points effectively",
+            "Prioritizing customer satisfaction",
+            "Lack of understanding of customer needs",
+            "Regular customer feedback for product improvement"
+          ],
+          "answer": 2,
+          "explanation": "Even innovative products can fail if founders don't understand customer needs — the product must solve a real problem that customers recognize."
+        },
+        {
+          "id": "a4q2",
+          "question": "Which of the following best captures the essence of the 'outside-in thinking' approach in product design?",
+          "options": [
+            "Creating products that cater to customer requirements",
+            "Enhancing internal operational processes",
+            "Focusing on excessive engineering solutions",
+            "Disregarding customer feedback in decision-making"
+          ],
+          "answer": 0,
+          "explanation": "Outside-in thinking means starting from customer requirements and working backwards, rather than building from internal capabilities outward."
+        },
+        {
+          "id": "a4q3",
+          "question": "In which areas do startups face challenges during their early stages?",
+          "options": [
+            "Scaling the business quickly",
+            "Building a skilled and cohesive team",
+            "Acquiring venture capital easily",
+            "Creating an effective marketing strategy"
+          ],
+          "answer": 1,
+          "explanation": "Early-stage startups commonly struggle with building skilled and cohesive teams, as talent acquisition and team dynamics are critical challenges."
+        },
+        {
+          "id": "a4q4",
+          "question": "What strategies can effectively promote sustainable products in rural markets?",
+          "options": [
+            "Social media campaigns targeting urban audiences",
+            "Distribution through government schemes",
+            "Online marketing through digital platforms",
+            "Door-to-door sales in urban regions"
+          ],
+          "answer": 1,
+          "explanation": "Government schemes provide reach, trust, and distribution networks that are particularly effective in rural markets where digital access may be limited."
+        },
+        {
+          "id": "a4q5",
+          "question": "What are some effective strategies to increase awareness about sustainable products?",
+          "options": [
+            "Collaborating with influential figures and forming partnerships",
+            "Solely relying on multi-level marketing and digital advertisements",
+            "Hosting engaging and interactive demonstrations",
+            "All of A, C, and D — building and educating communities"
+          ],
+          "answer": 3,
+          "explanation": "Building awareness requires multiple strategies: influencer collaboration, interactive demonstrations, and community building/education work together effectively."
+        },
+        {
+          "id": "a4q6",
+          "question": "How can pricing strategies improve the accessibility and financial viability of sustainable products?",
+          "options": [
+            "Offering direct sales without intermediaries",
+            "Government subsidies for eco-friendly products",
+            "Encouraging bulk orders from organizations",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "All three pricing strategies — direct sales, government subsidies, and bulk orders — together improve both accessibility and financial viability."
+        },
+        {
+          "id": "a4q7",
+          "question": "What factors are critical for a startup to attract investors?",
+          "options": [
+            "Demonstrating a real and solvable problem",
+            "Ignoring competition in the market",
+            "Focusing solely on futuristic technology",
+            "Providing vague or exaggerated solutions"
+          ],
+          "answer": 0,
+          "explanation": "Investors are attracted to startups that clearly demonstrate they are addressing a real, solvable problem with a viable solution."
+        },
+        {
+          "id": "a4q8",
+          "question": "What key considerations should businesses keep in mind when entering a new market?",
+          "options": [
+            "Understanding the cultural and economic environment",
+            "Avoiding market research and going with instincts",
+            "Ignoring local regulations and norms",
+            "Relying solely on existing products without adaptation"
+          ],
+          "answer": 0,
+          "explanation": "New market entry requires deep understanding of the local cultural and economic environment to tailor products and strategies appropriately."
+        },
+        {
+          "id": "a4q9",
+          "question": "How are urgent or active problems identified on the problem recognition scale?",
+          "options": [
+            "By ignoring the problem entirely",
+            "Recognizing a problem and actively seeking a solution",
+            "Recognizing a problem but refusing to act on it",
+            "Adjusting to the problem without solving it"
+          ],
+          "answer": 1,
+          "explanation": "Active problems are those where individuals not only recognize the problem but are actively seeking a solution to resolve it."
+        },
+        {
+          "id": "a4q10",
+          "question": "In the passive problem stage, what defines an individual's awareness of a problem on the problem recognition scale?",
+          "options": [
+            "No awareness of the problem exists",
+            "Awareness of the problem but no motivation to change",
+            "Motivation to change without understanding the problem",
+            "Recognizing the problem but being unable to act on it"
+          ],
+          "answer": 1,
+          "explanation": "In the passive problem stage, individuals are aware the problem exists but lack the motivation or urgency to actively seek a solution."
+        }
+      ]
+    },
+    {
+      "id": "assignment-5",
+      "title": "Assignment 5",
+      "week": 5,
+      "topic": "Innovation, IPR and Technology Readiness",
+      "questions": [
+        {
+          "id": "a5q1",
+          "question": "What strategies are crucial for converting academic research into practical societal benefits?",
+          "options": [
+            "Establishing obstacles to innovation",
+            "Partnering with industries to link research with real-world applications",
+            "Keeping research results confidential",
+            "Engaging in rivalry with industries to demonstrate academic dominance"
+          ],
+          "answer": 1,
+          "explanation": "Industry-academia partnerships are key to bridging the gap between research findings and real-world market applications."
+        },
+        {
+          "id": "a5q2",
+          "question": "Why are investors often reluctant to invest in healthcare product startups?",
+          "options": [
+            "High profit margins in the industry",
+            "Poor success rates of medical devices",
+            "Rapidly growing demand for medical devices",
+            "Shorter research and development cycles"
+          ],
+          "answer": 1,
+          "explanation": "The historically poor success rates of medical devices make healthcare startups high-risk investments, deterring many investors."
+        },
+        {
+          "id": "a5q3",
+          "question": "What initial step is crucial for developing a successful design solution?",
+          "options": [
+            "Identifying the problem and understanding functional requirements",
+            "Planning marketing campaigns and advertising strategies",
+            "Conducting employee training and managing resources",
+            "Securing Intellectual Property Rights and patents"
+          ],
+          "answer": 0,
+          "explanation": "Before any design work begins, clearly identifying the problem and understanding functional requirements ensures the solution addresses real needs."
+        },
+        {
+          "id": "a5q4",
+          "question": "What role did telemedicine play in improving healthcare during global pandemics?",
+          "options": [
+            "Increased healthcare costs without benefits",
+            "Reduced the strain on physical healthcare facilities",
+            "Created barriers for patient access to care",
+            "Complicated the delivery of medical services"
+          ],
+          "answer": 1,
+          "explanation": "Telemedicine reduced the burden on physical healthcare facilities by enabling remote consultations, keeping hospitals available for critical cases."
+        },
+        {
+          "id": "a5q5",
+          "question": "What is the main purpose of pilot production in the development process?",
+          "options": [
+            "Generating marketing and advertising content",
+            "Testing and adapting design features based on user feedback",
+            "Filing for patents before large-scale production",
+            "Conducting research in controlled lab environments"
+          ],
+          "answer": 1,
+          "explanation": "Pilot production tests the design at a small scale, allowing teams to gather user feedback and make adaptations before full-scale manufacturing."
+        },
+        {
+          "id": "a5q6",
+          "question": "At which point in the innovation process should businesses prioritize securing Intellectual Property Rights (IPR)?",
+          "options": [
+            "During the initial idea conception",
+            "After developing a working prototype",
+            "Before commercializing the product",
+            "Once the product is widely available in the market"
+          ],
+          "answer": 2,
+          "explanation": "IPR should be secured before commercialization to protect the innovation from being copied once it enters the market."
+        },
+        {
+          "id": "a5q7",
+          "question": "Who is eligible to obtain licenses for Intellectual Property Rights (IPR)?",
+          "options": [
+            "Start-ups only",
+            "Industry professionals only",
+            "Non-Governmental Organizations (NGOs) only",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "IPR licenses can be obtained by startups, industry professionals, NGOs, and other entities — there is no restriction based on organizational type."
+        },
+        {
+          "id": "a5q8",
+          "question": "What does TRL stand for in the context of innovation and development?",
+          "options": [
+            "Technology Readiness Levels",
+            "Transition and Research Limits",
+            "Technological Resource Level",
+            "Test and Reliability Levels"
+          ],
+          "answer": 0,
+          "explanation": "TRL stands for Technology Readiness Levels — a scale used to assess the maturity of a technology from basic research (TRL 1) to full deployment (TRL 9)."
+        },
+        {
+          "id": "a5q9",
+          "question": "What key aspect should be prioritized when developing a Proof of Concept (POC)?",
+          "options": [
+            "Demonstrating functional feasibility",
+            "Implementing industrial techniques for scalability",
+            "Securing patent protection during initial stages",
+            "Brainstorming creative ideas without practical implementation"
+          ],
+          "answer": 0,
+          "explanation": "A Proof of Concept primarily aims to demonstrate that an idea is technically feasible — it can be built and works as intended."
+        },
+        {
+          "id": "a5q10",
+          "question": "What are the best practices for defining the functional requirements of a project?",
+          "options": [
+            "Conducting thorough stakeholder interviews to gather insights",
+            "Ignoring end-user feedback and relying on assumptions",
+            "Prioritizing features based on developer convenience",
+            "Overlooking the project scope and timeline"
+          ],
+          "answer": 0,
+          "explanation": "Stakeholder interviews ensure that functional requirements accurately reflect actual user needs and business objectives."
+        }
+      ]
+    },
+    {
+      "id": "assignment-6",
+      "title": "Assignment 6",
+      "week": 6,
+      "topic": "Human-Centered Design and Design Management",
+      "questions": [
+        {
+          "id": "a6q1",
+          "question": "Which key elements are essential for successfully engaging customers using a human-centered approach in product development?",
+          "options": [
+            "Utilizing lean methods and tools",
+            "Building empathy and conducting user research",
+            "Relying on traditional marketing strategies",
+            "Concentrating solely on product ideas"
+          ],
+          "answer": 1,
+          "explanation": "Human-centered design requires building genuine empathy with users and conducting thorough user research to understand their real needs."
+        },
+        {
+          "id": "a6q2",
+          "question": "Which factor is most critical when aligning a product with customer expectations during development?",
+          "options": [
+            "Conducting iterative testing and feedback loops",
+            "Emphasizing aesthetic appeal over functionality",
+            "Ignoring competitor analysis",
+            "Skipping the prototyping phase"
+          ],
+          "answer": 0,
+          "explanation": "Iterative testing and continuous feedback loops ensure the product evolves in alignment with customer expectations throughout development."
+        },
+        {
+          "id": "a6q3",
+          "question": "How do design thinking, user research, and strategic planning benefit an organization?",
+          "options": [
+            "Links business operations with innovation efforts",
+            "Helps build mock-ups for product testing",
+            "Focuses on generating creative ideas only",
+            "Encourages quick decision-making without research"
+          ],
+          "answer": 0,
+          "explanation": "The combination of design thinking, user research, and strategic planning creates a bridge between business operations and innovation."
+        },
+        {
+          "id": "a6q4",
+          "question": "What should the primary objective of a design researcher and strategist be when working for a client?",
+          "options": [
+            "Focus solely on the product's core idea",
+            "Balance user needs, technological feasibility, and business objectives",
+            "Ensure customer experience takes precedence over business goals",
+            "Prioritize technical feasibility over desirability"
+          ],
+          "answer": 1,
+          "explanation": "Effective design strategy balances the three pillars: what users need (desirability), what is technically possible (feasibility), and what is commercially viable (viability)."
+        },
+        {
+          "id": "a6q5",
+          "question": "Which strategy is most effective for encouraging interviewees to share valuable information?",
+          "options": [
+            "Asking complex and detailed questions",
+            "Beginning with secondary objectives",
+            "Building rapport and trust with the interviewee",
+            "Employing a rigid and formal interview structure"
+          ],
+          "answer": 2,
+          "explanation": "Building rapport and trust creates a comfortable environment where interviewees feel safe sharing honest, valuable insights."
+        },
+        {
+          "id": "a6q6",
+          "question": "What are the essential characteristics of a robust design brief?",
+          "options": [
+            "Providing detailed technical specifications and timelines",
+            "Outlining comprehensive marketing strategies",
+            "Including extensive budget estimates",
+            "Identifying user pain points, mapping user journeys, and ensuring ecosystem fit"
+          ],
+          "answer": 3,
+          "explanation": "A robust design brief centers on understanding users — identifying their pain points, mapping their journeys, and ensuring the solution fits into their ecosystem."
+        },
+        {
+          "id": "a6q7",
+          "question": "What is design management in relation to achieving organizational goals?",
+          "options": [
+            "Lateral thinking and creativity",
+            "Overseeing design teams and their timelines",
+            "Collaboration between stakeholders to meet business goals",
+            "A structured process for fulfilling business objectives through design"
+          ],
+          "answer": 3,
+          "explanation": "Design management is the structured process of leveraging design capabilities to fulfill business objectives — connecting design with organizational strategy."
+        },
+        {
+          "id": "a6q8",
+          "question": "What are the three key qualities that a client seeks in a design firm?",
+          "options": [
+            "Discipline, speed, and high fees",
+            "Quality, speed, and transparency",
+            "Collaboration, extended timelines, and reliability",
+            "Minimal interaction, predictability, and discipline"
+          ],
+          "answer": 1,
+          "explanation": "Clients prioritize quality (excellent output), speed (timely delivery), and transparency (clear communication) when selecting design partners."
+        },
+        {
+          "id": "a6q9",
+          "question": "What should be included in a comprehensive design brief to ensure project success?",
+          "options": [
+            "Detailed project timeline and budget",
+            "In-depth competitor analysis and benchmarking",
+            "Specific user personas and their pain points",
+            "Finalized marketing strategies and plans"
+          ],
+          "answer": 2,
+          "explanation": "User personas and their pain points are essential in a design brief because they keep the entire project focused on real user needs."
+        },
+        {
+          "id": "a6q10",
+          "question": "Why is it important for designers to empathize with both users and business goals?",
+          "options": [
+            "To ensure marketing and advertising success",
+            "To prioritize aesthetics over functionality",
+            "To balance creative ideas with realistic objectives",
+            "To reduce the complexity of the design process"
+          ],
+          "answer": 2,
+          "explanation": "Empathizing with both users and business goals allows designers to create solutions that are both creatively compelling and commercially viable."
+        }
+      ]
+    }
+  ],
+  "mockTests": [
+    {
+      "id": "mock-1",
+      "title": "Full Mock Test 1",
+      "description": "Covers all 6 weeks — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": ["a1q1","a1q3","a1q5","a1q7","a1q9","a2q1","a2q3","a2q5","a2q7","a2q9","a3q1","a3q3","a3q5","a3q7","a3q9","a4q1","a4q3","a4q5","a4q7","a4q9","a5q1","a5q3","a5q5","a5q7","a5q9","a6q1","a6q3","a6q5","a6q7","a6q9"]
+    },
+    {
+      "id": "mock-2",
+      "title": "Full Mock Test 2",
+      "description": "Covers all 6 weeks — 30 questions, 45 minutes",
+      "duration": 2700,
+      "questionCount": 30,
+      "questionIds": ["a1q2","a1q4","a1q6","a1q8","a1q10","a2q2","a2q4","a2q6","a2q8","a2q10","a3q2","a3q4","a3q6","a3q8","a3q10","a4q2","a4q4","a4q6","a4q8","a4q10","a5q2","a5q4","a5q6","a5q8","a5q10","a6q2","a6q4","a6q6","a6q8","a6q10"]
+    }
+  ]
+}

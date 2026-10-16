@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzes — NPTEL Prep</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .page-header {
+      background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+    }
+    .page-header-content { max-width: 1200px; margin: 0 auto; }
+    .page-header h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .page-header p { opacity: 0.85; font-size: 0.95rem; }
+    #quizListView, #quizActiveView { display: none; }
+    #quizListView.visible, #quizActiveView.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">N</div>
+      NPTEL Prep
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="materials.html">📚 Materials</a></li>
+      <li><a href="quizzes.html" class="active">✏️ Quizzes</a></li>
+      <li><a href="mock-tests.html">🧪 Mock Tests</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-content">
+    <h1>✏️ Assignment Quizzes</h1>
+    <p>Practice assignment-wise MCQs with instant feedback and detailed explanations</p>
+  </div>
+</div>
+
+<main class="main-content">
+
+  <!-- QUIZ LIST VIEW -->
+  <div id="quizListView">
+    <div class="filter-bar">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search quizzes by topic…" autocomplete="off">
+      </div>
+      <select class="filter-select" id="weekFilter">
+        <option value="">All Weeks</option>
+      </select>
+    </div>
+
+    <div class="cards-grid" id="quizCards"></div>
+    <div id="noResults" class="empty-state hidden">
+      <div class="empty-state-icon">🔍</div>
+      <h3>No quizzes found</h3>
+      <p>Try a different keyword or clear the filter</p>
+    </div>
+  </div>
+
+  <!-- ACTIVE QUIZ VIEW -->
+  <div id="quizActiveView">
+    <div style="margin-bottom:1rem">
+      <button class="btn btn-ghost" id="backToList" onclick="showQuizList()">← Back to Quizzes</button>
+    </div>
+
+    <div class="quiz-progress">
+      <div class="quiz-progress-header">
+        <span class="quiz-progress-label" id="quizTitle">Quiz</span>
+        <span class="quiz-progress-count" id="progressCount">0 / 0</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.6rem">
+        <span style="font-size:0.8rem;color:var(--neutral-500)" id="scoreTrack"></span>
+        <span class="badge badge-blue" id="topicBadge"></span>
+      </div>
+    </div>
+
+    <div class="question-card" id="questionCard">
+      <!-- Question rendered here -->
+    </div>
+
+    <div class="quiz-nav">
+      <button class="btn btn-ghost" id="prevBtn" onclick="navigate(-1)" disabled>← Prev</button>
+      <button class="btn btn-ghost" id="checkBtn" onclick="checkAnswer()">Check Answer</button>
+      <button class="btn btn-blue" id="nextBtn" onclick="navigate(1)">Next →</button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>NPTEL Prep — Developing Innovative Products and Entrepreneurship &nbsp;|&nbsp;
+  <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a></p>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/app.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

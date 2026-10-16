@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Materials — NPTEL Prep</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .page-header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+    }
+    .page-header-content { max-width: 1200px; margin: 0 auto; }
+    .page-header h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .page-header p { opacity: 0.85; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">N</div>
+      NPTEL Prep
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="materials.html" class="active">📚 Materials</a></li>
+      <li><a href="quizzes.html">✏️ Quizzes</a></li>
+      <li><a href="mock-tests.html">🧪 Mock Tests</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-content">
+    <h1>📚 Study Materials</h1>
+    <p>Week-wise topics, key concepts, and curated reference resources</p>
+  </div>
+</div>
+
+<main class="main-content">
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="search-input-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search topics, resources…" autocomplete="off">
+    </div>
+    <select class="filter-select" id="weekFilter">
+      <option value="">All Weeks</option>
+    </select>
+    <select class="filter-select" id="typeFilter">
+      <option value="">All Resource Types</option>
+      <option value="notes">📝 Notes</option>
+      <option value="video">🎥 Videos</option>
+      <option value="reference">📖 References</option>
+    </select>
+  </div>
+
+  <!-- WEEK CARDS -->
+  <div id="weekCards">
+    <div class="empty-state">
+      <div class="empty-state-icon">⏳</div>
+      <h3>Loading materials…</h3>
+    </div>
+  </div>
+
+  <div id="noResults" class="empty-state hidden">
+    <div class="empty-state-icon">🔍</div>
+    <h3>No results found</h3>
+    <p>Try a different search term or clear the filters</p>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>NPTEL Prep — Developing Innovative Products and Entrepreneurship &nbsp;|&nbsp;
+  <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a></p>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/app.js"></script>
+<script src="js/materials.js"></script>
+</body>
+</html>

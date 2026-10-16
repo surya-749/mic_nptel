@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL Prep — Developing Innovative Products & Entrepreneurship</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .feature-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .feature-title { font-weight: 700; color: var(--neutral-800); margin-bottom: 0.3rem; }
+    .feature-desc { font-size: 0.88rem; color: var(--neutral-500); line-height: 1.5; }
+    .week-overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .week-pill {
+      background: #fff;
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: var(--neutral-700);
+    }
+    .week-pill:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      color: var(--primary);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    .week-pill-num {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .week-pill-title { font-size: 0.85rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">N</div>
+      NPTEL Prep
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="materials.html">📚 Materials</a></li>
+      <li><a href="quizzes.html">✏️ Quizzes</a></li>
+      <li><a href="mock-tests.html">🧪 Mock Tests</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🎓 NPTEL Certification Prep</div>
+    <h1>Ace Your NPTEL Exam on<br>Innovative Products & Entrepreneurship</h1>
+    <p>Study smarter with topic-wise quizzes, timed mock tests, instant explanations, and curated study materials — all in one place.</p>
+    <div class="hero-actions">
+      <a href="quizzes.html" class="btn btn-primary">✏️ Start Quizzing</a>
+      <a href="mock-tests.html" class="btn btn-outline">🧪 Take Mock Test</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-container">
+    <div class="stat-item">
+      <div class="stat-number">60</div>
+      <div class="stat-label">MCQ Questions</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Weeks Covered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Mock Tests</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Free Access</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+
+  <!-- FEATURES -->
+  <div class="section-header">
+    <h2>Everything You Need to Prepare</h2>
+    <p>Comprehensive preparation resources designed around the NPTEL syllabus</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📚</div>
+      <div>
+        <div class="feature-title">Study Materials</div>
+        <div class="feature-desc">Week-wise topics, key concepts, and curated reference links organized by module.</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✏️</div>
+      <div>
+        <div class="feature-title">Topic-wise Quizzes</div>
+        <div class="feature-desc">Practice assignment-wise MCQs with instant feedback and detailed explanations for every question.</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧪</div>
+      <div>
+        <div class="feature-title">Timed Mock Tests</div>
+        <div class="feature-desc">Full 30-question mock exams under real exam conditions. Review answers after submission.</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div>
+        <div class="feature-title">Score & Analysis</div>
+        <div class="feature-desc">Instant results with accuracy percentage, correct/wrong counts, and question-level review.</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔍</div>
+      <div>
+        <div class="feature-title">Search & Filter</div>
+        <div class="feature-desc">Find quizzes or materials by topic, week, or keyword — quickly locate what you need.</div>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💡</div>
+      <div>
+        <div class="feature-title">Explanations</div>
+        <div class="feature-desc">Every answer comes with a clear conceptual explanation to reinforce understanding.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEEK OVERVIEW -->
+  <div class="section-header">
+    <h2>Course Overview — Weeks 1–6</h2>
+    <p>Browse study materials and quizzes by week</p>
+  </div>
+
+  <div class="week-overview-grid" id="weekOverview">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- QUICK ACTIONS -->
+  <div class="section-header mt-3" style="margin-top:2.5rem">
+    <h2>Quick Practice</h2>
+    <p>Jump directly into any assignment quiz</p>
+  </div>
+
+  <div class="cards-grid" id="quickQuizCards">
+    <!-- Populated by JS -->
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>NPTEL Prep — Developing Innovative Products and Entrepreneurship &nbsp;|&nbsp;
+  Study materials based on NPTEL curriculum &nbsp;|&nbsp;
+  <a href="https://nptel.ac.in" target="_blank" rel="noopener">nptel.ac.in</a></p>
+</footer>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/app.js"></script>
+<script>
+  // Populate week overview
+  async function initHomePage() {
+    try {
+      const data = await fetchData('data/materials.json');
+      const weekGrid = document.getElementById('weekOverview');
+      weekGrid.innerHTML = data.weeks.map(w => `
+        <a href="materials.html?week=${w.week}" class="week-pill">
+          <div class="week-pill-num">${w.week}</div>
+          <div class="week-pill-title">${w.title}</div>
+        </a>
+      `).join('');
+
+      const qData = await fetchData('data/questions.json');
+      const quizCards = document.getElementById('quickQuizCards');
+      const colors = ['blue','purple','green','orange','red','blue'];
+      quizCards.innerHTML = qData.assignments.map((a, i) => `
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon ${colors[i]}">✏️</div>
+            <div>
+              <div class="card-title">${a.title}</div>
+              <div class="card-subtitle">Week ${a.week} — ${a.topic}</div>
+            </div>
+          </div>
+          <div class="card-body">${a.questions.length} questions covering ${a.topic.toLowerCase()}.</div>
+          <div class="card-footer">
+            <span class="badge badge-blue">${a.questions.length} MCQs</span>
+            <a href="quizzes.html?id=${a.id}" class="btn btn-blue" style="font-size:0.85rem;padding:0.5rem 1rem">Start →</a>
+          </div>
+        </div>
+      `).join('');
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
+  initHomePage();
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+{
+  "course": {
+    "name": "Developing Innovative Products and Entrepreneurship",
+    "code": "NPTEL",
+    "duration": "12 Weeks",
+    "instructor": "NPTEL Faculty",
+    "description": "This course covers entrepreneurship, design thinking, product innovation, and startup methodologies through real-world case studies and practical assignments."
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Introduction to Entrepreneurship",
+      "topics": [
+        "What is Entrepreneurship?",
+        "Characteristics of Entrepreneurs",
+        "Types of Entrepreneurship",
+        "Economic Impact of Entrepreneurship",
+        "Lean Startup Methodology",
+        "Evidence-Based Entrepreneurship"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 1 Lecture Notes",
+          "type": "notes",
+          "description": "Core concepts of entrepreneurship, startup ecosystems, and the lean methodology",
+          "url": "#"
+        },
+        {
+          "title": "The Lean Startup — Eric Ries",
+          "type": "reference",
+          "description": "Foundational book on Build-Measure-Learn cycle for startups",
+          "url": "https://theleanstartup.com/"
+        },
+        {
+          "title": "Week 1 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 1 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Team Building and Customer Discovery",
+      "topics": [
+        "Building the Right Team",
+        "Roles and Responsibilities in a Startup",
+        "Shared Vision and Common Goals",
+        "Customer Discovery Process",
+        "Early Adopters",
+        "Pivoting Strategies"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 2 Lecture Notes",
+          "type": "notes",
+          "description": "Team dynamics, customer discovery, and the startup pivot",
+          "url": "#"
+        },
+        {
+          "title": "The Startup Owner's Manual — Steve Blank",
+          "type": "reference",
+          "description": "Step-by-step guide for building a startup through customer development",
+          "url": "https://steveblank.com/"
+        },
+        {
+          "title": "Week 2 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 2 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Design Thinking and Product Design",
+      "topics": [
+        "Design Thinking Process",
+        "Empathy in Design",
+        "Problem Statement Formulation",
+        "Ideation and Brainstorming",
+        "Prototyping Techniques",
+        "Intellectual Property Rights (IPR) and Prior Art",
+        "Collaborative Design",
+        "Regulatory Barriers in Product Design"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 3 Lecture Notes",
+          "type": "notes",
+          "description": "Design thinking, empathy mapping, and IPR fundamentals",
+          "url": "#"
+        },
+        {
+          "title": "IDEO Design Thinking Resource",
+          "type": "reference",
+          "description": "Official design thinking methodology guide from IDEO",
+          "url": "https://designthinking.ideo.com/"
+        },
+        {
+          "title": "Week 3 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 3 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Market Entry and Customer Needs",
+      "topics": [
+        "Outside-In Thinking",
+        "Problem Recognition Scale",
+        "Active vs Passive Problems",
+        "Sustainable Product Marketing",
+        "Rural Market Penetration",
+        "Pricing Strategies for Accessibility",
+        "Attracting Investors"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 4 Lecture Notes",
+          "type": "notes",
+          "description": "Market entry strategies, sustainable products, and investor attraction",
+          "url": "#"
+        },
+        {
+          "title": "Blue Ocean Strategy",
+          "type": "reference",
+          "description": "Creating uncontested market space and making competition irrelevant",
+          "url": "https://www.blueoceanstrategy.com/"
+        },
+        {
+          "title": "Week 4 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 4 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "title": "Innovation, IPR and Technology Readiness",
+      "topics": [
+        "Academic Research to Market",
+        "Healthcare Product Startups",
+        "Technology Readiness Levels (TRL)",
+        "Proof of Concept (POC)",
+        "Pilot Production",
+        "IPR Licensing",
+        "Telemedicine and HealthTech Innovation"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 5 Lecture Notes",
+          "type": "notes",
+          "description": "TRL scale, IPR strategy, POC development, and healthcare innovation",
+          "url": "#"
+        },
+        {
+          "title": "Technology Readiness Levels — NASA",
+          "type": "reference",
+          "description": "Official TRL scale definitions and usage guide",
+          "url": "https://www.nasa.gov/directorates/heo/scan/engineering/technology/technology_readiness_level"
+        },
+        {
+          "title": "Week 5 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 5 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "title": "Human-Centered Design and Design Management",
+      "topics": [
+        "Human-Centered Design Principles",
+        "User Research Methods",
+        "Interview Techniques",
+        "Design Brief Components",
+        "User Personas and Pain Points",
+        "Design Management",
+        "Client-Designer Relationships",
+        "Balancing Desirability, Feasibility, Viability"
+      ],
+      "resources": [
+        {
+          "title": "NPTEL Week 6 Lecture Notes",
+          "type": "notes",
+          "description": "Human-centered design, design briefs, and strategic design management",
+          "url": "#"
+        },
+        {
+          "title": "Nielsen Norman Group — UX Research",
+          "type": "reference",
+          "description": "World-leading UX research and user interview methodologies",
+          "url": "https://www.nngroup.com/"
+        },
+        {
+          "title": "Week 6 Video Lectures",
+          "type": "video",
+          "description": "NPTEL video lectures covering Week 6 syllabus",
+          "url": "https://nptel.ac.in/"
+        }
+      ]
+    }
+  ]
+}
